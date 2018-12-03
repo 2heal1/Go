@@ -1,0 +1,35 @@
+.ffont1{
+    font-size: 15px;
+    color: dimgray;
+    font-weight: 600;
+}
+.ffont2{
+    background-color: beige;
+    color: rosybrown;
+}
+.ffont3{
+    color: #427ad1;
+    margin-left: 10px;
+}
+.ffont4{
+    background-color: beige;
+    color: rosybrown;
+    margin-left: 10px;
+}
+.ffont5{
+    margin-left: 0px;
+    color: red;
+    font-size: 20px;
+}
+.ffont6{
+    margin-left: 0px;
+    color: dimgray;
+    margin-top: 7px;
+    font-size: 13px;
+}
+.ffont7{
+    margin-top: 5px;
+    margin-left: 0px;
+    font-size: 13px;
+    color: #484848;
+}

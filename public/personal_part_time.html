@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>个人_我的兼职</title>
+    <link rel="stylesheet"href="css/bootstrap.min.css">
+    <script src="jquery-1.9.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet"href="index_css.css">
+    <link rel="stylesheet" href="personal.css">
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+<body style="background-color: white">
+<div class="container-fluid">
+    <div class="row">
+        <!--功能列表-->
+        <div class="col-2 pdiv2">
+            <!--欢迎-->
+            <div align="center" style="margin-top: 15px;">
+                <h4>Hi,用户昵称3247891</h4>
+            </div>
+            <!--头像-->
+            <div class="pdiv1">
+                <div style="margin-left: 70px;margin-top: 15px;"><h5>3247891</h5></div>
+            </div>
+            <!--个人中心-->
+            <div class="row pfunction">
+                <div class="pvertical"style="visibility: hidden"></div>
+                <span style="margin-left: 30px">
+                      <img src="pictures/个人中心_灰.png" height="20" style="margin-top: -4px;"/>
+                    <a href="personal.html"target="_self">个人中心</a>
+                </span>
+            </div>
+            <!--我的竞赛-->
+            <div class="row pfunction">
+                <div class="pvertical"style="visibility: hidden"></div>
+                <span style="margin-left: 30px">
+                <img src="pictures/竞赛_灰.png" height="20" style="margin-top: -4px;"/>
+                    <a href="personal_com.html"target="_self">我的竞赛</a>
+                </span>
+            </div>
+            <!--我的捐款-->
+            <div class="row pfunction">
+                <div class="pvertical"style="visibility: hidden"></div>
+                <span style="margin-left: 30px">
+                     <img src="pictures/爱心捐款_灰.png" height="20" style="margin-top: -4px;"/>
+                    <a href="personal_cha.html"target="_self">我的捐款</a>
+                </span>
+            </div>
+            <!--我的兼职-->
+            <div class="row pfunction"style="color: black">
+                <div class="pvertical"style="visibility: visible"></div>
+                <span style="margin-left: 30px">
+                     <img src="pictures/兼职.png" height="20" style="margin-top: -4px;"/>
+                     <a href="personal_part_time.html"target="_self"style="color: black">我的兼职</a>
+                </span>
+                <!--下拉菜单-->
+                <div style="margin-top: 5px;display:none;">
+                    <!--我的求职-->
+                    <div style="margin-left: -80px;margin-top: 5px;">
+                        <div class="row pfunction">
+                            <div class="pvertical"style="visibility: hidden"></div>
+                            <span style="margin-left: 30px">
+                               <img src="pictures/求职_灰.png" height="20" style="margin-top: -7px;"/>
+                                <a id="job_search">我的求职</a>
+                            </span>
+                        </div>
+                    </div>
+                    <!--我的招聘-->
+                    <div style="margin-left: -80px;margin-top: -20px;">
+                        <div class="row pfunction">
+                            <div class="pvertical"style="visibility: hidden"></div>
+                            <span style="margin-left: 30px">
+                                <img src="pictures/招聘_灰.png" height="20" style="margin-top: -4px;"/>
+                                <a>我的招聘</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--我的闲置-->
+            <div class="row pfunction">
+                <div class="pvertical"style="visibility: hidden"></div>
+                <span style="margin-left: 30px">
+                     <img src="pictures/闲置_灰.png" height="20" style="margin-top: -4px;"/>
+                     <a href="personal_unused.html"target="_self">我的闲置</a>
+                </span>
+                <!--下拉菜单-->
+                <div style="margin-top: 5px;display:none;">
+                    <!--我卖出的-->
+                    <div style="margin-left: -80px;margin-top: 5px;">
+                        <div class="row pfunction">
+                            <div class="pvertical"style="visibility: hidden"></div>
+                            <span style="margin-left: 30px">
+                               <img src="pictures/出售_灰.png" height="20" style="margin-top: -7px;"/>
+                                <a>我卖出的</a>
+                            </span>
+                        </div>
+                    </div>
+                    <!--我买入的-->
+                    <div style="margin-left: -80px;margin-top: -20px;">
+                        <div class="row pfunction">
+                            <div class="pvertical"style="visibility: hidden"></div>
+                            <span style="margin-left: 30px">
+                                <img src="pictures/购买_灰.png" height="20" style="margin-top: -7px;"/>
+                                <a>我买入的</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--我的失领-->
+            <div class="row pfunction">
+                <div class="pvertical"style="visibility: hidden"></div>
+                <span style="margin-left: 30px">
+                     <img src="pictures/失物招领_灰.png" height="20" style="margin-top: -4px;"/>
+                    <a href="personal_find.html"target="_self">我的失领</a>
+                </span>
+            </div>
+            <!--我的消息-->
+            <div class="row pfunction">
+                <div class="pvertical"style="visibility: hidden"></div>
+                <span style="margin-left: 30px">
+                     <img src="pictures/消息_灰.png" height="20" style="margin-top: -4px;"/>
+                    <a href="personal_info.html"target="_self">我的消息</a>
+                </span>
+            </div>
+            <!--帐号设置-->
+            <div class="row pfunction">
+                <div class="pvertical"style="visibility: hidden"></div>
+                <span style="margin-left: 30px">
+                     <img src="pictures/设置_灰.png" height="20" style="margin-top: -4px;"/>
+                    <a href="personal_set_up.html"target="_self">帐号设置</a>
+                </span>
+            </div>
+            <!--退出-->
+            <div class="row pfunction">
+                <div class="pvertical"style="visibility: hidden"></div>
+                <span style="margin-left: 30px">
+                     <img src="pictures/退出_灰.png" height="20" style="margin-top: -4px;"/>
+                    <a>退出</a>
+                </span>
+            </div>
+            <div>
+                <br>   <br>   <br>   <br>   <br>
+            </div>
+        </div>
+        <div class="col-10"style="background-color: #f7f7f759;">
+            <div class="row">
+                <div style="margin-left: 40px;margin-top: 10px;">
+                    <h3>搜索你想要的</h3>
+                </div>
+                <div>
+                    <img src="pictures/搜索--1.png" height="15"style="margin-left: 20px;margin-top: 25px;" />
+                </div>
+                <div style="margin-top: 19px;margin-left: 3px;"><input type="text"value=" 我的.."class="pinput1"></div>
+            </div>
+            <div class="pdiv3">
+                <hr style="margin: 0;background-color: #eaeaea00;">
+            </div>
+            <!--我的兼职-->
+            <div class="col-12">
+                <div style="margin-left: 10px">
+                    <br>
+                    <h4>我的兼职</h4>
+                </div>
+                <!--导航栏-->
+                <div class="row">
+                    <div style="margin-left: 25px;margin-top: 25px;">
+                        <a style="color: #3fa544"id="qiuzhi2">我的求职</a>
+                        <hr class="pphr1"style="visibility: visible"id="qiuzhi3">
+                    </div>
+                    <div style="margin-left: 25px;margin-top: 25px;">
+                        <a id="zhaopin2">我的招聘</a>
+                        <hr class="pphr1"style="visibility: hidden"id="zhaopin3">
+                    </div>
+                </div>
+                <div class="ppdiv1"></div>
+                <!--求职-->
+                <div style="display: block"id="qiuzhi">
+                    <div class="row"style="background-color: white;">
+                        <!--申请的公司+职位-->
+                        <div class="col-4 row">
+                            <div class="col-6">
+                                <img src="pictures/logo2.png"  height="150"class="img-thumbnail"align="center"/>
+                            </div>
+                            <div class="col-6">
+                                <div style="font-size: 14px;font-weight: bold;margin-top: 35px;">大学生Go</div>
+                                <div style="font-size: 13px;color: dimgray;margin-top: 5px">2018-01-19 09:41</div>
+                                <div style="font-size: 13px;color: dimgray;margin-top: 5px"><strong>项目经理</strong></div>
+                            </div>
+                        </div>
+                        <!--申请状态-->
+                        <div class="col-8 row">
+                            <div class="col-1"> <div class="ppvertical1"></div></div>
+                            <div class="col-9">
+                                <div style="font-size: 14px;margin-top: 40px;">求职成功，请在2018-01-23日准时到公司报道</div>
+                            </div>
+                            <div class="col-2">
+                                <div style="font-size: 13px;margin-top: 40px;"><a style="color: #0a6dc5">彻底删除</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--招聘-->
+                <div style="display: none"id="zhaopin">
+                    <div class="row"style="background-color: white">
+                        <!--公司+职位-->
+                        <div class="col-4 row">
+                            <div class="col-6">
+                                <img src="pictures/logo2.png"  height="150"class="img-thumbnail"/>
+                            </div>
+                            <div class="col-6">
+                                <div style="font-size: 14px;font-weight: bold;margin-top: 35px;">大学生Go</div>
+                                <div style="font-size: 13px;color: dimgray;margin-top: 5px">2018-02-11 11:25</div>
+                                <div style="font-size: 13px;color: dimgray;margin-top: 5px"><strong>职场精英</strong></div>
+                            </div>
+                        </div>
+                        <!--招聘状态-->
+                        <div class="col-8 row">
+                            <div class="col-1"> <div class="ppvertical1"></div></div>
+                            <div class="col-9">
+                                <div style="font-size: 14px;margin-top: 40px;">发布成功，请仔细观察求职者的留言信息</div>
+                            </div>
+                            <div class="col-2">
+                                <div style="font-size: 13px;margin-top: 40px;"><a style="color: #0a6dc5">彻底删除</a></div>
+                            </div>
+                            <div style="font-size: 13px;margin-left: 80px;margin-top: -55px;z-index: 999">
+                                <img src="pictures/留言.png"  width="20"/><span id="ClickMe"style="cursor: pointer">留言：</span><span>1</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--上下页-->
+            <div class="row"style="margin-top: 10px">
+                <div class="col-10"></div>
+                <div class="col-2 row">
+                    <a style="visibility: hidden">上一页</a>
+                    <a style="margin-left: 20px">下一页</a>
+                </div>
+                <div class="col-1"></div>
+            </div>
+            <!--我的简历-->
+            <div class="col-12">
+                <div style="margin-left: 10px">
+                    <br>
+                    <h4>我的简历</h4>
+                </div>
+                <div class="table-responsive"style="margin-top: 25px">
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th>简历名称</th>
+                            <th>类型</th>
+                            <th>公开设置</th>
+                            <th>下载浏览</th>
+                            <th>面试邀请</th>
+                            <th>更新时间</th>
+                            <th>操作</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>网络安全与信息工程师</td>
+                            <td>全职</td>
+                            <td>公开</td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>2018-01-03</td>
+                            <td>
+                                <span>修改</span>
+                                <span>删除</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>新建..</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!--上下页+-->
+                <div class="row"style="margin-top: 10px">
+                    <div class="col-10"></div>
+                    <div class="col-2 row">
+                        <a style="visibility: hidden">上一页</a>
+                        <a style="margin-left: 20px">下一页</a>
+                    </div>
+                    <div class="col-1"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="goodcover"style="height: 100%;"></div>
+<div id="code"style="left: 462px;">
+    <div class="close1"><a href="javascript:void(0)" id="closebt"><img src="images/close.gif"style="float: right"></a></div>
+    <div class="goodtxt">
+        <!--标题-->
+        <div style="font-size: 16px;font-weight: bold;float: left;margin-top: -50px;">
+            留言
+        </div>
+        <!--留言-->
+        <div class="row"style="margin-left: 10px;margin-left: 42px;">
+            <div style="margin-top: 10px;">
+                <div class="row" style="margin-left: 10px">
+                    <img src="pictures/head.jpg" height="55"style="border-radius: 50%; margin-top: -7px;"/>
+                    <div style="margin-left: 15px; margin-top: -5px;">
+                        <span style="color: #494949;margin-left: -165px;">用户128391247</span><br>
+                        <span style="font-size: 13px;color: dimgray;">山东科技大学泰山科技学院&nbsp;&nbsp;·&nbsp;&nbsp;2018-07-25 17:29</span>
+                    </div>
+                </div>
+                <div style="margin-left: 81px;margin-top: 10px;color: #5a5a5a;font-size: 14px;"class="row">
+                    请问一下 这个职位工资是多少？
+                        <img src="pictures/编辑.png" height="15"style="margin-top: 2px;margin-left: 123px;" />
+                        <div style=" color: dimgray;font-size: 13px;"><a>回复</a></div>
+                </div>
+            </div>
+        </div>
+        <!--下一页-->
+        <div class="pdiv6"style="margin-top: 45px">
+            <a style="visibility: hidden">上一页</a>
+            <a style="margin-left: 20px">下一页</a>
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function(){
+        $('#qiuzhi2').click(function(){
+            $('#qiuzhi2').css("color","#3fa544");
+            $('#qiuzhi3').css("visibility","visible");
+            $('#qiuzhi').css("display","block");
+            $('#zhaopin').css("display","none");
+            $('#zhaopin2').css("color","black");
+            $('#zhaopin3').css("visibility","hidden");
+
+        });
+        $('#zhaopin2').click(function(){
+            $('#zhaopin2').css("color","#3fa544");
+            $('#zhaopin3').css("visibility","visible");
+            $('#zhaopin').css("display","block");
+            $('#qiuzhi').css("display","none");
+            $('#qiuzhi2').css("color","black");
+            $('#qiuzhi3').css("visibility","hidden");
+        });
+    });
+</script>
+<script>
+    $(function() {
+        //alert($(window).height());
+        $('#ClickMe').click(function() {
+            $('#code').center();
+            $('#goodcover').show();
+            $('#code').fadeIn();
+        });
+        $('#closebt').click(function() {
+            $('#code').hide();
+            $('#goodcover').hide();
+        });
+        $('#goodcover').click(function() {
+            $('#code').hide();
+            $('#goodcover').hide();
+        });
+        /*var val=$(window).height();
+        var codeheight=$("#code").height();
+        var topheight=(val-codeheight)/2;
+        $('#code').css('top',topheight);*/
+        jQuery.fn.center = function(loaded) {
+            var obj = this;
+            body_width = parseInt($(window).width());
+            body_height = parseInt($(window).height());
+            block_width = parseInt(obj.width());
+            block_height = parseInt(obj.height());
+
+            left_position = parseInt((body_width / 2) - (block_width / 2) + $(window).scrollLeft());
+            if (body_width < block_width) {
+                left_position = 0 + $(window).scrollLeft();
+            };
+
+            top_position = parseInt((body_height / 2) - (block_height / 2) + $(window).scrollTop());
+            if (body_height < block_height) {
+                top_position = 0 + $(window).scrollTop();
+            };
+
+            if (!loaded) {
+
+                obj.css({
+                    'position': 'absolute'
+                });
+                obj.css({
+                    'top': ($(window).height() - $('#code').height()) * 0.5,
+                    'left': left_position
+                });
+                $(window).bind('resize', function() {
+                    obj.center(!loaded);
+                });
+                $(window).bind('scroll', function() {
+                    obj.center(!loaded);
+                });
+
+            } else {
+                obj.stop();
+                obj.css({
+                    'position': 'absolute'
+                });
+                obj.animate({
+                    'top': top_position
+                }, 200, 'linear');
+            }
+        }
+
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,150 @@
+a{
+    color: #7b7b7b;
+    cursor: pointer;
+}
+.pdiv1{
+    width: 60px;
+    background-repeat: no-repeat;
+    height: 60px;
+    border: 1px solid #b5b5b5;
+    border-radius: 50%;
+    background-image: url(pictures/head_1.png);
+    margin-left: 25px;
+    margin-top: 15px;
+}
+.pdiv2{
+    border-top: 0;
+    border: 2px solid #e6e6e669;
+    border-bottom: 0;
+    box-shadow: 3px 5px 10px 1px #d8d8d8;
+}
+.pdiv3{
+    font-size: 13px;
+    color: #757575;
+    margin-left: 28px;
+    margin-top: 55px;
+}
+.pdiv4{
+    background-color: white;
+    font-size: 13px;
+    color: #636363;
+    width: 320px;
+    height: 190px;
+    margin-left: 28px;
+    border: 1px solid #e8e8e8;
+    margin-top: 20px;
+    box-shadow: 15px 10px 18px 1px #d4d4d4;
+}
+.pdiv5{
+    margin-left: 1120px;
+    margin-top: 100px;
+    font-size: 13px;
+    color: dimgray;
+}
+.pdiv6{
+    margin-left: 323px;
+    margin-top: 10px;
+    font-size: 13px;
+    color: dimgray;
+}
+.pvertical{
+    width: 3px;
+    height: 29px;
+    background-color: #ff8507;
+    margin-left: 10px;
+    margin-top: -4px;
+}
+.pvertical2{
+    margin-left: 640px;
+    width: 2px;
+    height: 34px;
+    background-color: #5f5f5f;
+    margin-top: -4px;
+    margin-left: 640px;
+}
+.pvertical3{
+    width: 2px;
+    margin-left: 53px;
+    height: 45px;
+    background-color: #a6a6a6;
+    margin-top: 0px;
+}
+.pvertical4{
+    width: 2px;
+    margin-left: 53px;
+    height: 45px;
+    background-color: #a6a6a6;
+}
+.pfunction{
+    margin-top: 25px;
+    font-size: 14px;
+    color: #7b7b7b;
+}
+.pinput1{
+    border-radius: 24px;
+    width: 100px;
+    height: 22px;
+    color: #4c4c4c;
+    background-color: #fcfcfc;
+    font-size: 13px;
+    border: 1px solid #bdbdbd;
+    outline: none;
+}
+.pinput2{
+    outline: none;
+    background-color: white;
+    border: 0;
+    color: #636363;
+    cursor: pointer;
+    font-size: 13px;
+}
+.pround1{
+    margin-left: 47px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    height: 15px;
+    border: 4px solid #fe6b6b;
+    width: 15px;
+}
+.pfont1{
+    font-size: 14px;
+    color: #858585;
+    margin-top: 43px;
+}
+.pfont2{
+    font-size: 14px;
+    margin-top: 10px;
+}
+.pc_1{
+    cursor: pointer;
+    background-color: #ffadad40;
+}
+.pc_1:hover{
+    background-color: #fad5d540;
+    opacity: 0.8;
+    transition: all 2s;
+}
+.pphr1{
+    height: 1px;
+    background-color: #3fa544;
+    margin-top: 14px;
+}
+.ppdiv1{
+    border-top: 1px solid #d2d2d2;
+    margin-top: -17px;
+    margin-left: 10px;
+}
+.ppvertical1{
+    width: 1px;
+    margin-top: 27px;
+    margin-left: 8px;
+    height: 105px;
+    background-color: #a6a6a640;
+}
+.psinput1{
+    margin-left: 19px;
+    width: 1085px;
+    outline: black;
+    border: 0;
+    border-bottom: 1px solid #c7c7c7;
+}

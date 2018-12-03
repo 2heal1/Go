@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Mosaddek">
+    <meta name="keyword" content="FlatLab, Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
+    <link rel="shortcut icon" href="img/favicon.html">
+
+    <title>Chart</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/Administration_bootstrap.min.css" rel="stylesheet">
+    <link href="css/Administration_bootstrap-reset.css" rel="stylesheet">
+    <!--external css-->
+    <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <link href="assets/morris.js-0.4.3/morris.css" rel="stylesheet" />
+    <!-- Custom styles for this template -->
+    <link href="css/Administration_style.css" rel="stylesheet">
+    <link href="css/Administration_style-responsive.css" rel="stylesheet" />
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 tooltipss and media queries -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+  <section id="container" class="">
+      <!--头部-->
+      <header class="header white-bg">
+          <div class="sidebar-toggle-box">
+              <div data-original-title="Toggle Navigation" data-placement="right" class="icon-reorder tooltips"></div>
+          </div>
+          <!--标题-->
+          <a href="#" class="logo">大学生<span>Go!</span></a>
+          <div class="nav notify-row" id="top_menu">
+              <!--  通知  -->
+              <ul class="nav top-menu">
+                  <!-- 任务 -->
+                  <li class="dropdown">
+                      <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                          <i class="icon-tasks"></i>
+                          <span class="badge bg-success">6</span>
+                      </a>
+                      <ul class="dropdown-menu extended tasks-bar">
+                          <div class="notify-arrow notify-arrow-green"></div>
+                          <li>
+                              <p class="green">你有6个待处理的任务</p>
+                          </li>
+                          <li>
+                              <a href="#">
+                                  <div class="task-info">
+                                      <div class="desc">闲置信息审核</div>
+                                      <div class="percent">40%</div>
+                                  </div>
+                                  <div class="progress progress-striped">
+                                      <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                                          <span class="sr-only">40% Complete (success)</span>
+                                      </div>
+                                  </div>
+                              </a>
+                          </li>
+                          <li>
+                              <a href="#">
+                                  <div class="task-info">
+                                      <div class="desc">闲置信息审核</div>
+                                      <div class="percent">60%</div>
+                                  </div>
+                                  <div class="progress progress-striped">
+                                      <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                                          <span class="sr-only">60% Complete (warning)</span>
+                                      </div>
+                                  </div>
+                              </a>
+                          </li>
+                          <li>
+                              <a href="#">
+                                  <div class="task-info">
+                                      <div class="desc">修复100个Bug</div>
+                                      <div class="percent">87%</div>
+                                  </div>
+                                  <div class="progress progress-striped">
+                                      <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 87%">
+                                          <span class="sr-only">87% Complete</span>
+                                      </div>
+                                  </div>
+                              </a>
+                          </li>
+                          <li>
+                              <a href="#">
+                                  <div class="task-info">
+                                      <div class="desc">竞赛信息审核</div>
+                                      <div class="percent">33%</div>
+                                  </div>
+                                  <div class="progress progress-striped">
+                                      <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 33%">
+                                          <span class="sr-only">33% Complete (danger)</span>
+                                      </div>
+                                  </div>
+                              </a>
+                          </li>
+                          <li>
+                              <a href="#">
+                                  <div class="task-info">
+                                      <div class="desc">捐款信息审核</div>
+                                      <div class="percent">45%</div>
+                                  </div>
+                                  <div class="progress progress-striped active">
+                                      <div class="progress-bar"  role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%">
+                                          <span class="sr-only">45% Complete</span>
+                                      </div>
+                                  </div>
+
+                              </a>
+                          </li>
+                          <li class="external">
+                              <a href="#">请参阅所有任务</a>
+                          </li>
+                      </ul>
+                  </li>
+                  <!-- 信息-->
+                  <li id="header_inbox_bar" class="dropdown">
+                      <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                          <i class="icon-envelope-alt"></i>
+                          <span class="badge bg-important">5</span>
+                      </a>
+                      <ul class="dropdown-menu extended inbox">
+                          <div class="notify-arrow notify-arrow-red"></div>
+                          <li>
+                              <p class="red">你有5条新消息</p>
+                          </li>
+                          <li>
+                              <a href="#">
+                                  <span class="photo"><img alt="avatar" src="img/avatar-mini.jpg"></span>
+                                  <span class="subject">
+                                    <span class="from">U2h</span>
+                                    <span class="time">刚刚</span>
+                                    </span>
+                                  <span class="message">
+                                        这是一个很棒的计划
+                                    </span>
+                              </a>
+                          </li>
+                          <li>
+                              <a href="#">
+                                  <span class="photo"><img alt="avatar" src="img/avatar-mini2.jpg"></span>
+                                  <span class="subject">
+                                    <span class="from">波少</span>
+                                    <span class="time">10 分钟前</span>
+                                    </span>
+                                  <span class="message">
+                                     嗨，最近怎么样？
+                                    </span>
+                              </a>
+                          </li>
+                          <li>
+                              <a href="#">
+                                  <span class="photo"><img alt="avatar" src="img/avatar-mini3.jpg"></span>
+                                  <span class="subject">
+                                    <span class="from">毛虫</span>
+                                    <span class="time">3小时前</span>
+                                    </span>
+                                  <span class="message">
+                                        This is awesome dashboard.
+                                    </span>
+                              </a>
+                          </li>
+                          <li>
+                              <a href="#">
+                                  <span class="photo"><img alt="avatar" src="img/avatar-mini4.jpg"></span>
+                                  <span class="subject">
+                                    <span class="from">Jondi Rose</span>
+                                    <span class="time">刚刚</span>
+                                    </span>
+                                  <span class="message">
+                                        下午4点A-116开会
+                                    </span>
+                              </a>
+                          </li>
+                          <li>
+                              <a href="#">查看所有消息</a>
+                          </li>
+                      </ul>
+                  </li>
+                  <!-- 通知-->
+                  <li id="header_notification_bar" class="dropdown">
+                      <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+
+                          <i class="icon-bell-alt"></i>
+                          <span class="badge bg-warning">7</span>
+                      </a>
+                      <ul class="dropdown-menu extended notification">
+                          <div class="notify-arrow notify-arrow-yellow"></div>
+                          <li>
+                              <p class="yellow">你有7个新通知</p>
+                          </li>
+                          <li>
+                              <a href="#">
+                                  <span class="label label-danger"><i class="icon-bolt"></i></span>
+                                  服务器 # 3超载
+                                  <span class="small italic">34 分钟前</span>
+                              </a>
+                          </li>
+                          <li>
+                              <a href="#">
+                                  <span class="label label-warning"><i class="icon-bell"></i></span>
+                                  服务器 #10 没有编码
+                                  <span class="small italic">1 小时前</span>
+                              </a>
+                          </li>
+                          <li>
+                              <a href="#">
+                                  <span class="label label-danger"><i class="icon-bolt"></i></span>
+                                  服务器 # 5超载
+                                  <span class="small italic">4 小时前</span>
+                              </a>
+                          </li>
+                          <li>
+                              <a href="#">
+                                  <span class="label label-success"><i class="icon-plus"></i></span>
+                                  服务器 # 4超载
+                                  <span class="small italic">刚刚</span>
+                              </a>
+                          </li>
+                          <li>
+                              <a href="#">
+                                  <span class="label label-info"><i class="icon-bullhorn"></i></span>
+                                  应用程序错误
+                                  <span class="small italic">10 分钟前</span>
+                              </a>
+                          </li>
+                          <li>
+                              <a href="#">查看所有通知</a>
+                          </li>
+                      </ul>
+                  </li>
+              </ul>
+          </div>
+          <div class="top-nav ">
+              <!--搜索和用户信息-->
+              <ul class="nav pull-right top-menu">
+                  <li>
+                      <input type="text" class="form-control search" placeholder="Search">
+                  </li>
+                  <!-- 用户登录个人信息-->
+                  <li class="dropdown">
+                      <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                          <img alt="" src="img/avatar1_small.jpg">
+                          <span class="username">Jhon Doue</span>
+                          <b class="caret"></b>
+                      </a>
+                      <ul class="dropdown-menu extended logout">
+                          <div class="log-arrow-up"></div>
+                          <li><a href="#"><i class=" icon-suitcase"></i>文件</a></li>
+                          <li><a href="#"><i class="icon-cog"></i> 设置</a></li>
+                          <li><a href="#"><i class="icon-bell-alt"></i> 通知</a></li>
+                          <li><a href="Administration_login.html"><i class="icon-key"></i>注销</a></li>
+                      </ul>
+                  </li>
+              </ul>
+          </div>
+      </header>
+      <aside>
+          <div id="sidebar"  class="nav-collapse ">
+              <!-- 菜单栏-->
+              <ul class="sidebar-menu">
+                  <li class="active">
+                      <a class="" href="Administration_index.html">
+                          <i class="icon-user"></i>
+                          <span>我的管理</span>
+                      </a>
+                  </li>
+                  <li>
+                      <a class="" href="Administration_calendar.html">
+                          <i class="icon-dashboard"></i>
+                          <span>我的日历</span>
+                          <span class="label label-danger pull-right mail-info">2</span>
+                      </a>
+                  </li>
+                  <li>
+                      <a class="" href="Administration_charts.html">
+                          <i class="icon-th"></i>
+                          <span>相关图表</span>
+                      </a>
+                  </li>
+                  <li>
+                      <a class="" href="Administration_basic_table.html">
+                          <i class="icon-glass"></i>
+                          <span>申请列表</span>
+                      </a>
+                  </li>
+                  <li>
+                      <a class="" href="Administration_inbox.html">
+                          <i class="icon-envelope"></i>
+                          <span>信件</span>
+                          <span class="label label-danger pull-right mail-info">2</span>
+                      </a>
+                  </li>
+              </ul>
+              <!-- sidebar menu end-->
+          </div>
+      </aside>
+      <!--主要内容-->
+      <section id="main-content">
+          <header class="tab-head">
+              <ul class="nav nav-tabs">
+
+                  <li class="active">
+                      <a data-toggle="tab" href="#morris">Morris</a>
+                  </li>
+
+                  <li class="">
+                      <a data-toggle="tab" href="#chartjs">Chartjs</a>
+                  </li>
+
+                  <li class="">
+                      <a data-toggle="tab" href="#sparkline">Sparkline</a>
+                  </li>
+              </ul>
+          </header>
+          <section class="wrapper tab-container">
+              <!-- page start-->
+              <div class="tab-content">
+                  <div class="tab-pane active" id="morris">
+                      <div class="row">
+                          <div class="col-lg-6">
+                              <section class="panel">
+                                  <header class="panel-heading">
+                                      Jaguar 'E' Type vehicles in the UK
+                                  </header>
+                                  <div class="panel-body">
+                                      <div id="hero-graph" class="graph"></div>
+                                  </div>
+                              </section>
+                          </div>
+                          <div class="col-lg-6">
+                              <section class="panel">
+                                  <header class="panel-heading">
+                                      iPhone CPU benchmarks
+                                  </header>
+                                  <div class="panel-body">
+                                      <div id="hero-bar" class="graph"></div>
+                                  </div>
+                              </section>
+                          </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-lg-6">
+                              <section class="panel">
+                                  <header class="panel-heading">
+                                      Quarterly Apple iOS device unit sales
+                                  </header>
+                                  <div class="panel-body">
+                                      <div id="hero-area" class="graph"></div>
+                                  </div>
+                              </section>
+                          </div>
+                          <div class="col-lg-6">
+                              <section class="panel">
+                                  <header class="panel-heading">
+                                      Donut flavours
+                                  </header>
+                                  <div class="panel-body">
+                                      <div id="hero-donut" class="graph"></div>
+                                  </div>
+                              </section>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="tab-pane" id="chartjs">
+                      <div class="row">
+                          <div class="col-lg-6">
+                              <section class="panel">
+                                  <header class="panel-heading">
+                                      Doughnut
+                                  </header>
+                                  <div class="panel-body text-center">
+                                      <canvas id="doughnut" height="300" width="400"></canvas>
+                                  </div>
+                              </section>
+                          </div>
+                          <div class="col-lg-6">
+                              <section class="panel">
+                                  <header class="panel-heading">
+                                      Line
+                                  </header>
+                                  <div class="panel-body text-center">
+                                      <canvas id="line" height="300" width="450"></canvas>
+                                  </div>
+                              </section>
+                          </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-lg-6">
+                              <section class="panel">
+                                  <header class="panel-heading">
+                                      Radar
+                                  </header>
+                                  <div class="panel-body text-center">
+                                      <canvas id="radar" height="300" width="400"></canvas>
+                                  </div>
+                              </section>
+                          </div>
+                          <div class="col-lg-6">
+                              <section class="panel">
+                                  <header class="panel-heading">
+                                      Polar Area
+                                  </header>
+                                  <div class="panel-body text-center">
+                                      <canvas id="polarArea" height="300" width="400"></canvas>
+                                  </div>
+                              </section>
+                          </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-lg-6">
+                              <section class="panel">
+                                  <header class="panel-heading">
+                                      Bar
+                                  </header>
+                                  <div class="panel-body text-center">
+                                      <canvas id="bar" height="300" width="500"></canvas>
+                                  </div>
+                              </section>
+                          </div>
+                          <div class="col-lg-6">
+                              <section class="panel">
+                                  <header class="panel-heading">
+                                      Pie
+                                  </header>
+                                  <div class="panel-body text-center">
+                                      <canvas id="pie" height="300" width="400"></canvas>
+                                  </div>
+                              </section>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="tab-pane" id="sparkline">
+                      <div class="row">
+                          <div class="col-lg-4">
+                              <!--total earning start-->
+                              <div class="panel green-chart">
+                                  <div class="panel-body">
+                                      <div class="chart">
+                                          <div class="heading">
+                                              <span>June</span>
+                                              <strong>23 Days | 65%</strong>
+                                          </div>
+                                          <div id="barchart"></div>
+                                      </div>
+                                  </div>
+                                  <div class="chart-tittle">
+                                      <span class="title">Total Earning</span>
+                                      <span class="value">$, 76,54,678</span>
+                                  </div>
+                              </div>
+                              <!--total earning end-->
+                          </div>
+                          <div class="col-lg-4">
+                              <!--new earning start-->
+                              <div class="panel terques-chart">
+                                  <div class="panel-body chart-texture">
+                                      <div class="chart">
+                                          <div class="heading">
+                                              <span>Friday</span>
+                                              <strong>$ 57,00 | 15%</strong>
+                                          </div>
+                                          <div class="sparkline" data-type="line" data-resize="true" data-height="75" data-width="300%" data-line-width="1" data-line-color="#fff" data-spot-color="#fff" data-fill-color="" data-highlight-line-color="#fff" data-spot-radius="4" data-data="[200,135,667,333,526,996,564]"></div>
+                                      </div>
+                                  </div>
+                                  <div class="chart-tittle">
+                                      <span class="title">New Earning</span>
+                                      <span class="value">
+                                          <a href="#" class="active">Market</a>
+                                          |
+                                          <a href="#">Referal</a>
+                                          |
+                                          <a href="#">Online</a>
+                                      </span>
+                                  </div>
+                              </div>
+                              <!--new earning end-->
+                          </div>
+                          <div class="col-lg-4">
+                              <section class="panel">
+                                  <header class="panel-heading">
+                                      Pie
+                                  </header>
+                                  <div class="panel-body text-center">
+                                      <div class="inline-block">
+                                          <div id="pie-chart2" style="width: 150px; height: 128px" ></div>
+                                      </div>
+                                  </div>
+                              </section>
+                          </div>
+                      </div>
+                  </div>
+
+              </div>
+              <!-- page end-->
+          </section>
+      </section>
+      <!--main content end-->
+  </section>
+
+    <!-- js placed at the end of the document so the pages load faster -->
+    <script src="js/Administration_jquery.js"></script>
+    <script src="js/Administration_jquery-1.8.3.min.js"></script>
+    <script src="js/Administration_bootstrap.min.js"></script>
+    <script src="js/Administration_jquery.scrollTo.min.js"></script>
+    <script src="js/Administration_jquery.nicescroll.js" type="text/javascript"></script>
+    <script src="assets/morris.js-0.4.3/morris.min.js" type="text/javascript"></script>
+    <script src="assets/morris.js-0.4.3/raphael-min.js" type="text/javascript"></script>
+    <script src="assets/chart-master/Chart.js"></script>
+    <script src="js/Administration_jquery.sparkline.js" type="text/javascript"></script>
+
+
+    <!--common script for all pages-->
+    <script src="js/Administration_common-scripts.js"></script>
+
+    <!-- script for this page only-->
+    <script src="js/Administration_morris-script.js"></script>
+    <script src="js/Administration_all-chartjs.js"></script>
+    <script src="js/Administration_sparkline-chart.js"></script>
+
+
+
+
+  </body>
+</html>

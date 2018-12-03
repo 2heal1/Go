@@ -1,0 +1,61 @@
+.chddiv1{
+    width: 177px;
+    background-color: #00bbff;
+    height: 4px;
+    margin-top: 10px;
+}
+.chddiv2{
+    border-radius: 50%;
+    background-color: #00bbff;
+    height: 26px;
+    color: white;
+    width: 26px;
+    font-size: 17px;
+}
+.chddiv3{
+    width: 177px;
+    background-color:#b5b5b5;;
+    height: 4px;
+    margin-top: 10px;
+}
+.chddiv4{
+    border-radius: 50%;
+    background-color: #b5b5b5;
+    height: 26px;
+    color: black;
+    width: 26px;
+    font-size: 17px;
+}
+.chddiv5{
+    margin-left: 150px;
+    margin-top: -29px;
+    border: 1px solid black;
+}
+.chinput1{
+    margin-left: 75px;
+    width: 394px;
+    height: 37px;
+    color: #777777;
+}
+.chinput2{
+    width: 167px;
+    height: 46px;
+    background-color: #00bbff;
+    color: white;
+    border-radius: 5px;
+    font-size: 15px;
+    margin-left: 49px;
+    border: 0;
+}
+#container12 span {position: relative;}
+#container12 .inputCheck {position: absolute;width: 20px;height: 20px;
+    visibility: hidden;}
+#container12 .inputCheck+label {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border: 1px solid;
+    border-color: #424242;
+    background: #ffffff;
+}
+#container12 .inputCheck:checked+label {background: url(pictures/勾_black.png) no-repeat center center;background-size:20px 20px;}

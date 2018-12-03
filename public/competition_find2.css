@@ -1,0 +1,27 @@
+.cf2input1{
+    margin-left: 65px;
+    width: 945px;
+    border: 0;
+    outline: black;
+    background-color: #8b451300;
+}
+.cf2input2{
+    height: 48px;
+    width: 140px;
+    font-size: 17px;
+    color: #959595;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 1px solid #aaaaaa;
+    background-color: #ffffff;
+}
+.cf2input2:hover{
+    background-color: black;
+    color: white;
+
+}
+.cf2hr1{
+    margin-left: 115px;
+    /* background-color: #3f3f3f; */
+    border-color: #dbdbdb;
+}

@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>个人_我的失领</title>
+    <link rel="stylesheet"href="css/bootstrap.min.css">
+    <script src="jquery-1.9.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet"href="index_css.css">
+    <script src="js/jquery-latest.min.js" type="text/javascript"></script>
+    <script src="js/jq22.js"></script>
+    <link rel="stylesheet" href="css/jq22.css">
+    <link rel="stylesheet" href="personal.css">
+    <link rel="stylesheet" href="css/main.css" />
+    <!--自适应-->
+    <style>
+        /* 超小型设备（平板电脑，1px 起） */
+        @media (min-width: 1px) {
+            .simplefont1{
+                font-size: 0.4rem;
+            }
+        }
+        /* 小型设备（平板电脑，768px 起） */
+        @media (min-width: 768px) {
+            .simplefont1{
+                font-size: 1.3rem;
+            }
+            .perdiv1{
+                margin-top: 15px;
+            }
+            .perdiv2{
+                margin-left: 70px;
+                margin-top: 15px;
+            }
+            .pdiv1{
+                background-position: 0px 0px;
+                width: 60px;
+                background-repeat: no-repeat;
+                height: 60px;
+                border: 1px solid #b5b5b5;
+                border-radius: 50%;
+                background-image: url(pictures/head_1.png);
+                margin-left: -13px;
+                margin-top: 15px;
+            }
+            .pfunction{
+                margin-top: 25px;
+                font-size: 12px;
+                color: #7b7b7b;
+            }
+            .pvertical{
+                width: 3px;
+                height: 22px;
+                background-color: #ff8507;
+                margin-left: 10px;
+                margin-top: -4px;
+            }
+            .perdiv3{
+                margin-left: 8px;
+            }
+            .perdiv4{
+                margin-top: -4px;
+            }
+            .perdiv5{
+                margin-left: 40px;
+                margin-top: 10px;
+            }
+            .perdiv6{
+                margin-left: 20px;
+                margin-top: 39px;
+            }
+            .perdiv7{
+                margin-top: 35px;
+                margin-left: 3px;
+            }
+            .pinput1{
+                border-radius: 24px;
+                width: 100px;
+                height: 22px;
+                color: #4c4c4c;
+                background-color: #fcfcfc;
+                font-size: 13px;
+                border: 1px solid #bdbdbd;
+                outline: none;
+            }
+        }
+
+        /* 中型设备（台式电脑，992px 起） */
+        @media (min-width: 992px) {
+            .simplefont1{
+                font-size: 1.3rem;
+            }
+            .perdiv1{
+                margin-top: 15px;
+            }
+            .perdiv2{
+                margin-left: 70px;
+                margin-top: 15px;
+            }
+            .pdiv1{
+                background-position: 0px 0px;
+                width: 60px;
+                background-repeat: no-repeat;
+                height: 60px;
+                border: 1px solid #b5b5b5;
+                border-radius: 50%;
+                background-image: url(pictures/head_1.png);
+                margin-left: 15px;
+                margin-top: 15px;
+            }
+            .pfunction{
+                margin-top: 25px;
+                font-size: 14px;
+                color: #7b7b7b;
+            }
+            .pvertical{
+                width: 3px;
+                height: 29px;
+                background-color: #ff8507;
+                margin-left: 10px;
+                margin-top: -4px;
+            }
+            .perdiv3{
+                margin-left: 30px;
+            }
+            .perdiv4{
+                margin-top: -4px;
+            }
+            .perdiv5{
+                margin-left: 40px;
+                margin-top: 10px;
+            }
+            .perdiv6{
+                margin-left: 20px;
+                margin-top: 39px;
+            }
+            .perdiv7{
+                margin-top: 35px;
+                margin-left: 3px;
+            }
+            .pinput1{
+                border-radius: 24px;
+                width: 100px;
+                height: 22px;
+                color: #4c4c4c;
+                background-color: #fcfcfc;
+                font-size: 13px;
+                border: 1px solid #bdbdbd;
+                outline: none;
+            }
+
+        }
+        /* 大型设备（大台式电脑，1200px 起） */
+        @media (min-width:1200px) {
+            .simplefont1{
+                font-size: 1.4rem;
+            }
+            .perdiv1{
+                margin-top: 15px;
+            }
+            .perdiv2{
+                margin-left: 70px;
+                margin-top: 15px;
+            }
+            .pdiv1{
+                background-position: 0px 0px;
+                width: 60px;
+                background-repeat: no-repeat;
+                height: 60px;
+                border: 1px solid #b5b5b5;
+                border-radius: 50%;
+                background-image: url(pictures/head_1.png);
+                margin-left: 25px;
+                margin-top: 15px;
+            }
+            .pfunction{
+                margin-top: 25px;
+                font-size: 14px;
+                color: #7b7b7b;
+            }
+            .pvertical{
+                width: 3px;
+                height: 29px;
+                background-color: #ff8507;
+                margin-left: 10px;
+                margin-top: -4px;
+            }
+            .perdiv3{
+                margin-left: 30px;
+            }
+            .perdiv4{
+                margin-top: -4px;
+            }
+            .perdiv5{
+                margin-left: 40px;
+                margin-top: 10px;
+            }
+            .perdiv6{
+                margin-left: 20px;
+                margin-top: 25px;
+            }
+            .perdiv7{
+                margin-top: 19px;
+                margin-left: 3px;
+            }
+            .pinput1{
+                border-radius: 24px;
+                width: 100px;
+                height: 22px;
+                color: #4c4c4c;
+                background-color: #fcfcfc;
+                font-size: 13px;
+                border: 1px solid #bdbdbd;
+                outline: none;
+            }
+        }
+    </style>
+</head>
+<body style="background-color: white">
+<div class="container-fluid">
+    <div class="row">
+        <!--功能列表-->
+        <div class="col-2 pdiv2">
+            <!--欢迎-->
+            <div align="center" class="perdiv1">
+                <h4>Hi,用户昵称3247891</h4>
+            </div>
+            <!--头像-->
+            <div class="pdiv1">
+                <div class="perdiv2"><h5>3247891</h5></div>
+            </div>
+            <!--个人中心-->
+            <div class="row pfunction"style="color: black">
+                <div class="pvertical"style="visibility: hidden"></div>
+                <span class="perdiv3">
+                      <img src="pictures/个人中心_灰.png" height="20" class="perdiv4"/>
+                    <a href="personal.html">个人中心</a>
+                </span>
+            </div>
+            <!--我的竞赛-->
+            <div class="row pfunction">
+                <div class="pvertical"style="visibility: hidden"></div>
+                <span class="perdiv3">
+                     <img src="pictures/竞赛_灰.png" height="20" class="perdiv4"/>
+                    <a href="personal_com.html"target="_self">我的竞赛</a>
+                </span>
+            </div>
+            <!--我的捐款-->
+            <div class="row pfunction">
+                <div class="pvertical"style="visibility: hidden"></div>
+                <span class="perdiv3">
+                     <img src="pictures/爱心捐款_灰.png" height="20" class="perdiv4"/>
+                    <a href="personal_cha.html"target="_self">我的捐款</a>
+                </span>
+            </div>
+            <!--我的兼职-->
+            <div class="row pfunction">
+                <div class="pvertical"style="visibility: hidden"></div>
+                <span class="perdiv3">
+                     <img src="pictures/兼职_灰.png" height="20" class="perdiv4"/>
+                     <a href="personal_part_time.html"target="_self">我的兼职</a>
+                </span>
+            </div>
+            <!--我的闲置-->
+            <div class="row pfunction">
+                <div class="pvertical"style="visibility: hidden"></div>
+                <span class="perdiv3">
+                     <img src="pictures/闲置_灰.png" height="20" class="perdiv4"/>
+                     <a href="personal_unused.html"target="_self">我的闲置</a>
+                </span>
+            </div>
+            <!--我的失领-->
+            <div class="row pfunction">
+                <div class="pvertical"></div>
+                <span class="perdiv3">
+                     <img src="pictures/失物招领.png" height="20" class="perdiv4"/>
+                    <a href="personal_find.html"target="_self"style="color: black">我的失领</a>
+                </span>
+            </div>
+            <!--我的消息-->
+            <div class="row pfunction">
+                <div class="pvertical"style="visibility: hidden"></div>
+                <span class="perdiv3">
+                     <img src="pictures/消息_灰.png" height="20" class="perdiv4"/>
+                    <a href="personal_info.html"target="_self">我的消息</a>
+                </span>
+            </div>
+            <!--帐号设置-->
+            <div class="row pfunction">
+                <div class="pvertical"style="visibility: hidden"></div>
+                <span class="perdiv3">
+                     <img src="pictures/设置_灰.png" height="20" class="perdiv4"/>
+                    <a href="personal_set_up.html"target="_self">帐号设置</a>
+                </span>
+            </div>
+            <!--退出-->
+            <div class="row pfunction">
+                <div class="pvertical"style="visibility: hidden"></div>
+                <span  class="perdiv3">
+                     <img src="pictures/退出_灰.png" height="20" class="perdiv4"/>
+                    <a>退出</a>
+                </span>
+            </div>
+            <div>
+                <br>   <br>   <br>   <br>   <br>
+            </div>
+        </div>
+        <div class="col-10"style="background-color: #f7f7f759;">
+            <div class="row">
+                <div class="perdiv5">
+                    <h3>搜索你想要的</h3>
+                </div>
+                <div>
+                    <img src="pictures/搜索--1.png" height="15"class="perdiv6" />
+                </div>
+                <div class="perdiv7"><input type="text"value=" 我的.."class="pinput1"></div>
+            </div>
+            <div class="pdiv3">
+                <hr>
+            </div>
+            <!--我的失领-->
+            <div class="col-12">
+                <div style="margin-left: 10px">
+                    <br>
+                    <h4>我的失领</h4>
+                </div>
+                <!--导航栏-->
+                <div class="row">
+                    <div style="margin-left: 25px;margin-top: 25px;">
+                        <a style="color: #3fa544"id="diushi2">我丢失的</a>
+                        <hr class="pphr1"style="visibility: visible"id="diushi3">
+                    </div>
+                    <div style="margin-left: 25px;margin-top: 25px;">
+                        <a id="jianqu2">我拾取的</a>
+                        <hr class="pphr1"style="visibility: hidden"id="jianqu3">
+                    </div>
+                </div>
+                <div class="ppdiv1"></div>
+                <!--丢失-->
+                <div style="display: block"id="diushi">
+                    <div class="row"style="background-color: white;">
+                        <!--标题	类别	丢失区域	详细地点	丢失时间 目前状态 信息编号-->
+                        <div class="col-12 row"style="font-size: 13px;background-color: #f7f7f759;">
+                            <!--标题-->
+                            <div class="col-4"align="center">
+                                标题
+                            </div>
+                            <!--类别	丢失区域	详细地点-->
+                            <div class="col-4 row"align="center">
+                                <div class="col-4">
+                                    类别
+                                </div>
+                                <div class="col-4">
+                                    丢失区域
+                                </div>
+                                <div class="col-4">
+                                    详细地点
+                                </div>
+                            </div>
+                            <!--丢失时间 目前状态 信息编号-->
+                            <div class="col-4 row"align="center">
+                                <div class="col-4">
+                                    丢失时间
+                                </div>
+                                <div class="col-4">
+                                    目前状态
+                                </div>
+                                <div class="col-4">
+                                    信息编号
+                                </div>
+                            </div>
+                        </div>
+                        <br>   <br>
+                        <!--丢失内容1-->
+                        <div class="col-12 row"style="font-size: 13px;">
+                            <!--标题-->
+                            <div class="col-4"style="font-size: 13px;font-weight: bold;">
+                                <img src="pictures/id_1.png" height="100" />
+                                北京台湾通行证失物招领,失主马佳佳
+                            </div>
+                            <!--类别	丢失区域	详细地点-->
+                            <div class="col-4 row"align="center">
+                                <div class="col-4"style="font-size: 14px;">
+                                    <div style="margin-top: 35px;">证件</div>
+                                </div>
+                                <div class="col-4"style="font-size: 14px;">
+                                    <div style="margin-top: 35px;">北京市 市辖区</div>
+                                </div>
+                                <div class="col-4"style="color: #479ba6;font-size: 14px;">
+                                    <div style="margin-top: 35px;"><a>国贸站</a></div>
+                                </div>
+                            </div>
+                            <!--丢失时间 目前状态 信息编号-->
+                            <div class="col-4 row"align="center">
+                                <div class="col-4"style="font-size: 14px;">
+                                    <div style="margin-top: 35px;">2018-07-30</div>
+                                </div>
+                                <div class="col-4"style="font-size: 14px;">
+                                    <div style="margin-top: 35px;">丢失中</div>
+                                </div>
+                                <div class="col-4"style="font-size: 14px;">
+                                    <div style="margin-top: 35px;"> <a>0567</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12"style="background-color: #f5f5f5;margin-left: 14px;height: 4px;"></div>
+                        <!--丢失内容1-->
+                        <div class="col-12 row"style="font-size: 13px;">
+                            <!--标题-->
+                            <div class="col-4"style="font-size: 13px;font-weight: bold;">
+                                <img src="pictures/id_1.png" height="100" />
+                                北京台湾通行证失物招领,失主马佳佳
+                            </div>
+                            <!--类别	丢失区域	详细地点-->
+                            <div class="col-4 row"align="center">
+                                <div class="col-4"style="font-size: 14px;">
+                                    <div style="margin-top: 35px;">证件</div>
+                                </div>
+                                <div class="col-4"style="font-size: 14px;">
+                                    <div style="margin-top: 35px;">北京市 市辖区</div>
+                                </div>
+                                <div class="col-4"style="color: #479ba6;font-size: 14px;">
+                                    <div style="margin-top: 35px;"><a>国贸站</a></div>
+                                </div>
+                            </div>
+                            <!--丢失时间 目前状态 信息编号-->
+                            <div class="col-4 row"align="center">
+                                <div class="col-4"style="font-size: 14px;">
+                                    <div style="margin-top: 35px;">2018-07-30</div>
+                                </div>
+                                <div class="col-4"style="font-size: 14px;">
+                                    <div style="margin-top: 35px;">丢失中</div>
+                                </div>
+                                <div class="col-4"style="font-size: 14px;">
+                                    <div style="margin-top: 35px;"> <a>0567</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12"style="background-color: #f5f5f5;margin-left: 14px;height: 4px;"></div>
+                        <!--丢失内容1-->
+                        <div class="col-12 row"style="font-size: 13px;">
+                            <!--标题-->
+                            <div class="col-4"style="font-size: 13px;font-weight: bold;">
+                                <img src="pictures/id_1.png" height="100" />
+                                北京台湾通行证失物招领,失主马佳佳
+                            </div>
+                            <!--类别	丢失区域	详细地点-->
+                            <div class="col-4 row"align="center">
+                                <div class="col-4"style="font-size: 14px;">
+                                    <div style="margin-top: 35px;">证件</div>
+                                </div>
+                                <div class="col-4"style="font-size: 14px;">
+                                    <div style="margin-top: 35px;">北京市 市辖区</div>
+                                </div>
+                                <div class="col-4"style="color: #479ba6;font-size: 14px;">
+                                    <div style="margin-top: 35px;"><a>国贸站</a></div>
+                                </div>
+                            </div>
+                            <!--丢失时间 目前状态 信息编号-->
+                            <div class="col-4 row"align="center">
+                                <div class="col-4"style="font-size: 14px;">
+                                    <div style="margin-top: 35px;">2018-07-30</div>
+                                </div>
+                                <div class="col-4"style="font-size: 14px;">
+                                    <div style="margin-top: 35px;">丢失中</div>
+                                </div>
+                                <div class="col-4"style="font-size: 14px;">
+                                    <div style="margin-top: 35px;"> <a>0567</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--拾取-->
+                <div style="display: none"id="jianqu">
+                    <div class="row"style="background-color: white;">
+                        <!--标题	类别	拾取区域	详细地点	拾取时间 目前状态 信息编号-->
+                        <div class="col-12 row"style="font-size: 13px;background-color: #f7f7f759;">
+                            <!--标题-->
+                            <div class="col-4"align="center">
+                                标题
+                            </div>
+                            <!--类别	拾取区域	详细地点-->
+                            <div class="col-4 row"align="center">
+                                <div class="col-4">
+                                    类别
+                                </div>
+                                <div class="col-4">
+                                    拾取区域
+                                </div>
+                                <div class="col-4">
+                                    详细地点
+                                </div>
+                            </div>
+                            <!--拾取时间 目前状态 信息编号-->
+                            <div class="col-4 row"align="center">
+                                <div class="col-4">
+                                    拾取时间
+                                </div>
+                                <div class="col-4">
+                                    目前状态
+                                </div>
+                                <div class="col-4">
+                                    信息编号
+                                </div>
+                            </div>
+                        </div>
+                        <br>   <br>
+                        <!--拾取内容1-->
+                        <div class="col-12 row"style="font-size: 13px;">
+                            <!--标题-->
+                            <div class="col-4"style="font-size: 13px;font-weight: bold;">
+                                <img src="pictures/id_1.png" height="100" />
+                                北京台湾通行证失物招领,失主马佳佳
+                            </div>
+                            <!--类别	拾取区域	详细地点-->
+                            <div class="col-4 row"align="center">
+                                <div class="col-4"style="font-size: 14px;">
+                                    <div style="margin-top: 35px;">证件</div>
+                                </div>
+                                <div class="col-4"style="font-size: 14px;">
+                                    <div style="margin-top: 35px;">北京市 市辖区</div>
+                                </div>
+                                <div class="col-4"style="color: #479ba6;font-size: 14px;">
+                                    <div style="margin-top: 35px;"><a>国贸站</a></div>
+                                </div>
+                            </div>
+                            <!--拾取时间 目前状态 信息编号-->
+                            <div class="col-4 row"align="center">
+                                <div class="col-4"style="font-size: 14px;">
+                                    <div style="margin-top: 35px;">2018-07-30</div>
+                                </div>
+                                <div class="col-4"style="font-size: 14px;">
+                                    <div style="margin-top: 35px;">认领中</div>
+                                </div>
+                                <div class="col-4"style="font-size: 14px;">
+                                    <div style="margin-top: 35px;"> <a>0567</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12"style="background-color: #f5f5f5;margin-left: 14px;height: 4px;"></div>
+                        <!--拾取内容1-->
+                        <div class="col-12 row"style="font-size: 13px;">
+                            <!--标题-->
+                            <div class="col-4"style="font-size: 13px;font-weight: bold;">
+                                <img src="pictures/id_1.png" height="100" />
+                                北京台湾通行证失物招领,失主马佳佳
+                            </div>
+                            <!--类别	拾取区域	详细地点-->
+                            <div class="col-4 row"align="center">
+                                <div class="col-4"style="font-size: 14px;">
+                                    <div style="margin-top: 35px;">证件</div>
+                                </div>
+                                <div class="col-4"style="font-size: 14px;">
+                                    <div style="margin-top: 35px;">北京市 市辖区</div>
+                                </div>
+                                <div class="col-4"style="color: #479ba6;font-size: 14px;">
+                                    <div style="margin-top: 35px;"><a>国贸站</a></div>
+                                </div>
+                            </div>
+                            <!--拾取时间 目前状态 信息编号-->
+                            <div class="col-4 row"align="center">
+                                <div class="col-4"style="font-size: 14px;">
+                                    <div style="margin-top: 35px;">2018-07-30</div>
+                                </div>
+                                <div class="col-4"style="font-size: 14px;">
+                                    <div style="margin-top: 35px;">认领中</div>
+                                </div>
+                                <div class="col-4"style="font-size: 14px;">
+                                    <div style="margin-top: 35px;"> <a>0567</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12"style="background-color: #f5f5f5;margin-left: 14px;height: 4px;"></div>
+                        <!--拾取内容1-->
+                        <div class="col-12 row"style="font-size: 13px;">
+                            <!--标题-->
+                            <div class="col-4"style="font-size: 13px;font-weight: bold;">
+                                <img src="pictures/id_1.png" height="100" />
+                                北京台湾通行证失物招领,失主马佳佳
+                            </div>
+                            <!--类别	拾取区域	详细地点-->
+                            <div class="col-4 row"align="center">
+                                <div class="col-4"style="font-size: 14px;">
+                                    <div style="margin-top: 35px;">证件</div>
+                                </div>
+                                <div class="col-4"style="font-size: 14px;">
+                                    <div style="margin-top: 35px;">北京市 市辖区</div>
+                                </div>
+                                <div class="col-4"style="color: #479ba6;font-size: 14px;">
+                                    <div style="margin-top: 35px;"><a>国贸站</a></div>
+                                </div>
+                            </div>
+                            <!--拾取时间 目前状态 信息编号-->
+                            <div class="col-4 row"align="center">
+                                <div class="col-4"style="font-size: 14px;">
+                                    <div style="margin-top: 35px;">2018-07-30</div>
+                                </div>
+                                <div class="col-4"style="font-size: 14px;">
+                                    <div style="margin-top: 35px;">认领中</div>
+                                </div>
+                                <div class="col-4"style="font-size: 14px;">
+                                    <div style="margin-top: 35px;"> <a>0567</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--上下页-->
+            <div class="row"style="margin-top: 10px">
+                <div class="col-10"></div>
+                <div class="col-2 row">
+                    <a style="visibility: hidden">上一页</a>
+                    <a style="margin-left: 20px">下一页</a>
+                </div>
+                <div class="col-1"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function(){
+        $('#diushi2').click(function(){
+            $('#diushi2').css("color","#3fa544");
+            $('#diushi3').css("visibility","visible");
+            $('#diushi').css("display","block");
+            $('#jianqu').css("display","none");
+            $('#jianqu2').css("color","black");
+            $('#jianqu3').css("visibility","hidden");
+
+        });
+        $('#jianqu2').click(function(){
+            $('#jianqu2').css("color","#3fa544");
+            $('#jianqu3').css("visibility","visible");
+            $('#jianqu').css("display","block");
+            $('#diushi').css("display","none");
+            $('#diushi2').css("color","black");
+            $('#diushi3').css("visibility","hidden");
+        });
+    });
+</script>
+</body>
+</html>

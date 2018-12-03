@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+    <link rel="stylesheet"href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="node_modules/vue/dist/vue.js"></script>
+    <!--axios基于promise-->
+    <script src="node_modules/axios/dist/axios.js"></script>
+    <script>
+        window.onload=function () {
+            let vm=new Vue({
+                el:'#app',
+                data:{
+                    newss:[
+                        {day:'',month:"",year:'',news:"中国打破了世界软件巨头规则",newsDetail:"中国馆的建筑设计理念来源于对本届世博的中国馆主题的理解和思考，在保留展会建筑标志性要求的同事，进一步..."},
+                        {day:'',month:"",year:'',news:"中国打破了世界软件巨头规则",newsDetail:"中国馆的建筑设计理念来源于对本届世博的中国馆主题的理解和思考，在保留展会建筑标志性要求的同事，进一步..."},
+                        {day:'',month:"",year:'',news:"中国打破了世界软件巨头规则",newsDetail:"中国馆的建筑设计理念来源于对本届世博的中国馆主题的理解和思考，在保留展会建筑标志性要求的同事，进一步..."},
+                    ],
+                    books:[
+                        {bookName:'做饭',authorname:'汪曾祺',booksrc:'picture/cook.jpg'},
+                        {bookName:'做饭',authorname:'汪曾祺',booksrc:'picture/cook.jpg'},
+                        {bookName:'做饭',authorname:'汪曾祺',booksrc:'picture/cook.jpg'},
+                        {bookName:'做饭',authorname:'汪曾祺',booksrc:'picture/cook.jpg'},
+                        {bookName:'做饭',authorname:'汪曾祺',booksrc:'picture/cook.jpg'},
+                    ],
+                    bookDrifting:[
+                        {booksrc:'picture/人类简史：从动物到上帝.jpg'},
+                        {booksrc:'picture/谁动了我的奶酪.jpg'},
+                        {booksrc:'picture/斯坦福极简经济学.jpg'},
+                    ]
+                },
+                methods:{
+                },
+                computed:{
+                    getdateDay(){
+                        var date=new Date();
+                        dateDay=date.getDate();
+                        return dateDay;
+                    },
+                    getdateYear(){
+                        var date=new Date();
+                        dateYear=date.getFullYear();
+                        dateMonth=date.getMonth()+1;
+                        return dateYear+'年'+dateMonth+'月';
+                    }
+                }
+            })
+        }
+    </script>
+    <style>
+        .bookleft{
+            float: left;
+        }
+        .bookright{
+            float: right;
+        }
+        .img1{
+            width: 1.7rem;
+        }
+        .bg2{
+            background-image: url(picture/pic_newbook_backgound.png);
+            background-size: 100%;
+            background-repeat: no-repeat;
+        }
+        .inputSearch1{
+            border-radius: 7px;
+            border: 1px solid #cccccc26;
+            box-shadow: 0px 1px 10px 1px #d4d4d4;
+            background-color: white;
+            outline: none;
+        }
+        .searchImg{
+            margin-top: 8px;
+        }
+        .div1{
+            margin-top: 4px;
+        }
+        .bg{
+            background-image: url(picture/pic_home_banner.png);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            /*width: 100%;*/
+        }
+    </style>
+</head>
+<body>
+<div class="bg">
+    <!--导航-->
+    <div>
+        <div style="background-color: #0000001f;">
+            <div style="height: 10px"></div>
+            <div class="row">
+                <div class="col-sm-2 col-md-2 col-lg-2"></div>
+                <div class="col-sm-3 col-md-3 col-lg-3">
+                    <img src="picture/logo_brown.png"class="img-thumbnail img1"style="background:none;border:0 ">
+                    <a class="font-weight-bold small"style="color: white">智慧图书管理系统</a>
+                </div>
+                <div class="col-xl-2 col-sm-1"></div>
+                <div class="col-lg-4 col-sm-6 col-md-5 row">
+                    <div class="col-md-3 col-sm-3 col-lg-3 small text-right"style="color: white"><a>首页</a></div>
+                    <div class="col-md-3 col-sm-3 col-lg-3 small text-right"style="color: white"><a>图书馆</a></div>
+                    <div class="col-md-3 col-sm-3 col-lg-3 small text-right"style="color: white"><a>图书漂流</a></div>
+                    <div class="col-md-3 col-sm-3 col-lg-3 small text-right"style="color: white"><a>个人中心</a></div>
+                </div>
+                <div class="col-sm-2 col-md-2 col-lg-2"></div>
+            </div>
+            <div style="height: 10px"></div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+</div>
+
+<div id="app" >
+    <!--搜索框-->
+    <div class="row"style="margin-top: -2.6rem">
+        <div class="col-3"></div>
+        <div class="input-group input-group-lg col-6 inputSearch1"id="div1">
+            <input type="text"id="text1" class="form-control" placeholder="输入搜索关键字" aria-describedby="sizing-addon1"style="border: 0;box-shadow: none">
+            <a style="cursor: pointer"><img src="picture/ic_home_search.png"class="searchImg" alt=""style="border: 0"></a>
+        </div>
+    </div>
+    <br> <br>
+    <!--句子-->
+    <div class="row">
+        <div class="col-3"></div>
+        <div class="col-6"style="background: url(picture/pic_backgound.png)no-repeat"><br><div class="h6 offset-3 div1"style="color: #828282">品 味 书 香， 倾 听 书 声, 传 染 书 瘾， 领 略 书 韵</div><br><a style="visibility: hidden">s</a></div>
+        <div class="col-3"></div>
+    </div>
+    <!--阅读推荐-->
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-5">
+            <div class="row"  v-for="(value,index) in newss">
+                <div class="col-4">
+                    <div class="h4 offset-1"style="color:rgba(0,0,0,0.5);">___________</div>
+                    <div class="col-9  text-right">
+                        <div class="h3">{{getdateDay}}</div>
+                        <div class="h6">{{getdateYear}}</div>
+                    </div>
+                </div>
+                <div class="col-8">
+                    <br>
+                    <div class="h5">{{value.news}}</div>
+                    <div class="h6 small"style="color: #666666">{{value.newsDetail}}</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-5 col-md-6 col-sm-6">
+            <img src="picture/pic_news_backgound.png"class="img-thumbnail"style="border:0;background: none">
+        </div>
+
+    </div>
+    <!--新书推荐-->
+    <div class="bg2">
+        <br><br><br>
+        <div class="row">
+            <div class="col-2 offset-3"><img src="picture/btn_left.png"class="img-thumbnail "style="background:none;border: 0;float: right" alt=""></div>
+            <div class="col-2">
+                <div class="text-center h6">·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;新书推荐&nbsp;&nbsp;&nbsp;&nbsp;·</div>
+                <div class="small text-center"style="color: #a7a7a7">NEW BOOK RECOMMENDATION</div>
+            </div>
+            <div class="col-2"><img src="picture/btn_left.png"class="img-thumbnail "style="background:none;border: 0;float: left" alt=""></div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-2"v-for="(value,index) in books">
+                <div class="col-10 bookright">
+                    <img :src="value.booksrc"class="img-thumbnail"style="background:none;border: 0;float: right"  alt="">
+                    <div class="text-center h6">{{value.bookName}}</div>
+                    <div class="text-center small"style="color: #969696">作者：{{value.authorname}}</div><br><br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <!--图书漂流-->
+    <div>
+        <div class="row">
+            <div class="col-2 offset-3"><img src="picture/btn_left.png"class="img-thumbnail "style="background:none;border: 0;float: right" alt=""></div>
+            <div class="col-2">
+                <div class="text-center h6">·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;图书漂流&nbsp;&nbsp;&nbsp;&nbsp;·</div>
+                <div class="small text-center"style="color: #a7a7a7">BOOK DRIFTING</div>
+            </div>
+            <div class="col-2"><img src="picture/btn_left.png"class="img-thumbnail "style="background:none;border: 0;float: left" alt=""></div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-2 offset-1"v-for="(value,index) in bookDrifting">
+                <img :src="value.booksrc" alt=""class="img-thumbnail">
+            </div>
+        </div><br><br>
+    </div>
+</div>
+</body>
+</html>

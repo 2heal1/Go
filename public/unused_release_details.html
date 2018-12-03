@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"href="css/bootstrap.min.css">
+    <script src="jquery-1.9.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet"href="unused.css">
+    <link rel="stylesheet"href="index_css.css">
+    <link rel="stylesheet"href="competition.css">
+    <link rel="stylesheet"href="unused_release.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet"href="charity_details.css">
+    <link rel="stylesheet" href="css/jq222.css">
+    <script src="js/jquery-latest.min.js" type="text/javascript"></script>
+    <script src="js/jq22.js"></script>
+    <link rel="stylesheet" href="css/jq22.css">
+    <title>unusede_release_details</title>
+    <script>
+        // $.validator.setDefaults({
+        //     submitHandler: function() {
+        //         alert("提交事件!");
+        //     }
+        // });
+        $().ready(function() {
+// 在键盘按下并释放及提交后验证提交表单
+            $("#signupForm").validate({
+                rules: {
+                    Minformation: "required",
+                    MmoneyAll: "required",
+                    Mreason: {
+                        required: true,
+                        minlength: 10
+                    },
+                    avatar:"required",
+                    pic:"required",
+                    agree: "required"
+                },
+                messages: {
+                    Minformation: "请输入募捐相关信息",
+                    MmoneyAll: "请输入募捐金额",
+                    Mreason: {
+                        required: "请输入募捐原因",
+                        minlength: "募捐原因必须超过十个字"
+                    },
+                    avatar:"请上传身份证图片",
+                    pic:"请上传相关图片",
+                    agree: "请勾选声明"
+                }
+            });
+        });
+    </script>
+    <style>
+        .error{
+            color:red;
+        }
+    </style>
+    <style>
+        .charity_btn_1{
+            display: inline-block;
+            position: relative;
+            padding: 3px 5px;
+            overflow: hidden;
+            color: #000;
+            border: 1px solid #c1c1c1;
+            background-color: #fff;
+        }
+        .charity_btn_2{
+            height: 100px;
+            /* position: absolute; */
+            width: 129px;
+            /* left: 0; */
+            text-align: center;
+            outline: none;
+            background-color: #f79595bf;
+            filter: alpha(opacity=0);
+            -moz-opacity: 0;
+            -khtml-opacity: 0;
+            opacity: 0;
+        }
+        input[type=checkbox] {
+            width: 20px;
+            height: 20px;
+            background-color: #fff;
+            -webkit-appearance:none;
+            border: 1px solid #c9c9c9;
+            border-radius: 2px;
+            outline: none;
+        }
+        .inputCheck input[type=checkbox]:checked{
+            background: url("pictures/闪电.png")no-repeat center;
+        }
+    </style>
+    <!--自适应-->
+    <style>
+        /* 超小型设备（平板电脑，1px 起） */
+        @media (min-width: 1px) {
+            .simplefont1{
+                font-size: 0.4rem;
+            }
+            .simplefont2{
+                font-size: 0.5rem;
+            }
+            .chinput1{
+                margin-left: 0rem;
+                width: 26rem;
+                height: 2rem;
+                color: #777777;
+            }
+            .charity_btn_1{
+                display: inline-block;
+                position: relative;
+                padding: 3px 5px;
+                overflow: hidden;
+                margin-left: 0rem;
+                color: #000;
+                border: 1px solid #c1c1c1;
+                background-color: #fff;
+            }
+            .charity_btn_2{
+                height: 70px;
+                width: 80px;
+                text-align: center;
+                outline: none;
+                background-color: #f79595bf;
+                filter: alpha(opacity=0);
+                -moz-opacity: 0;
+                -khtml-opacity: 0;
+                opacity: 0;
+            }
+            .chddiv5{
+                margin-left: -0.3rem;
+                margin-top: 1rem;
+                border: 1px solid black;
+            }
+            .bottom1{
+                font-size: 1.0rem;
+                font-weight: bold;
+            }
+            .bottom2{
+                font-size: 0.6rem;
+                margin-left: 1.3rem;
+                margin-top: 0.3rem;
+            }
+            .bottom3{
+                color: white;
+                width: 8rem;
+                background-color: white;
+            }
+            .bottom4{
+                color: white;
+                width: 16rem;
+                background-color: white;
+            }
+            .bottom5{
+                width: 1.2rem;
+                height: 1.2rem;
+            }
+            .bottom6{
+                font-size: 0.8rem;
+                float: right;
+            }
+            .bottom7{
+                width: 2rem;
+                height: 2rem;
+            }
+            .pfprogresshr1{
+                height: 3px;
+                width: 140px;
+                background-color: #3096ff;
+                margin-top: 6px;
+            }
+            .pfprogresshr2{
+                height: 3px;
+                width: 140px;
+                background-color: #dfdfdf4d;
+                margin-top: 6px;
+            }
+            .pfabu21{
+                width: 100px;
+                margin-left: -2px;
+                height: 30px;
+            }
+            .pfabu22{
+                width: 100px;
+                height: 30px;
+                margin-left: -2px;
+            }
+            .pfabu23{
+                height: 235px;
+                margin-left: -2px;
+                width: 440px;
+                font-size: 14px;
+            }
+        }
+        /* 小型设备（平板电脑，768px 起） */
+        @media (min-width: 768px) {
+            .simplefont1{
+                font-size: 1.3rem;
+            }
+            .simplefont2{
+                font-size: 1.4rem;
+            }
+            .chinput1{
+                margin-left: 0rem;
+                width: 35rem;
+                height: 3.7rem;
+                color: #777777;
+            }
+            .charity_btn_1{
+                display: inline-block;
+                position: relative;
+                padding: 3px 5px;
+                overflow: hidden;
+                margin-left: 0rem;
+                color: #000;
+                border: 1px solid #c1c1c1;
+                background-color: #fff;
+            }
+            .charity_btn_2{
+                height: 85px;
+                width: 112px;
+                text-align: center;
+                outline: none;
+                background-color: #f79595bf;
+                filter: alpha(opacity=0);
+                -moz-opacity: 0;
+                -khtml-opacity: 0;
+                opacity: 0;
+            }
+            .chddiv5{
+                margin-left: -0.3rem;
+                margin-top: 1rem;
+                border: 1px solid black;
+            }
+            .bottom1{
+                font-size: 1.4rem;
+                font-weight: bold;
+            }
+            .bottom2{
+                font-size: 0.8rem;
+                margin-left: 1.3rem;
+                margin-top: 0.8rem;
+            }
+            .bottom3{
+                color: white;
+                width: 10rem;
+                background-color: white;
+            }
+            .bottom4{
+                color: white;
+                width: 16rem;
+                background-color: white;
+            }
+            .bottom5{
+                width: 2rem;
+                height: 2rem;
+            }
+            .bottom6{
+                font-size: 0.8rem;
+                float: right;
+            }
+            .bottom7{
+                width: 3rem;
+                height: 3rem;
+            }
+            .pfprogresshr1{
+                height: 3px;
+                width: 195px;
+                background-color: #3096ff;
+                margin-top: 6px;
+            }
+            .pfprogresshr2{
+                height: 3px;
+                width: 195px;
+                background-color: #dfdfdf4d;
+                margin-top: 6px;
+            }
+            .pfabu21{
+                width: 100px;
+                margin-left: -2px;
+                height: 30px;
+            }
+            .pfabu22{
+                width: 100px;
+                height: 30px;
+                margin-left: -2px;
+            }
+            .pfabu23{
+                height: 235px;
+                margin-left: -2px;
+                width: 440px;
+                font-size: 14px;
+            }
+
+        }
+
+        /* 中型设备（台式电脑，992px 起） */
+        @media (min-width: 992px) {
+            .simplefont1{
+                font-size: 1.3rem;
+            }
+            .simplefont2{
+                font-size: 1.4rem;
+
+            }
+            .chinput1{
+                margin-left: -5rem;
+                width: 40rem;
+                height: 3.7rem;
+                color: #777777;
+            }
+            .charity_btn_1{
+                display: inline-block;
+                position: relative;
+                padding: 3px 5px;
+                overflow: hidden;
+                margin-left: -5rem;
+                color: #000;
+                border: 1px solid #c1c1c1;
+                background-color: #fff;
+            }
+            .charity_btn_2{
+                height: 100px;
+                width: 129px;
+                text-align: center;
+                outline: none;
+                background-color: #f79595bf;
+                filter: alpha(opacity=0);
+                -moz-opacity: 0;
+                -khtml-opacity: 0;
+                opacity: 0;
+            }
+            .chddiv5{
+                margin-left: -5.3rem;
+                margin-top: 0rem;
+                border: 1px solid black;
+            }
+            .bottom1{
+                font-size: 2.2rem;
+                font-weight: bold;
+            }
+            .bottom2{
+                font-size: 1.4rem;
+                margin-left: 1.3rem;
+                margin-top: 1.0rem;
+            }
+            .bottom3{
+                color: white;
+                width: 17rem;
+                background-color: white;
+            }
+            .bottom4{
+                color: white;
+                width: 22rem;
+                background-color: white;
+            }
+            .bottom5{
+                width: 2rem;
+                height: 2rem;
+            }
+            .bottom6{
+                font-size: 1.0rem;
+                float: right;
+            }
+            .bottom7{
+                width: 4rem;
+                height: 4rem;
+            }
+            .pfprogresshr1{
+                height: 3px;
+                width: 262px;
+                background-color: #3096ff;
+                margin-top: 6px;
+            }
+            .pfprogresshr2{
+                height: 3px;
+                width: 262px;
+                background-color: #dfdfdf4d;
+                margin-top: 6px;
+            }
+            .pfabu21{
+                width: 144px;
+                margin-left: -52px;
+                height: 30px;
+            }
+            .pfabu22{
+                width: 144px;
+                height: 30px;
+                margin-left: -52px;
+            }
+            .pfabu23{
+                height: 235px;
+                margin-left: -52px;
+                width: 440px;
+                font-size: 14px;
+            }
+
+        }
+        /* 大型设备（大台式电脑，1200px 起） */
+        @media (min-width:1200px) {
+            .simplefont1{
+                font-size: 1.4rem;
+            }
+            .simplefont2{
+                font-size: 1.5rem;
+            }
+            .chinput1{
+                margin-left: -5rem;
+                width: 40rem;
+                height: 3.7rem;
+                color: #777777;
+            }
+            .charity_btn_1{
+                display: inline-block;
+                position: relative;
+                padding: 3px 5px;
+                overflow: hidden;
+                margin-left: -5rem;
+                color: #000;
+                border: 1px solid #c1c1c1;
+                background-color: #fff;
+            }
+            .charity_btn_2{
+                height: 100px;
+                width: 129px;
+                text-align: center;
+                outline: none;
+                background-color: #f79595bf;
+                filter: alpha(opacity=0);
+                -moz-opacity: 0;
+                -khtml-opacity: 0;
+                opacity: 0;
+            }
+            .bottom1{
+                font-size: 2.4rem;
+                font-weight: bold;
+            }
+            .bottom2{
+                font-size: 1.4rem;
+                margin-left: 1.3rem;
+                margin-top: 1.0rem;
+            }
+            .bottom3{
+                color: white;
+                width: 17rem;
+                background-color: white;
+            }
+            .bottom4{
+                color: white;
+                width: 22rem;
+                background-color: white;
+            }
+            .bottom5{
+                width: 2rem;
+                height: 2rem;
+            }
+            .bottom6{
+                font-size: 1.2rem;
+                float: right;
+            }
+            .bottom7{
+                width: 4rem;
+                height: 4rem;
+            }
+            .pfprogresshr1{
+                height: 3px;
+                width: 340px;
+                background-color: #3096ff;
+                margin-top: 6px;
+            }
+            .pfprogresshr2{
+                height: 3px;
+                width: 340px;
+                background-color: #dfdfdf4d;
+                margin-top: 6px;
+            }
+            .pfabu21{
+                width: 144px;
+                margin-left: -52px;
+                height: 30px;
+            }
+            .pfabu22{
+                width: 144px;
+                height: 30px;
+                margin-left: -52px;
+            }
+            .pfabu23{
+                height: 235px;
+                margin-left: -52px;
+                width: 440px;
+                font-size: 14px;
+            }
+
+        }
+    </style>
+</head>
+<body>
+<img src="pictures/parttime.png" class="img-thumbnail"style="z-index: -2;"/>
+<div class="container" style="height: auto;background-color: white;position: relative;margin-top: -55px">
+    <br><br>
+    <!--进度条-->
+    <div class="row"style="margin-top: 30px;">
+        <!--产品经理-->
+        <div class="col-4 row"style="margin-left: 10px;">
+            <div>
+                1. 闲置手机
+                <hr class="pfprogresshr2">
+            </div>
+        </div>
+        <!--填写信息-->
+        <div class="col-4 row"style="margin-left: 10px;">
+            <div style="color: #c94301">
+                2. 填写信息
+                <hr class="pfprogresshr1"style="background-color: #c94301">
+            </div>
+        </div>
+        <!--完成发布-->
+        <div class="col-4 row"style="margin-left: 10px;">
+            <div>
+                3. 完成发布
+                <hr class="pfprogresshr2">
+            </div>
+        </div>
+    </div>
+    <!--基础信息-->
+    <div>
+        <form id="signupForm" method="post" action="/jieshou.jsp"style="margin-top: 40px;">
+            <fieldset>
+                <!--您的身份-->
+                <div class="simplefont2 row">
+                    <div class="col-2">
+                        <label for="Parid">您的身份：</label>
+                    </div>
+                    <div class="col-4 row">
+                        <input id="Parid" name="Upersonal" type="radio"value="个人">个人转让
+                        <div class="col-1"></div>
+                        <input id="Parid2" name="Ubusiness" type="radio"value="商家">商家转让
+                    </div>
+                    <div class="col-6"></div>
+                </div>
+                <!--手机品牌-->
+                <div class="simplefont2 row" style="margin-top: 15px">
+                    <div class="col-2">
+                        <label for="Pardemand">手机品牌：</label>
+                    </div>
+                    <div class="col-2">
+                        <select class="fsinput2 pfabu21" id="Pardemand"name="fsarea">
+                            <option value ="beijing">HTC</option>
+                            <option value ="tianjin">SAMSUNG</option>
+                            <option value ="sichuan">IPHONE</option>
+                        </select>
+                    </div>
+                    <div class="col-2">
+                    </div>
+                    <div class="col-2">
+                    </div>
+                    <div class="col-4"></div>
+                </div>
+                <!--手机新旧-->
+                <div class="simplefont2 row" style="margin-top: 15px">
+                    <div class="col-2">
+                        <label for="Pardemand">手机品牌：</label>
+                    </div>
+                    <div class="col-2">
+                        <select class="fsinput2 pfabu21" id="Pardemand"name="fsarea">
+                            <option value ="beijing">全新</option>
+                            <option value ="tianjin">95成新</option>
+                            <option value ="sichuan">9成新</option>
+                            <option value ="tianjin">7成新及以下</option>
+                        </select>
+                    </div>
+                    <div class="col-2">
+                    </div>
+                    <div class="col-2">
+                    </div>
+                    <div class="col-4"></div>
+                </div>
+                <!--转让价格-->
+                <div class="simplefont2 row" style="margin-top: 15px">
+                    <div class="col-2">
+                        <label for="Parname">转让价格：</label>
+                    </div>
+                    <div class="col-4">
+                        <input id="Parname" name="Parname" type="text"class="chinput1"value="请输入您转让的价格">
+                    </div>
+                    <div class="col-6"></div>
+                </div>
+                <!--标题-->
+                <div class="simplefont2 row" style="margin-top: 15px">
+                    <div class="col-2">
+                        <label for="Partypr">标题：</label>
+                    </div>
+                    <div class="col-4">
+                        <input id="Partypr" name="Partypr" type="text"class="chinput1"value="请输入您要发布的标题">
+                    </div>
+                    <div class="col-6"></div>
+                </div>
+                <!--详细信息-->
+                <div class="simplefont2 row" style="margin-top: 15px">
+                    <div class="col-2">
+                        <label for="Parcominfo">详细信息：</label>
+                    </div>
+                    <div class="col-6">
+                        <textarea type="text"id="Parcominfo" name="Parcominfo"class="pfabu23">描述下转让原因、物品来源、可否面议、如何交易、物品亮点/瑕疵等方面</textarea>
+                    </div>
+                    <div class="col-4"></div>
+                </div>
+                <!--相关图片-->
+                <div style="margin-top: 15px"class="simplefont2 row">
+                    <div class="col-2">
+                        <label for="pic">相关图片：</label>
+                    </div>
+                    <div class="col-6">
+                        <div class="chddiv5">
+                            <div class="charity_btn_4">
+                                <input type="file" id="pic" name="pic" required class="charity_btn_2">
+                                <div class="charity_details_div2">
+                                    +上传相相关图片<br><br><br><br>
+                                </div>
+                            </div>
+                            <br> <br> <br> <br> <br> <br><br><br>
+                        </div>
+                    </div>
+                    <div class="col-4"></div>
+                </div>
+                <!--手机号-->
+                <div style="margin-top: 15px"class="row simplefont2">
+                    <div class="col-2">
+                        <label for="Mphone">手机号：</label>
+                    </div>
+                    <div class="col-4">
+                        <input id="Mphone" name="Mphone" type="text"class="chinput1"value="请输入您的手机号">
+                    </div>
+                    <div class="col-6"></div>
+                </div>
+                <p style="margin-top: 15px">
+                <div id="container12"style="margin-left: 0px;margin-top: 40px;">
+               <span>
+                   <input type="checkbox"class="inputCheck" id="agree"name="agree">
+                   <label for="agree"></label>
+               </span>
+                </div>
+                <div for="agree"style="font-weight: normal;font-size: 15px;margin-left: 24px;margin-top: -28px;">请同意我们的声明<a style="cursor: pointer;margin-left: 14px;color: purple">《发布声明》</a></div><br>
+
+                </p>
+                <p style="margin-left: -42px;">
+                    <input class="chinput2" type="submit" value="立刻发布">
+                </p>
+                <br>  <br>  <br>
+            </fieldset>
+        </form>
+    </div>
+</div>
+<br><br><br><br>
+<!--底部-->
+<div class="container-fluid"style="padding-left: 0;padding-right: 0">
+    <div  style="background-color: black;color: white">
+        <div class="row">
+            <div class="col-3">
+                <div style="float: right">
+                    <br>
+                    <div class="bottom1">关于我们</div>
+                    <hr class="bottom3">
+                    <div class="bottom2">在线留言</div>
+                    <div class="bottom2">招贤纳士</div>
+                    <div class="bottom2">新闻报道</div>
+                </div>
+            </div>
+            <div class="col-2">
+                <div style="float: right">
+                    <br>
+                    <div class="bottom1">帮助中心</div>
+                    <hr class="bottom3">
+                    <div class="bottom2">常见问题</div>
+                    <div class="bottom2">侵权举报</div>
+                    <div class="bottom2">色情举报</div>
+                </div>
+            </div>
+            <div class="col-2">
+                <div style="float: right">
+                    <br>
+                    <div class="bottom1">关注我们</div>
+                    <hr class="bottom3">
+                    <div class="bottom2">下载app</div>
+                    <div class="bottom2">
+                        大学生Go！公众号： <a><img src="pictures/二维码.png" class="bottom5"id="erweima1"/></a>
+                    </div>
+                    <br>
+                    <img src="pictures/二维码.png" class="bottom7"id="erweima2"style="visibility: hidden;float: right"/>
+                </div>
+            </div>
+            <div class="col-3">
+                <div style="float: right">
+                    <br>
+                    <div class="bottom1">在线客服</div>
+                    <hr class="bottom4">
+                    <div class="bottom2">大学生Go!·客服QQ: 641639426</div>
+                    <div class="bottom2">大学生Go!·官方QQ群: 64161239426</div>
+                    <div class="bottom2">大学生Go!·客服微信:  <a><img src="pictures/二维码.png" class="bottom5"id="erweima3"/></a></div>
+                    <div class="bottom2">请在工作日10:00-19:00联系客服</div>
+                </div>
+            </div>
+            <div class="col-2">
+                <br> <br> <br> <br> <br> <br> <br>
+                <img src="pictures/二维码.png" class="bottom7"id="erweima4"style="visibility: hidden;"/>
+            </div>
+        </div>
+        <br> <br> <br> <br> <br>
+        <div class="row">
+            <div class="col-4">
+
+            </div>
+            <div class="col-6 bottom6">
+                Copyright © 2004 YoungsGo Systems Incorporated. All rights reserved.
+                <br> <br>
+            </div>
+            <div class="col-2">
+
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

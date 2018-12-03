@@ -1,0 +1,1186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>捐款Go！</title>
+    <link rel="stylesheet"href="css/bootstrap.min.css">
+    <script src="jquery-1.9.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet"href="index_css.css">
+    <link rel="stylesheet"href="competition.css">
+    <link rel="stylesheet"href="charity.css">
+    <link rel="stylesheet" href="css/jq22.css">
+    <script src="js/banner.js" type="text/javascript"></script>
+    <link href="css/banner2.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/jq222.css">
+    <script src="js/jquery-latest.min.js" type="text/javascript"></script>
+    <script src="js/jq22.js"></script>
+    <style>
+
+        #part1_1:hover{
+            box-shadow: 1px 5px 8px 2px #e9e9e9;
+            transition: all 0.8s;
+        }
+        #part1_1{
+            transition: all 2s;
+        }
+        #part2_1{
+            transition: all 0.8s;
+        }
+        #part3_1:hover{
+            box-shadow: 1px 5px 8px 2px #e9e9e9;
+            transition: all 0.8s;
+        }
+        #part3_1{
+            transition: all 2s;
+        }
+        #part4_1{
+            transition: all 0.8s;
+        }
+        .aa{
+            cursor: pointer;
+        }
+        .aa:hover{
+            color: dimgray;
+        }
+
+    </style>
+    <style>
+        input[type=checkbox] {
+            /*-ms-transform: scale(2); !* IE *!*/
+            /*-moz-transform: scale(2); !* FireFox *!*/
+            /*-webkit-transform: scale(2); !* Safari and Chrome *!*/
+            /*-o-transform: scale(2); !* Opera *!*/
+            width: 20px;
+            height: 20px;
+            background-color: #fff;
+            -webkit-appearance:none;
+            border: 1px solid #c9c9c9;
+            border-radius: 2px;
+            outline: none;
+        }
+        .checkBox input[type=checkbox]:checked{
+            background: url("pictures/闪电.png")no-repeat center;
+        }
+    </style>
+    <!--自适应-->
+    <style>
+        /* 超小型设备（平板电脑，1px 起） */
+        @media (min-width: 1px) {
+            .imgbox {
+                width: 531px;
+                height: 300px;
+                position: relative;
+                background-color: #222222;
+                overflow: hidden;
+                border-radius: 5px;
+            }
+            .banner {
+                margin-left: -4px;
+                width: 292px;
+                height: 125px;
+                background-color: aqua;
+                position: relative;
+                overflow: hidden;
+                cursor: pointer;
+            }
+            .div3{
+                color: #3a3434;
+                font-weight: bold;
+                display: none;
+            }
+            .div4{
+                color: #3a3434;
+                font-weight: bold;
+                display: block;
+            }
+            .charity_f1{
+                font-size: 9px;
+                color: dimgray;
+                font-weight: 600;
+            }
+            .charity_f2{
+                font-size: 10px;
+                color: red;
+                font-weight: 600;
+            }
+            .charity_b1{
+                width: 69px;
+                background-color: #ff6902e6;
+                height: 24px;
+                color: white;
+                font-weight: bold;
+                font-size: 10px;
+                border-radius: 9px;
+            }
+            .charity_i1{
+                height: 39%;
+                margin-top: 9px;
+                margin-left: -266px;
+                width: 55%;
+            }
+            .simplefont1{
+                font-size: 0.4rem;
+            }
+            .simplefont2{
+                font-size: 1.15rem;
+            }
+            .simplefont3{
+                color: orange;
+                font-size: 0.25rem;
+                float: right;
+            }
+            .simplefont4{
+                font-size: 0.5rem;
+                color: dimgray;
+                font-weight: bold;
+            }
+            .cli2{
+                width: 1.5rem;
+                color: #ffffff;
+                height: 1.5rem;
+                border: 0.1rem solid #ffffff00;
+                text-align: center;
+                font-size: 0.6rem;
+                background-color: #50e1ce;
+            }
+            .cli1{
+                width: 1.5rem;
+                color: #747474;
+                height: 1.5rem;
+                border: 0.1rem solid #66666685;
+                text-align: center;
+                font-size: 0.6rem;
+                margin-left: 0.8rem;
+            }
+            .bottom1{
+                font-size: 1.0rem;
+                font-weight: bold;
+            }
+            .bottom2{
+                font-size: 0.6rem;
+                margin-left: 1.3rem;
+                margin-top: 0.3rem;
+            }
+            .bottom3{
+                color: white;
+                width: 8rem;
+                background-color: white;
+            }
+            .bottom4{
+                color: white;
+                width: 16rem;
+                background-color: white;
+            }
+            .bottom5{
+                width: 1.2rem;
+                height: 1.2rem;
+            }
+            .bottom6{
+                font-size: 0.8rem;
+                float: right;
+            }
+            .bottom7{
+                width: 2rem;
+                height: 2rem;
+            }
+        }
+        /* 小型设备（平板电脑，768px 起） */
+        @media (min-width: 768px) {
+            .imgbox {
+                width: 742px;
+                height: 300px;
+                position: relative;
+                background-color: #222222;
+                overflow: hidden;
+                border-radius: 5px;
+            }
+            .banner {
+                margin-left: -4px;
+                width: 407px;
+                height: 246px;
+                background-color: aqua;
+                position: relative;
+                overflow: hidden;
+                cursor: pointer;
+            }
+            .div3{
+                color: #3a3434;
+                font-weight: bold;
+                font-size: 5px;
+                display: none;
+            }
+            .div4{
+                color: #3a3434;
+                font-weight: bold;
+                display: block;
+            }
+            .charity_f1{
+                font-size: 14px;
+                color: dimgray;
+                font-weight: 600;
+            }
+            .charity_f2{
+                font-size: 16px;
+                color: red;
+                font-weight: 600;
+            }
+            .charity_b1{
+                width: 96px;
+                background-color: #ff6902e6;
+                height: 36px;
+                color: white;
+                font-weight: bold;
+                font-size: 14px;
+                border-radius: 9px;
+            }
+            .charity_i1{
+                height: 78%;
+                margin-top: 9px;
+                margin-left: -381px;
+                width: 57%;
+            }
+            .simplefont1{
+                font-size: 1.3rem;
+            }
+            .simplefont2{
+                font-size: 1.35rem;
+            }
+            .simplefont3{
+                color: orange;
+                font-size: 0.95rem;
+                float: right;
+            }
+            .simplefont4{
+                font-size: 1.4rem;
+                color: dimgray;
+                font-weight: bold;
+            }
+            .cli2{
+                width: 2.0rem;
+                color: #ffffff;
+                height: 2.0rem;
+                border: 0.1rem solid #ffffff00;
+                text-align: center;
+                font-size: 1.3rem;
+                background-color: #50e1ce;
+            }
+            .cli1{
+                width: 2.0rem;
+                color: #747474;
+                height: 2.0rem;
+                border: 0.1rem solid #66666685;
+                text-align: center;
+                font-size: 1.3rem;
+                margin-left: 1.6rem;
+            }
+            .bottom1{
+                font-size: 1.4rem;
+                font-weight: bold;
+            }
+            .bottom2{
+                font-size: 0.8rem;
+                margin-left: 1.3rem;
+                margin-top: 0.8rem;
+            }
+            .bottom3{
+                color: white;
+                width: 10rem;
+                background-color: white;
+            }
+            .bottom4{
+                color: white;
+                width: 16rem;
+                background-color: white;
+            }
+            .bottom5{
+                width: 2rem;
+                height: 2rem;
+            }
+            .bottom6{
+                font-size: 0.8rem;
+                float: right;
+            }
+            .bottom7{
+                width: 3rem;
+                height: 3rem;
+            }
+        }
+
+        /* 中型设备（台式电脑，992px 起） */
+        @media (min-width: 992px) {
+            .imgbox {
+                width: 885px;
+                height: 300px;
+                position: relative;
+                background-color: #222222;
+                overflow: hidden;
+                border-radius: 5px;
+            }
+            .banner {
+                margin-left: 4px;
+                width: 522px;
+                height: 300px;
+                background-color: aqua;
+                position: relative;
+                overflow: hidden;
+                cursor: pointer;
+            }
+            .div3{
+                color: #3a3434;
+                font-weight: bold;
+                font-size: 10px;
+                display: block;
+            }
+            .div4{
+                color: #3a3434;
+                font-weight: bold;
+                display: none;
+            }
+            .charity_f1{
+                font-size: 19px;
+                color: dimgray;
+                font-weight: 600;
+            }
+            .charity_f2{
+                font-size: 22px;
+                color: red;
+                font-weight: 600;
+            }
+            .charity_b1{
+                width: 126px;
+                background-color: #ff6902e6;
+                height: 46px;
+                color: white;
+                font-weight: bold;
+                font-size: 18px;
+                border-radius: 9px;
+            }
+            .charity_i1{
+                height: 93%;
+                margin-top: 4px;
+                margin-left: -447px;
+                width: 61%;
+            }
+            .simplefont1{
+                font-size: 1.3rem;
+            }
+            .simplefont2{
+                font-size: 1.55rem;
+            }
+            .simplefont3{
+                color: orange;
+                font-size: 1.25rem;
+                float: right;
+            }
+            .simplefont4{
+                font-size: 1.4rem;
+                color: dimgray;
+                font-weight: bold;
+            }
+            .cli2{
+                width: 2.2rem;
+                color: #ffffff;
+                height: 2.2rem;
+                border: 0.1rem solid #ffffff00;
+                text-align: center;
+                font-size: 1.4rem;
+                background-color: #50e1ce;
+            }
+            .cli1{
+                width: 2.2rem;
+                color: #747474;
+                height: 2.2rem;
+                border: 0.1rem solid #66666685;
+                text-align: center;
+                font-size: 1.4rem;
+                margin-left: 1.8rem;
+            }
+            .bottom1{
+                font-size: 2.2rem;
+                font-weight: bold;
+            }
+            .bottom2{
+                font-size: 1.4rem;
+                margin-left: 1.3rem;
+                margin-top: 1.0rem;
+            }
+            .bottom3{
+                color: white;
+                width: 17rem;
+                background-color: white;
+            }
+            .bottom4{
+                color: white;
+                width: 22rem;
+                background-color: white;
+            }
+            .bottom5{
+                width: 2rem;
+                height: 2rem;
+            }
+            .bottom6{
+                font-size: 1.0rem;
+                float: right;
+            }
+            .bottom7{
+                width: 4rem;
+                height: 4rem;
+            }
+        }
+        /* 大型设备（大台式电脑，1200px 起） */
+        @media (min-width:1200px) {
+            .imgbox {
+                width: 1367px;
+                height: 300px;
+                position: relative;
+                background-color: #222222;
+                overflow: hidden;
+                border-radius: 5px;
+            }
+            .banner {
+                margin-left: 4px;
+                width: 638px;
+                height: 300px;
+                background-color: aqua;
+                position: relative;
+                overflow: hidden;
+                cursor: pointer;
+            }
+            .div3{
+                color: #3a3434;
+                font-weight: bold;
+                font-size: 13px;
+                display: block;
+            }
+            .div4{
+                color: #3a3434;
+                font-weight: bold;
+                display: none;
+            }
+            .charity_f1{
+                font-size: 20px;
+                color: dimgray;
+                font-weight: 600;
+            }
+            .charity_f2{
+                font-size: 25px;
+                color: red;
+                font-weight: 600;
+            }
+            .charity_b1{
+                width: 140px;
+                background-color: #ff6902e6;
+                height: 50px;
+                color: white;
+                font-weight: bold;
+                font-size: 18px;
+                border-radius: 9px;
+            }
+            .charity_i1{
+                height: 102%;
+                margin-left: -685px;
+                width: 48%;
+                margin-top: 0px;
+            }
+            .simplefont1{
+                font-size: 1.4rem;
+            }
+            .simplefont2{
+                font-size: 1.75rem;
+            }
+            .simplefont3{
+                color: orange;
+                font-size: 1.45rem;
+                float: right;
+            }
+            .simplefont4{
+                font-size: 1.5rem;
+                color: dimgray;
+                font-weight: bold;
+            }
+            .cli2{
+                float: left;
+                width: 2.5rem;
+                color: #ffffff;
+                height: 2.5rem;
+                border: 0.1rem solid #ffffff00;
+                text-align: center;
+                font-size: 1.6rem;
+                background-color: #50e1ce;
+            }
+            .cli1{
+                width: 2.5rem;
+                color: #747474;
+                height: 2.5rem;
+                border: 0.1rem solid #66666685;
+                text-align: center;
+                font-size: 1.6rem;
+                margin-left: 2rem;
+            }
+            .bottom1{
+                font-size: 2.4rem;
+                font-weight: bold;
+            }
+            .bottom2{
+                font-size: 1.4rem;
+                margin-left: 1.3rem;
+                margin-top: 1.0rem;
+            }
+            .bottom3{
+                color: white;
+                width: 17rem;
+                background-color: white;
+            }
+            .bottom4{
+                color: white;
+                width: 22rem;
+                background-color: white;
+            }
+            .bottom5{
+                width: 2rem;
+                height: 2rem;
+            }
+            .bottom6{
+                font-size: 1.2rem;
+                float: right;
+            }
+            .bottom7{
+                width: 4rem;
+                height: 4rem;
+            }
+        }
+    </style>
+</head>
+<body style="background-color: #e3e3e35e;">
+<img src="pictures/charity2.png" class="img-thumbnail"style="z-index: -2;"/>
+<div  class="container" style="height: auto;background-color: white;position: relative;margin-top: -55px">
+    <!--导航1-->
+    <div class="div3">
+        <div class="row">
+            <div class="col-3" style=" margin-left: 35px;margin-top: 17px;">
+                <a href="index.html"target="_blank"><img src="pictures/logo.png" width="200px"class="img-thumbnail" /></a>
+            </div>
+            <div class="col-1 aa"style="margin-top: 14px;">
+                <a style="width: 57px;color: #3a3434;"href="competition.html"target="_blank">竞赛Go!</a>
+            </div>
+            <div class="col-1 aa"style="margin-top: 14px;margin-left: -10px">
+                <a style="width: 57px;color: #3a3434;"href="exam.html"target="_blank">考试Go!</a>
+            </div>
+            <div class="col-1 aa"style="margin-top: 14px;margin-left: -10px">
+                <a href="charity.html"target="_blank"style="color: #3a3434;">捐款Go!</a>
+            </div>
+            <div class="col-1 aa"style="margin-top: 14px;margin-left: -10px">
+                <a href="parttime.html"target="_blank"style="color: #3a3434;">兼职Go!</a>
+            </div>
+            <div class="col-1 aa"style="margin-top: 14px;margin-left: -10px">
+                <a href="unused.html"target="_blank"style="color: #3a3434;">闲置Go!</a>
+            </div>
+            <div class="col-1 aa"style="margin-top: 14px;margin-left: -10px">
+                <a href="find.html"target="_blank"style="color: #3a3434;">失领Go!</a>
+            </div>
+            <div class="col-2 col-lg-1"style="margin-top: 14px;margin-left: -10px">
+                <input type="text" value="搜索..."style="color: #696969c2;font-size: 13px;margin-left: -10px;width: 62px">
+            </div>
+            <div class="col-1 col-lg-2"style="margin-top: 14px;margin-left: -10px">
+                <a id="reg"onclick="display3()">注册</a>
+                &nbsp;&nbsp;
+                <a id="log"onclick="display1()">登录</a>
+            </div>
+        </div>
+    </div>
+    <!--导航2折叠-->
+    <div class="div4">
+        <div id='cssmenu'>
+            <ul>
+                <li><a href='index.html'target="_blank">大学生Go!</a></li>
+                <li><a href='competition.html'target="_blank">竞赛Go!</a>
+                </li>
+                <li><a href='exam.html'target="_blank">考试Go!</a></li>
+                <li><a href='charity.html'target="_blank">捐款Go!</a></li>
+                <li><a href='parttime.html'target="_blank">兼职Go!</a></li>
+                <li><a href='find.html'target="_blank">失领Go!</a></li>
+                <li><a id="reg2"onclick="display3()">注册</a></li>
+                <li><a id="log2"onclick="display1()">登录</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="login"style="display: none;z-index: 999;position: relative;top: -80px;">
+
+        <div class="login">
+            <form action="#" method="post" class="container offset1 loginform">
+                <div id="owl-login">
+                    <div class="hand"></div>
+                    <div class="hand hand-r"></div>
+                    <div class="arms">
+                        <div class="arm"></div>
+                        <div class="arm arm-r"></div>
+                    </div>
+                </div>
+                <div class="pad">
+                    <input type="hidden" name="_csrf" value="9IAtUxV2CatyxHiK2LxzOsT6wtBE6h8BpzOmk=">
+                    <div class="control-group">
+                        <div class="controls">
+                            <label for="email" class="control-label fa fa-envelope"></label>
+                            <input id="email" type="email" name="email" placeholder="Email" tabindex="1" autofocus="autofocus" class="form-control input-medium">
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <div class="controls">
+                            <label for="password" class="control-label fa fa-asterisk"></label>
+                            <input id="password" type="password" name="password" placeholder="Password" tabindex="2" class="form-control input-medium">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-actions">
+                    <a href="#" tabindex="5" class="btn pull-left btn-link text-muted"id="noid"onclick="change1()">没有帐号?</a>
+                    <button type="button" tabindex="6" class="btn"id="cancel"onmouseenter="hover1()"onmouseleave="levae1()"style="color: #75797c;background-color: #1a8fb400"onclick="display2()">取消</button>
+                    <button type="submit" tabindex="4" class="btn "id="btn_login"onmouseenter="hover2()"onmouseleave="levae2()"style="color: #75797c;background-color: #1a8fb400">登录</button>
+                </div>
+            </form>
+        </div>
+
+        <script src="js/jquery.min.js"></script>
+        <script>
+            $(function() {
+
+                $('#login #password').focus(function() {
+                    $('#owl-login').addClass('password');
+                }).blur(function() {
+                    $('#owl-login').removeClass('password');
+                });
+            });
+        </script>
+    </div>
+    <br>
+    <br><br><br>
+    <div class="row">
+     <div class="col-7 chdiv1">
+           <div class="banner"style="margin-top: 40px;">
+        <img class="change pre"  src="images/pre.png" style="display: none">
+        <img class="change next" src="images/next.png"style="display: none" >
+        <div class="cirbox"style="    bottom: 6px;" >
+            <div class="cir cr"style="background-color: white"></div>
+            <div class="cir"style="background-color: white"></div>
+            <div class="cir"style="background-color: white"></div>
+            <div class="cir"style="background-color: white"></div>
+        </div>
+        <div class="imgbox">
+            <img class="img im charity_i1" src="images/3.png">
+            <img class="img charity_i1" src="images/4.png">
+            <img class="img im charity_i1" src="images/5.png">
+            <img class="img charity_i1" src="images/6.png">
+        </div>
+    </div>
+           <div style="margin-top: 15px;margin-left: 4px;color: #636363;font-size: 1.4rem">
+           <span><a>热点：</a></span>
+           <span><a>99公益日</a></span>
+           <span><a>益行家</a></span>
+           <span><a>益行日</a></span>
+           <span><a>庐山灾援</a></span>
+           <span><a>公益资源对接</a></span>
+           <hr>
+        </div>
+         <!--内容1-->
+           <div>
+              <div class="simplefont1">
+                <span style="color: white;background: #ffa602f0;">视频</span>
+                <span style="font-size: 1.8rem;">99公益日系列纪录片：我想有只左手，像你一样</span>
+            </div>
+              <div class="row"style="margin-top: 15px">
+                <div class="col-5">
+                    <img src="pictures/145443152.jpg" class="img-thumbnail"/></div>
+                <div class="col-7 simplefont1"style="color: #868686;">
+                    99公益日即将迈入第三年，回望过去720天的日子里，你捐出的爱心为他们的生活带来哪些改变？首部99公益日系列纪录片——《让改变看得见》正式上线。第一弹，与你分享一个断掌少年的故事“我想要只左手”。
+                    <a style="color: #ca8c1c;cursor: pointer"id="a1"onmouseenter="under1()"onmouseleave="removeun()">详情</a>
+                </div>
+            </div>
+           </div>
+         <!--内容2-->
+         <div style="margin-top: 20px;border-top: 1px solid #c7c7c773;">
+             <br>
+             <div class="simplefont1">
+                 <span style="color: white;background: #ffa602f0;">视频</span>
+                 <span style="font-size: 1.8rem;">99公益日系列纪录片：我想有只左手，像你一样</span>
+             </div>
+             <div class="row"style="margin-top: 15px">
+                 <div class="col-5">
+                     <img src="pictures/145443152.jpg" class="img-thumbnail"/></div>
+                 <div class="col-7 simplefont1"style="color: #868686;">
+                     99公益日即将迈入第三年，回望过去720天的日子里，你捐出的爱心为他们的生活带来哪些改变？首部99公益日系列纪录片——《让改变看得见》正式上线。第一弹，与你分享一个断掌少年的故事“我想要只左手”。
+                     <a style="color: #ca8c1c;cursor: pointer"id="a1"onmouseenter="under1()"onmouseleave="removeun()">详情</a>
+                 </div>
+             </div>
+         </div>
+         <!--内容2-->
+         <div style="margin-top: 20px;border-top: 1px solid #c7c7c773;">
+             <br>
+             <div class="simplefont1">
+                 <span style="color: white;background: #ffa602f0;">视频</span>
+                 <span style="font-size: 1.8rem;">99公益日系列纪录片：我想有只左手，像你一样</span>
+             </div>
+             <div class="row"style="margin-top: 15px">
+                 <div class="col-5">
+                     <img src="pictures/145443152.jpg" class="img-thumbnail"/></div>
+                 <div class="col-7 simplefont1"style="color: #868686;">
+                     99公益日即将迈入第三年，回望过去720天的日子里，你捐出的爱心为他们的生活带来哪些改变？首部99公益日系列纪录片——《让改变看得见》正式上线。第一弹，与你分享一个断掌少年的故事“我想要只左手”。
+                     <a style="color: #ca8c1c;cursor: pointer"id="a1"onmouseenter="under1()"onmouseleave="removeun()">详情</a>
+                 </div>
+             </div>
+         </div>
+         <!--内容2-->
+         <div style="margin-top: 20px;border-top: 1px solid #c7c7c773;">
+             <br>
+             <div class="simplefont1">
+                 <span style="color: white;background: #ffa602f0;">视频</span>
+                 <span style="font-size: 1.8rem;">99公益日系列纪录片：我想有只左手，像你一样</span>
+             </div>
+             <div class="row"style="margin-top: 15px">
+                 <div class="col-5">
+                     <img src="pictures/145443152.jpg" class="img-thumbnail"/></div>
+                 <div class="col-7 simplefont1"style="color: #868686;">
+                     99公益日即将迈入第三年，回望过去720天的日子里，你捐出的爱心为他们的生活带来哪些改变？首部99公益日系列纪录片——《让改变看得见》正式上线。第一弹，与你分享一个断掌少年的故事“我想要只左手”。
+                     <a style="color: #ca8c1c;cursor: pointer"id="a1"onmouseenter="under1()"onmouseleave="removeun()">详情</a>
+                 </div>
+             </div>
+         </div>
+         <!--内容2-->
+         <div style="margin-top: 20px;border-top: 1px solid #c7c7c773;">
+             <br>
+             <div class="simplefont1">
+                 <span style="color: white;background: #ffa602f0;">视频</span>
+                 <span style="font-size: 1.8rem;">99公益日系列纪录片：我想有只左手，像你一样</span>
+             </div>
+             <div class="row"style="margin-top: 15px">
+                 <div class="col-5">
+                     <img src="pictures/145443152.jpg" class="img-thumbnail"/></div>
+                 <div class="col-7 simplefont1"style="color: #868686;">
+                     99公益日即将迈入第三年，回望过去720天的日子里，你捐出的爱心为他们的生活带来哪些改变？首部99公益日系列纪录片——《让改变看得见》正式上线。第一弹，与你分享一个断掌少年的故事“我想要只左手”。
+                     <a style="color: #ca8c1c;cursor: pointer"id="a1"onmouseenter="under1()"onmouseleave="removeun()">详情</a>
+                 </div>
+             </div>
+         </div>
+         <!--内容2-->
+         <div style="margin-top: 20px;border-top: 1px solid #c7c7c773;">
+             <br>
+             <div class="simplefont1">
+                 <span style="color: white;background: #ffa602f0;">视频</span>
+                 <span style="font-size: 1.8rem;">99公益日系列纪录片：我想有只左手，像你一样</span>
+             </div>
+             <div class="row"style="margin-top: 15px">
+                 <div class="col-5">
+                     <img src="pictures/145443152.jpg" class="img-thumbnail"/></div>
+                 <div class="col-7 simplefont1"style="color: #868686;">
+                     99公益日即将迈入第三年，回望过去720天的日子里，你捐出的爱心为他们的生活带来哪些改变？首部99公益日系列纪录片——《让改变看得见》正式上线。第一弹，与你分享一个断掌少年的故事“我想要只左手”。
+                     <a style="color: #ca8c1c;cursor: pointer"id="a1"onmouseenter="under1()"onmouseleave="removeun()">详情</a>
+                 </div>
+             </div>
+         </div>
+
+     </div>
+     <div class="col-5 chborder3">
+            <div class="row chborder2">
+                <div class="col-6">
+                    <div style="margin-top: 50px;">
+                        <div class="charity_f1">
+                            历史善款总额：
+                        </div>
+                        <div class="charity_f2 ">
+                            ￥ 3,689,720,666
+                        </div>
+                    </div>
+                </div>
+               <div class="col-6">
+                   <div style="margin-top: 50px;">
+                       <div class="charity_f1">
+                           历史爱心总人次：
+                       </div>
+                       <div class="charity_f2">
+                           6,875,350,238
+                       </div>
+                   </div>
+               </div>
+                <div style="margin-top: 20px;"class="col-12">
+                    <div class="charity_f1">
+                       <div>免费筹款申请：</div>
+                       <div style="margin-top: 10px;margin-left: -4px;"><a href="charity_details.html"target="_blank"><input type="button"value="立刻申请"class="charity_b1"></a></div>
+                        <div style="font-size: 0.8em">
+                            <br>
+                            FAQ:<br>
+                                 <div style="font-size: 0.7em">1.您需登录才可申请免费筹款<br>
+                                 2.我们会对您的情况进行审核，审核会在3个工作日内完成<br>
+                                 3.所有筹款均在透明的平台下操作
+                                     <br> <br>
+                                 </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         <div>
+             <!--乐捐-->
+             <div style="margin-top: 20px;">
+                 <div class="row">
+                     <div class="col-8">
+                         <span class="simplefont2">乐捐</span>
+                     </div>
+                     <div class="col-3">
+                    <span class="simplefont3">
+                     <a style="color: orange"href="charity_donate.html"target="_blank">更多</a>
+                    </span>
+                     </div>
+                     <div class="col-1"></div>
+                 </div>
+                 <hr style="margin-top: 8px;">
+                 <hr class="chhr1"style="margin-top: -23px">
+                 <div>
+                     &nbsp;&nbsp; <img src="pictures/aaa.png" height="90%" width="90%"class="img-thumbnail"/>
+                 </div>
+             </div>
+             <!--公益活动-->
+             <div style="margin-top: 20px;">
+                 <div class="row">
+                     <div class="col-8">
+                         <span class="simplefont2">公益活动</span>
+                     </div>
+                     <div class="col-3">
+                    <span class="simplefont3">
+                     更多
+                    </span>
+                     </div>
+                     <div class="col-1"></div>
+                 </div>
+                 <hr style="margin-top: 8px;">
+                 <hr class="chhr1"style="margin-top: -23px">
+                 <!--内容1-->
+                 <div class="row"style="margin-top: 25px">
+                    <div class="col-5">
+                       &nbsp;  &nbsp;  <img src="pictures/144829627.jpg"class="img-thumbnail"/>
+                    </div>
+                     <div class="col-7 simplefont1">
+                         <div class="simplefont4" style=" margin-top: 15px;">99公益日<br>
+                         </div>
+                         <div style=" margin-top: 5px;">
+                             日期：9月7日-9日<br>
+                             发起：腾讯
+                         </div>
+                         <div style="margin-top: 15px;"class="row">
+                             <div class="col-10">
+                                 <input type="button" value="详情"class="chbtn2"style="float: right">
+                             </div>
+                             <div class="col-2"></div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+             <!--公益活动内容2-->
+             <div style="margin-top: 20px;">
+                     <hr style="margin-top: 8px;">
+                 <div class="row"style="margin-top: 25px">
+                     <div class="col-5">
+                         &nbsp;  &nbsp;  <img src="pictures/144829627.jpg"class="img-thumbnail"/>
+                     </div>
+                     <div class="col-7 simplefont1">
+                         <div class="simplefont4" style=" margin-top: 15px;">99公益日<br>
+                         </div>
+                         <div style=" margin-top: 5px;">
+                             日期：9月7日-9日<br>
+                             发起：腾讯
+                         </div>
+                         <div style="margin-top: 15px;"class="row">
+                             <div class="col-10">
+                                 <input type="button" value="详情"class="chbtn2"style="float: right">
+                             </div>
+                             <div class="col-2"></div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+             <!--项目推荐-->
+             <div style="margin-top: 20px;">
+                 <div class="row">
+                     <div class="col-8">
+                         <span class="simplefont2">项目推荐</span>
+                     </div>
+                     <div class="col-3">
+                    <span class="simplefont3">
+                     更多
+                    </span>
+                     </div>
+                     <div class="col-1"></div>
+                 </div>
+                 <hr style="margin-top: 8px;">
+                 <hr class="chhr1"style="margin-top: -23px">
+                 <!--内容1-->
+                 <div class="row"style="margin-top: 25px">
+                     <div class="col-5">
+                         &nbsp;  &nbsp;  <img src="pictures/143888393.jpg" class="img-thumbnail"/>
+                     </div>
+                     <div class="col-7 simplefont1">
+                         <div class="simplefont4" style=" margin-top: 15px;">先心儿童的“心”生<br>
+                         </div>
+                         <div style="margin-top: 5px;">
+                             夏洲在爱佑童心项目资助下，接受手术并顺利出院。
+                         </div>
+                         <div style="margin-top: 15px;"class="row">
+                             <div class="col-10">
+                                 <input type="button" value="详情"class="chbtn2"style="float: right">
+                             </div>
+                             <div class="col-2"></div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+             <!--项目推荐内容2-->
+             <div style="margin-top: 20px;">
+                 <hr style="margin-top: 8px;">
+                 <div class="row">
+                     <div class="col-5">
+                         &nbsp;  &nbsp;  <img src="pictures/143888692.jpg" class="img-thumbnail"/>
+                     </div>
+                     <div class="col-7 simplefont1">
+                         <div class="simplefont4" style=" margin-top: 15px;">免费午餐小善大爱<br>
+                         </div>
+                         <div style="margin-top: 5px;">
+                             免费午餐，帮助孩子们免于饥饿，健康成长。
+                         </div>
+                         <div style="margin-top: 15px;"class="row">
+                             <div class="col-10">
+                                 <input type="button" value="详情"class="chbtn2"style="float: right">
+                             </div>
+                             <div class="col-2"></div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+             <!--项目推荐内容3-->
+             <div style="margin-top: 20px;">
+                 <hr style="margin-top: 8px;">
+                 <div class="row">
+                     <div class="col-5">
+                         &nbsp;  &nbsp;  <img src="pictures/143888870.jpg" class="img-thumbnail"/>
+                     </div>
+                     <div class="col-7 simplefont1">
+                         <div class="simplefont4" style=" margin-top: 15px;">乡村支教美丽中国<br>
+                         </div>
+                         <div style="margin-top: 5px;">
+                             中国的孩子，无论出身，都应该享有同等的优质教育。
+                         </div>
+                         <div style="margin-top: 15px;"class="row">
+                             <div class="col-10">
+                                 <input type="button" value="详情"class="chbtn2"style="float: right">
+                             </div>
+                             <div class="col-2"></div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+             <!--最公益-->
+             <div style="margin-top: 20px;">
+                 <div class="row">
+                     <div class="col-8">
+                         <span class="simplefont2">最公益</span>
+                     </div>
+                     <div class="col-3">
+                    <span class="simplefont3">
+                     更多
+                    </span>
+                     </div>
+                     <div class="col-1"></div>
+                 </div>
+                 <hr style="margin-top: 8px;">
+                 <hr class="chhr1"style="margin-top: -23px">
+                 <div>
+                     &nbsp;&nbsp; <img src="pictures/143887890.jpg" height="85%" width="85%"class="img-thumbnail"/>
+                 </div>
+             </div>
+         </div>
+        </div>
+     </div>
+    <!--页码-->
+    <div style="margin-top: 52px;"class="row">
+        <div class="col-4">
+
+        </div>
+        <div class="col-5">
+            <ul style="list-style: none;">
+                <li style="float: left"class="cli2">
+                    1
+                </li>
+                <li class="cli1">
+                    2
+                </li>
+                <li class="cli1">
+                    3
+                </li>
+                <li class="cli1">
+                    4
+                </li>
+                <li style="border: 0"class="cli1">
+                    <img src="pictures/省略.png" height="20" width="20"class="img-thumbnail"/>
+                </li>
+            </ul>
+        </div>
+        <div class="col-3">
+
+        </div>
+
+    </div>
+
+    <br> <br> <br><br><br><br>
+</div>
+<br><br><br><br>
+<!--底部-->
+<div class="container-fluid"style="padding-left: 0;padding-right: 0">
+    <div  style="background-color: black;color: white">
+        <div class="row">
+            <div class="col-3">
+                <div style="float: right">
+                    <br>
+                    <div class="bottom1">关于我们</div>
+                    <hr class="bottom3">
+                    <div class="bottom2">在线留言</div>
+                    <div class="bottom2">招贤纳士</div>
+                    <div class="bottom2">新闻报道</div>
+                </div>
+            </div>
+            <div class="col-2">
+                <div style="float: right">
+                    <br>
+                    <div class="bottom1">帮助中心</div>
+                    <hr class="bottom3">
+                    <div class="bottom2">常见问题</div>
+                    <div class="bottom2">侵权举报</div>
+                    <div class="bottom2">色情举报</div>
+                </div>
+            </div>
+            <div class="col-2">
+                <div style="float: right">
+                    <br>
+                    <div class="bottom1">关注我们</div>
+                    <hr class="bottom3">
+                    <div class="bottom2">下载app</div>
+                    <div class="bottom2">
+                        大学生Go！公众号： <a><img src="pictures/二维码.png" class="bottom5"id="erweima1"/></a>
+                    </div>
+                    <br>
+                    <img src="pictures/二维码.png" class="bottom7"id="erweima2"style="visibility: hidden;float: right"/>
+                </div>
+            </div>
+            <div class="col-3">
+                <div style="float: right">
+                    <br>
+                    <div class="bottom1">在线客服</div>
+                    <hr class="bottom4">
+                    <div class="bottom2">大学生Go!·客服QQ: 641639426</div>
+                    <div class="bottom2">大学生Go!·官方QQ群: 64161239426</div>
+                    <div class="bottom2">大学生Go!·客服微信:  <a><img src="pictures/二维码.png" class="bottom5"id="erweima3"/></a></div>
+                    <div class="bottom2">请在工作日10:00-19:00联系客服</div>
+                </div>
+            </div>
+            <div class="col-2">
+                <br> <br> <br> <br> <br> <br> <br>
+                <img src="pictures/二维码.png" class="bottom7"id="erweima4"style="visibility: hidden;"/>
+            </div>
+        </div>
+        <br> <br> <br> <br> <br>
+        <div class="row">
+            <div class="col-4">
+
+            </div>
+            <div class="col-6 bottom6">
+                Copyright © 2004 YoungsGo Systems Incorporated. All rights reserved.
+                <br> <br>
+            </div>
+            <div class="col-2">
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function display1() {
+        var a=document.getElementById("noid");
+        if(a){
+        }
+        else{
+            document.getElementById("btn_login").innerText="登录";
+            document.getElementById("haveid").innerText="没有帐号?";
+            document.getElementById("haveid").id="noid";
+        }
+        document.getElementById("login").style.display="block";
+    }
+    function display2() {
+        document.getElementById("login").style.display="none";
+    }
+    function display3() {
+        var a=document.getElementById("noid");
+        if(a){
+            document.getElementById("btn_login").innerText="注册";
+            document.getElementById("noid").innerText="已有帐号 立刻登录Go！";
+            document.getElementById("noid").id="haveid";
+        }
+        else{
+        }
+        document.getElementById("login").style.display="block";
+    }
+    function hover1() {
+        document.getElementById("cancel").style.color="white";
+        document.getElementById("cancel").style.backgroundColor="#1a8fb4";
+        document.getElementById("cancel").style.borderColor="#357ebd";
+    }
+    function levae1() {
+        document.getElementById("cancel").style.color="#75797c";
+        document.getElementById("cancel").style.backgroundColor="#1a8fb400";
+        document.getElementById("cancel").style.border="0";
+    }
+    function hover2() {
+        document.getElementById("btn_login").style.color="white";
+        document.getElementById("btn_login").style.backgroundColor="#1a8fb4";
+        document.getElementById("btn_login").style.borderColor="#357ebd";
+    }
+    function levae2() {
+        document.getElementById("btn_login").style.color="#75797c";
+        document.getElementById("btn_login").style.backgroundColor="#1a8fb400";
+        document.getElementById("btn_login").style.border="0";
+    }
+
+
+    function change1() {
+        var a=document.getElementById("noid");
+        if(a){
+            document.getElementById("btn_login").innerText="注册";
+            document.getElementById("noid").innerText="已有帐号 立刻登录Go！";
+            document.getElementById("noid").id="haveid";
+        }
+        else{
+            document.getElementById("btn_login").innerText="登录";
+            document.getElementById("haveid").innerText="没有帐号?";
+            document.getElementById("haveid").id="noid";
+        }
+    }
+    function under1() {
+        document.getElementById("a1").style.textDecoration="underline";
+    }
+    function removeun() {
+        document.getElementById("a1").style.textDecoration="none";
+    }
+$(document).ready(function(){
+    $('#erweima1').mouseover(function(){
+       $('#erweima2').css('visibility','visible');
+    });
+    $('#erweima1').mouseout(function(){
+        $('#erweima2').css('visibility','hidden');
+    });
+
+    $('#erweima3').mouseover(function(){
+        $('#erweima4').css('visibility','visible');
+    });
+    $('#erweima3').mouseout(function(){
+        $('#erweima4').css('visibility','hidden');
+    });
+});
+</script>
+</body>
+</html>

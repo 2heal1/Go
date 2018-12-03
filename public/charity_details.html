@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/jq22.css">
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet"href="charity_details.css">
+    <script src="http://static.runoob.com/assets/jquery-validation-1.14.0/lib/jquery.js"></script>
+    <script src="http://static.runoob.com/assets/jquery-validation-1.14.0/dist/jquery.validate.min.js"></script>
+    <script src="http://static.runoob.com/assets/jquery-validation-1.14.0/dist/localization/messages_zh.js"></script>
+    <script>
+        // $.validator.setDefaults({
+        //     submitHandler: function() {
+        //         alert("提交事件!");
+        //     }
+        // });
+        $().ready(function() {
+// 在键盘按下并释放及提交后验证提交表单
+            $("#signupForm").validate({
+                rules: {
+                    Minformation: "required",
+                    MmoneyAll: "required",
+                    Mreason: {
+                        required: true,
+                        minlength: 10
+                    },
+                    avatar:"required",
+                    pic:"required",
+                    agree: "required"
+                },
+                messages: {
+                    Minformation: "请输入募捐相关信息",
+                    MmoneyAll: "请输入募捐金额",
+                    Mreason: {
+                        required: "请输入募捐原因",
+                        minlength: "募捐原因必须超过十个字"
+                    },
+                    avatar:"请上传身份证图片",
+                    pic:"请上传相关图片",
+                    agree: "请勾选声明"
+                }
+            });
+        });
+    </script>
+    <style>
+        .error{
+            color:red;
+        }
+    </style>
+    <style>
+        .charity_btn_1{
+            display: inline-block;
+            position: relative;
+            padding: 3px 5px;
+            overflow: hidden;
+            color: #000;
+            border: 1px solid #c1c1c1;
+            background-color: #fff;
+        }
+        .charity_btn_2{
+            height: 100px;
+            width: 129px;
+            text-align: center;
+            outline: none;
+            background-color: #f79595bf;
+            filter: alpha(opacity=0);
+            -moz-opacity: 0;
+            -khtml-opacity: 0;
+            opacity: 0;
+        }
+        input[type=checkbox] {
+            width: 20px;
+            height: 20px;
+            background-color: #fff;
+            -webkit-appearance:none;
+            border: 1px solid #c9c9c9;
+            border-radius: 2px;
+            outline: none;
+        }
+        .inputCheck input[type=checkbox]:checked{
+            background: url("pictures/闪电.png")no-repeat center;
+        }
+    </style>
+    <!--自适应-->
+    <style>
+        /* 超小型设备（平板电脑，1px 起） */
+        @media (min-width: 1px) {
+            .chddiv1{
+                width: 69px;
+                background-color: #00bbff;
+                height: 2px;
+                margin-top: 6px;
+            }
+            .chddiv2{
+                border-radius: 50%;
+                background-color: #00bbff;
+                height: 15px;
+                color: white;
+                width: 15px;
+                font-size: 10px;
+            }
+            .chddiv3{
+                width: 69px;
+                background-color:#b5b5b5;;
+                height: 2px;
+                margin-top: 6px;
+            }
+            .chddiv4{
+                border-radius: 50%;
+                background-color: #b5b5b5;
+                height: 15px;
+                color: black;
+                width: 15px;
+                font-size: 10px;
+            }
+            .simplefont1{
+                font-size: 0.4rem;
+            }
+            .simplefont2{
+                font-size: 0.5rem;
+            }
+            .chinput1{
+                margin-left: 0rem;
+                width: 26rem;
+                height: 2rem;
+                color: #777777;
+            }
+            .charity_btn_1{
+                display: inline-block;
+                position: relative;
+                padding: 3px 5px;
+                overflow: hidden;
+                margin-left: 0rem;
+                color: #000;
+                border: 1px solid #c1c1c1;
+                background-color: #fff;
+            }
+            .charity_btn_2{
+                height: 70px;
+                width: 80px;
+                text-align: center;
+                outline: none;
+                background-color: #f79595bf;
+                filter: alpha(opacity=0);
+                -moz-opacity: 0;
+                -khtml-opacity: 0;
+                opacity: 0;
+            }
+            .charity_btn_3{
+                display: inline-block;
+                position: relative;
+                padding: 3px 5px;
+                overflow: hidden;
+                margin-left: -3rem;
+                color: #000;
+                border: 1px solid #c1c1c1;
+                background-color: #fff;
+            }
+            .charity_details_div1{
+                margin-left: 10.3rem;
+                color: dimgray;
+                margin-top: 1rem;
+            }
+            .charity_details_div2{
+                margin-top: -5.4rem;
+                margin-left: 1.0rem;
+            }
+            .chddiv5{
+                margin-left: 0rem;
+                margin-top: -2.0rem;
+                border: 1px solid black;
+            }
+            .charity_btn_4{
+                display: inline-block;
+                position: relative;
+                padding: 3px 5px;
+                overflow: hidden;
+                margin-left: -0.01rem;
+                color: #000;
+                border: 1px solid #c1c1c1;
+                /* margin-top: 0rem; */
+                background-color: #fff;
+            }
+            .bottom1{
+                font-size: 1.0rem;
+                font-weight: bold;
+            }
+            .bottom2{
+                font-size: 0.6rem;
+                margin-left: 1.3rem;
+                margin-top: 0.3rem;
+            }
+            .bottom3{
+                color: white;
+                width: 8rem;
+                background-color: white;
+            }
+            .bottom4{
+                color: white;
+                width: 16rem;
+                background-color: white;
+            }
+            .bottom5{
+                width: 1.2rem;
+                height: 1.2rem;
+            }
+            .bottom6{
+                font-size: 0.8rem;
+                float: right;
+            }
+            .bottom7{
+                width: 2rem;
+                height: 2rem;
+            }
+        }
+        /* 小型设备（平板电脑，768px 起） */
+        @media (min-width: 768px) {
+            .chddiv1{
+                width: 103px;
+                background-color: #00bbff;
+                height: 3px;
+                margin-top: 8px;
+            }
+            .chddiv2{
+                border-radius: 50%;
+                background-color: #00bbff;
+                height: 19px;
+                color: white;
+                width: 19px;
+                font-size: 13px;
+            }
+            .chddiv3{
+                width: 103px;
+                background-color:#b5b5b5;;
+                height: 3px;
+                margin-top: 8px;
+            }
+            .chddiv4{
+                border-radius: 50%;
+                background-color: #b5b5b5;
+                height: 19px;
+                color: black;
+                width: 19px;
+                font-size: 13px;
+            }
+            .simplefont1{
+                font-size: 1.3rem;
+            }
+            .simplefont2{
+                font-size: 1.4rem;
+            }
+            .chinput1{
+                margin-left: 0rem;
+                width: 35rem;
+                height: 3.7rem;
+                color: #777777;
+            }
+            .charity_btn_1{
+                display: inline-block;
+                position: relative;
+                padding: 3px 5px;
+                overflow: hidden;
+                margin-left: 0rem;
+                color: #000;
+                border: 1px solid #c1c1c1;
+                background-color: #fff;
+            }
+            .charity_btn_2{
+                height: 85px;
+                width: 112px;
+                text-align: center;
+                outline: none;
+                background-color: #f79595bf;
+                filter: alpha(opacity=0);
+                -moz-opacity: 0;
+                -khtml-opacity: 0;
+                opacity: 0;
+            }
+            .charity_btn_3{
+                display: inline-block;
+                position: relative;
+                padding: 3px 5px;
+                overflow: hidden;
+                margin-left: -3rem;
+                color: #000;
+                border: 1px solid #c1c1c1;
+                background-color: #fff;
+            }
+            .charity_details_div1{
+                margin-left: 13.7rem;
+                color: dimgray;
+                margin-top: 1rem;
+            }
+            .charity_details_div2{
+                margin-top: -5.4rem;
+                margin-left: 1.0rem;
+            }
+            .chddiv5{
+                margin-left: 0rem;
+                margin-top: -2.0rem;
+                border: 1px solid black;
+            }
+            .charity_btn_4{
+                display: inline-block;
+                position: relative;
+                padding: 3px 5px;
+                overflow: hidden;
+                margin-left: -0.01rem;
+                color: #000;
+                border: 1px solid #c1c1c1;
+                /* margin-top: 0rem; */
+                background-color: #fff;
+            }
+            .bottom1{
+                font-size: 1.4rem;
+                font-weight: bold;
+            }
+            .bottom2{
+                font-size: 0.8rem;
+                margin-left: 1.3rem;
+                margin-top: 0.8rem;
+            }
+            .bottom3{
+                color: white;
+                width: 10rem;
+                background-color: white;
+            }
+            .bottom4{
+                color: white;
+                width: 16rem;
+                background-color: white;
+            }
+            .bottom5{
+                width: 2rem;
+                height: 2rem;
+            }
+            .bottom6{
+                font-size: 0.8rem;
+                float: right;
+            }
+            .bottom7{
+                width: 3rem;
+                height: 3rem;
+            }
+
+        }
+
+        /* 中型设备（台式电脑，992px 起） */
+        @media (min-width: 992px) {
+
+            .chddiv1{
+                width: 140px;
+                background-color: #00bbff;
+                height: 4px;
+                margin-top: 10px;
+            }
+            .chddiv2{
+                border-radius: 50%;
+                background-color: #00bbff;
+                height: 24px;
+                color: white;
+                width: 24px;
+                font-size: 17px;
+            }
+            .chddiv3{
+                width: 140px;
+                background-color:#b5b5b5;;
+                height: 4px;
+                margin-top: 10px;
+            }
+            .chddiv4{
+                border-radius: 50%;
+                background-color: #b5b5b5;
+                height: 26px;
+                color: black;
+                width: 26px;
+                font-size: 17px;
+            }
+            .simplefont1{
+                font-size: 1.3rem;
+            }
+            .simplefont2{
+                font-size: 1.4rem;
+
+            }
+            .chinput1{
+                margin-left: -5rem;
+                width: 40rem;
+                height: 3.7rem;
+                color: #777777;
+            }
+            .charity_btn_1{
+                display: inline-block;
+                position: relative;
+                padding: 3px 5px;
+                overflow: hidden;
+                margin-left: -5rem;
+                color: #000;
+                border: 1px solid #c1c1c1;
+                background-color: #fff;
+            }
+            .charity_btn_2{
+                height: 100px;
+                width: 129px;
+                text-align: center;
+                outline: none;
+                background-color: #f79595bf;
+                filter: alpha(opacity=0);
+                -moz-opacity: 0;
+                -khtml-opacity: 0;
+                opacity: 0;
+            }
+            .charity_btn_3{
+                display: inline-block;
+                position: relative;
+                padding: 3px 5px;
+                overflow: hidden;
+                margin-left: -10rem;
+                color: #000;
+                border: 1px solid #c1c1c1;
+                background-color: #fff;
+            }
+            .charity_details_div1{
+                margin-left: 12.3rem;
+                color: dimgray;
+                margin-top: 1rem;
+            }
+            .charity_details_div2{
+                margin-top: -5.4rem;
+                margin-left: 1.0rem;
+            }
+            .chddiv5{
+                margin-left: -5rem;
+                margin-top: -2.0rem;
+                border: 1px solid black;
+            }
+            .charity_btn_4{
+                display: inline-block;
+                position: relative;
+                padding: 3px 5px;
+                overflow: hidden;
+                margin-left: -0.01rem;
+                color: #000;
+                border: 1px solid #c1c1c1;
+                /* margin-top: 0rem; */
+                background-color: #fff;
+            }
+            .bottom1{
+                font-size: 2.2rem;
+                font-weight: bold;
+            }
+            .bottom2{
+                font-size: 1.4rem;
+                margin-left: 1.3rem;
+                margin-top: 1.0rem;
+            }
+            .bottom3{
+                color: white;
+                width: 17rem;
+                background-color: white;
+            }
+            .bottom4{
+                color: white;
+                width: 22rem;
+                background-color: white;
+            }
+            .bottom5{
+                width: 2rem;
+                height: 2rem;
+            }
+            .bottom6{
+                font-size: 1.0rem;
+                float: right;
+            }
+            .bottom7{
+                width: 4rem;
+                height: 4rem;
+            }
+        }
+        /* 大型设备（大台式电脑，1200px 起） */
+        @media (min-width:1200px) {
+
+            .chddiv1{
+                width: 177px;
+                background-color: #00bbff;
+                height: 4px;
+                margin-top: 10px;
+            }
+            .chddiv2{
+                border-radius: 50%;
+                background-color: #00bbff;
+                height: 26px;
+                color: white;
+                width: 26px;
+                font-size: 17px;
+            }
+            .chddiv3{
+                width: 177px;
+                background-color:#b5b5b5;;
+                height: 4px;
+                margin-top: 10px;
+            }
+            .chddiv4{
+                border-radius: 50%;
+                background-color: #b5b5b5;
+                height: 26px;
+                color: black;
+                width: 26px;
+                font-size: 17px;
+            }
+            .simplefont1{
+                font-size: 1.4rem;
+            }
+            .simplefont2{
+                font-size: 1.5rem;
+            }
+            .chinput1{
+                margin-left: -5rem;
+                width: 40rem;
+                height: 3.7rem;
+                color: #777777;
+            }
+            .charity_btn_1{
+                display: inline-block;
+                position: relative;
+                padding: 3px 5px;
+                overflow: hidden;
+                margin-left: -5rem;
+                color: #000;
+                border: 1px solid #c1c1c1;
+                background-color: #fff;
+            }
+            .charity_btn_2{
+                height: 100px;
+                width: 129px;
+                text-align: center;
+                outline: none;
+                background-color: #f79595bf;
+                filter: alpha(opacity=0);
+                -moz-opacity: 0;
+                -khtml-opacity: 0;
+                opacity: 0;
+            }
+            .charity_btn_3{
+                display: inline-block;
+                position: relative;
+                padding: 3px 5px;
+                overflow: hidden;
+                margin-left: -14rem;
+                color: #000;
+                border: 1px solid #c1c1c1;
+                background-color: #fff;
+            }
+            .charity_details_div1{
+                margin-left: 15rem;
+                color: dimgray;
+                margin-top: 1rem;
+            }
+            .charity_details_div2{
+                margin-top: -5.4rem;
+                margin-left: 1.0rem;
+            }
+            .chddiv5{
+                margin-left: -5rem;
+                margin-top: -2.0rem;
+                border: 1px solid black;
+            }
+            .charity_btn_4{
+                display: inline-block;
+                position: relative;
+                padding: 3px 5px;
+                overflow: hidden;
+                margin-left: -0.01rem;
+                color: #000;
+                border: 1px solid #c1c1c1;
+                /* margin-top: 0rem; */
+                background-color: #fff;
+            }
+            .bottom1{
+                font-size: 2.4rem;
+                font-weight: bold;
+            }
+            .bottom2{
+                font-size: 1.4rem;
+                margin-left: 1.3rem;
+                margin-top: 1.0rem;
+            }
+            .bottom3{
+                color: white;
+                width: 17rem;
+                background-color: white;
+            }
+            .bottom4{
+                color: white;
+                width: 22rem;
+                background-color: white;
+            }
+            .bottom5{
+                width: 2rem;
+                height: 2rem;
+            }
+            .bottom6{
+                font-size: 1.2rem;
+                float: right;
+            }
+            .bottom7{
+                width: 4rem;
+                height: 4rem;
+            }
+        }
+    </style>
+    <title>charity_details</title>
+</head>
+<body style="background-color: #e3e3e35e;">
+<img src="pictures/charity2.png" class="img-thumbnail"style="z-index: -2;"/>
+<div  class="container" style="height: auto;background-color: white;position: relative;margin-top: -55px;">
+    <!--进度条-->
+    <div>
+        <div class="row simplefont1"style="margin-top: 15px;">
+            <!--提交资料-->
+            <div class="col-4"align="center">
+                提交资料
+                <!--进度条-->
+                <div class="row" style="margin-left: -5px;margin-top: 10px;">
+                    <div class="chddiv1"></div>
+                    <div class="chddiv2">1</div>
+                    <div class="chddiv1"></div>
+                </div>
+
+
+            </div>
+            <!--审核中-->
+            <div class="col-4"align="center">
+                审核中
+                <!--进度条-->
+                <div class="row" style="margin-left: -5px;margin-top: 10px;">
+                    <div class="chddiv3"></div>
+                    <div class="chddiv4">2</div>
+                    <div class="chddiv3"></div>
+                </div>
+
+            </div>
+            <!--审核结果-->
+            <div class="col-4"align="center">
+                审核结果
+                <!--进度条-->
+                <div class="row" style="margin-left: -5px;margin-top: 10px;">
+                    <div class="chddiv3"></div>
+                    <div class="chddiv4">3</div>
+                    <div class="chddiv3"></div>
+                </div>
+            </div>
+        </div>
+        <div align="center"class="simplefont1" style="margin-top: 15px;color: dimgray;">
+            预计需要2个工作日
+            <br> <br>
+            <hr>
+        </div>
+    </div>
+    <!--表单-->
+    <div style="margin-top: 35px">
+    <h2 style="font-weight: bold;">捐款报名表</h2>
+    <form id="signupForm" method="post" action="/jieshou.jsp"style="margin-top: 40px;">
+    <fieldset>
+        <!--具体信息-->
+        <div class="simplefont2 row">
+            <div class="col-2">
+                 <label for="Minformation">具体信息：</label>
+             </div>
+            <div class="col-4">
+                <input id="Minformation" name="Minformation" type="text"class="chinput1"value="请输入具体信息">
+            </div>
+             <div class="col-6"></div>
+        </div>
+        <!--分类-->
+        <div class="row simplefont2"style="margin-top: 15px">
+            <div class="col-2">
+                <label for="Msort">分类：</label>
+            </div>
+            <div class="col-4">
+                <select  class="chinput1"id="Msort"name="Msort">
+                    <option value ="疾病救助">疾病救助</option>
+                    <option value="救灾">扶贫/救灾</option>
+                    <option value="助学">教育/助学</option>
+                    <option value="动物">环保/动物/保护</option>
+                    <option value="其他">其他</option>
+                </select>            </div>
+            <div class="col-6"></div>
+        </div>
+        <!--所需金额-->
+        <div style="margin-top: 15px"class="simplefont2 row">
+            <div class="col-2">
+                <label for="MmoneyAll">所需金额：</label>
+            </div>
+            <div class="col-4">
+                <input id="MmoneyAll" name="MmoneyAll" type="text"class="chinput1"value="请输入您所需要的金额">
+            </div>
+            <div class="col-6"></div>
+        </div>
+        <!--募捐原因-->
+        <div style="margin-top: 15px"class="simplefont2 row">
+            <div class="col-2">
+                <label for="Mreason">募捐原因：</label>
+            </div>
+            <div class="col-4">
+                <input id="Mreason" name="Mreason" type="text"class="chinput1"value="请输入您需要募捐的原因">
+            </div>
+            <div class="col-6"></div>
+        </div>
+        <!--姓名-->
+        <div style="margin-top: 15px"class="simplefont2 row">
+            <div class="col-2">
+                <label for="Mname">姓名：</label>
+            </div>
+            <div class="col-4">
+                <input id="Mname" name="Mname" type="text"class="chinput1"value="请输入您身份证上的姓名">
+            </div>
+            <div class="col-6"></div>
+        </div>
+        <!--身份证-->
+        <div style="margin-top: 15px"class="row simplefont2">
+            <div class="col-2">
+                <label for="MnameID">身份证：</label>
+            </div>
+            <div class="col-4">
+                <input id="MnameID" name="MnameID" type="text"class="chinput1"value="请输入您身份证上的身份证号">
+            </div>
+            <div class="col-6"></div>
+        </div>
+        <!--证件照片-->
+        <div style="margin-top: 15px" class="row simplefont2">
+            <div class="col-2">
+                <label for="avatar">证件照片：</label>
+            </div>
+            <div class="col-3">
+                <div class="charity_btn_1">
+                    <input type="file" id="avatar" name="avatar" required class="charity_btn_2">
+                    <div style="margin-top: -54px;"align="center">
+                        +上传身份证正面<br><br><br><br>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="charity_btn_3">
+                    <input type="file" id="avatar2" name="avatar2" required class="charity_btn_2">
+                    <div style="margin-top: -54px;"align="center">
+                        +上传身份证反面<br><br><br><br>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2"></div>
+            <div class="charity_details_div1">支持png、jpg、jpeg、bmp格式，不能低于50KB，最大不能超过2M</div>
+            <br><br><br>
+        </div>
+        <!--相关证明-->
+        <div style="margin-top: 15px"class="simplefont2 row">
+            <div class="col-2">
+                <label for="pic">相关证明：</label>
+            </div>
+            <div class="col-6">
+                <div class="chddiv5">
+                    <div class="charity_btn_4">
+                        <input type="file" id="pic" name="pic" required class="charity_btn_2">
+                        <div class="charity_details_div2">
+                            +上传相关证明<br><br><br><br>
+                        </div>
+                    </div>
+                    <br> <br> <br> <br> <br> <br><br><br>
+                </div>
+            </div>
+            <div class="col-4"></div>
+        </div>
+        <!--手机号-->
+        <div style="margin-top: 15px"class="row simplefont2">
+            <div class="col-2">
+                <label for="Mphone">手机号：</label>
+            </div>
+            <div class="col-4">
+                <input id="Mphone" name="Mphone" type="text"class="chinput1"value="请输入您的手机号">
+            </div>
+            <div class="col-6"></div>
+        </div>
+        <p style="margin-top: 15px">
+        <div id="container12"style="margin-left: 0px;margin-top: 40px;">
+               <span>
+                   <input type="checkbox"class="inputCheck" id="agree"name="agree">
+                   <label for="agree"></label>
+               </span>
+        </div>
+        <div for="agree"style="font-weight: normal;font-size: 15px;margin-left: 24px;margin-top: -28px;">请同意我们的声明<a style="cursor: pointer;margin-left: 14px;color: purple">《募捐声明》</a></div><br>
+
+        </p>
+        <p style="margin-left: -42px;">
+            <input class="chinput2" type="submit" value="确认认证">
+        </p>
+        <br>  <br>  <br>
+    </fieldset>
+</form>
+</div>
+</div>
+<br><br><br><br>
+<!--底部-->
+<div class="container-fluid"style="padding-left: 0;padding-right: 0">
+    <div  style="background-color: black;color: white">
+        <div class="row">
+            <div class="col-3">
+                <div style="float: right">
+                    <br>
+                    <div class="bottom1">关于我们</div>
+                    <hr class="bottom3">
+                    <div class="bottom2">在线留言</div>
+                    <div class="bottom2">招贤纳士</div>
+                    <div class="bottom2">新闻报道</div>
+                </div>
+            </div>
+            <div class="col-2">
+                <div style="float: right">
+                    <br>
+                    <div class="bottom1">帮助中心</div>
+                    <hr class="bottom3">
+                    <div class="bottom2">常见问题</div>
+                    <div class="bottom2">侵权举报</div>
+                    <div class="bottom2">色情举报</div>
+                </div>
+            </div>
+            <div class="col-2">
+                <div style="float: right">
+                    <br>
+                    <div class="bottom1">关注我们</div>
+                    <hr class="bottom3">
+                    <div class="bottom2">下载app</div>
+                    <div class="bottom2">
+                        大学生Go！公众号： <a><img src="pictures/二维码.png" class="bottom5"id="erweima1"/></a>
+                    </div>
+                    <br>
+                    <img src="pictures/二维码.png" class="bottom7"id="erweima2"style="visibility: hidden;float: right"/>
+                </div>
+            </div>
+            <div class="col-3">
+                <div style="float: right">
+                    <br>
+                    <div class="bottom1">在线客服</div>
+                    <hr class="bottom4">
+                    <div class="bottom2">大学生Go!·客服QQ: 641639426</div>
+                    <div class="bottom2">大学生Go!·官方QQ群: 64161239426</div>
+                    <div class="bottom2">大学生Go!·客服微信:  <a><img src="pictures/二维码.png" class="bottom5"id="erweima3"/></a></div>
+                    <div class="bottom2">请在工作日10:00-19:00联系客服</div>
+                </div>
+            </div>
+            <div class="col-2">
+                <br> <br> <br> <br> <br> <br> <br>
+                <img src="pictures/二维码.png" class="bottom7"id="erweima4"style="visibility: hidden;"/>
+            </div>
+        </div>
+        <br> <br> <br> <br> <br>
+        <div class="row">
+            <div class="col-4">
+
+            </div>
+            <div class="col-6 bottom6">
+                Copyright © 2004 YoungsGo Systems Incorporated. All rights reserved.
+                <br> <br>
+            </div>
+            <div class="col-2">
+
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

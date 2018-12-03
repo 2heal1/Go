@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>个人_我的捐款</title>
+    <link rel="stylesheet"href="css/bootstrap.min.css">
+    <script src="jquery-1.9.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet"href="index_css.css">
+    <link rel="stylesheet" href="personal.css">
+    <link rel="stylesheet" href="css/jq222.css">
+    <script src="js/jquery-latest.min.js" type="text/javascript"></script>
+    <script src="js/jq22.js"></script>
+    <link rel="stylesheet" href="css/jq22.css">
+    <link rel="stylesheet" href="personal.css">
+    <!--自适应-->
+    <style>
+        /* 超小型设备（平板电脑，1px 起） */
+        @media (min-width: 1px) {
+            .simplefont1{
+                font-size: 0.4rem;
+            }
+        }
+        /* 小型设备（平板电脑，768px 起） */
+        @media (min-width: 768px) {
+            .simplefont1{
+                font-size: 1.3rem;
+            }
+            .perdiv1{
+                margin-top: 15px;
+            }
+            .perdiv2{
+                margin-left: 70px;
+                margin-top: 15px;
+            }
+            .pdiv1{
+                background-position: 0px 0px;
+                width: 60px;
+                background-repeat: no-repeat;
+                height: 60px;
+                border: 1px solid #b5b5b5;
+                border-radius: 50%;
+                background-image: url(pictures/head_1.png);
+                margin-left: -13px;
+                margin-top: 15px;
+            }
+            .pfunction{
+                margin-top: 25px;
+                font-size: 12px;
+                color: #7b7b7b;
+            }
+            .pvertical{
+                width: 3px;
+                height: 22px;
+                background-color: #ff8507;
+                margin-left: 10px;
+                margin-top: -4px;
+            }
+            .perdiv3{
+                margin-left: 8px;
+            }
+            .perdiv4{
+                margin-top: -4px;
+            }
+            .perdiv5{
+                margin-left: 40px;
+                margin-top: 10px;
+            }
+            .perdiv6{
+                margin-left: 20px;
+                margin-top: 39px;
+            }
+            .perdiv7{
+                margin-top: 35px;
+                margin-left: 3px;
+            }
+            .pinput1{
+                border-radius: 24px;
+                width: 100px;
+                height: 22px;
+                color: #4c4c4c;
+                background-color: #fcfcfc;
+                font-size: 13px;
+                border: 1px solid #bdbdbd;
+                outline: none;
+            }
+            .pdiv3{
+                font-size: 13px;
+                color: #757575;
+                margin-left: 28px;
+                margin-top: 55px;
+            }
+            .pcdiv1{
+                margin-left: 10px;
+            }
+            .pcdiv2{
+                margin-top: 9px;
+            }
+            .pcdiv3{
+                width: 2px;
+                margin-left: 53px;
+                height: 45px;
+                background-color: #a6a6a6;
+                margin-top: 0px;
+            }
+            .pcdiv4{
+                width: 2px;
+                margin-left: 53px;
+                height: 45px;
+                background-color: #a6a6a6;
+            }
+            .pcdiv5{
+                width: 2px;
+                margin-left: 53px;
+                height: 60px;
+                background-color: #a6a6a6;
+                margin-top: 0px;
+            }
+            .pcdiv6{
+                width: 2px;
+                margin-left: 53px;
+                height: 70px;
+                background-color: #a6a6a6;
+            }
+            .pround1{
+                margin-left: 47px;
+                background-color: #ffffff;
+                border-radius: 50%;
+                height: 15px;
+                border: 4px solid #fe6b6b;
+                width: 15px;
+            }
+            .pcdiv7{
+                margin-top: -22px;
+            }
+            .pcfont1{
+                font-size: 14px;
+                color: #858585;
+                margin-top: 43px;
+            }
+            .pcfont2{
+                font-size: 14px;
+                margin-top: 10px;
+            }
+            .pcimg1{
+                margin-left: 584px;
+                margin-top: -31px;
+            }
+            .pcdiv8{
+                margin-top: -103px;
+            }
+            .pcdiv9{
+                margin-left: 623px;
+                margin-top: 100px;
+                font-size: 13px;
+                color: dimgray;
+            }
+        }
+
+        /* 中型设备（台式电脑，992px 起） */
+        @media (min-width: 992px) {
+            .simplefont1{
+                font-size: 1.3rem;
+            }
+            .perdiv1{
+                margin-top: 15px;
+            }
+            .perdiv2{
+                margin-left: 70px;
+                margin-top: 15px;
+            }
+            .pdiv1{
+                background-position: 0px 0px;
+                width: 60px;
+                background-repeat: no-repeat;
+                height: 60px;
+                border: 1px solid #b5b5b5;
+                border-radius: 50%;
+                background-image: url(pictures/head_1.png);
+                margin-left: 15px;
+                margin-top: 15px;
+            }
+            .pfunction{
+                margin-top: 25px;
+                font-size: 14px;
+                color: #7b7b7b;
+            }
+            .pvertical{
+                width: 3px;
+                height: 29px;
+                background-color: #ff8507;
+                margin-left: 10px;
+                margin-top: -4px;
+            }
+            .perdiv3{
+                margin-left: 30px;
+            }
+            .perdiv4{
+                margin-top: -4px;
+            }
+            .perdiv5{
+                margin-left: 40px;
+                margin-top: 10px;
+            }
+            .perdiv6{
+                margin-left: 20px;
+                margin-top: 39px;
+            }
+            .perdiv7{
+                margin-top: 35px;
+                margin-left: 3px;
+            }
+            .pinput1{
+                border-radius: 24px;
+                width: 100px;
+                height: 22px;
+                color: #4c4c4c;
+                background-color: #fcfcfc;
+                font-size: 13px;
+                border: 1px solid #bdbdbd;
+                outline: none;
+            }
+            .pdiv3{
+                font-size: 13px;
+                color: #757575;
+                margin-left: 28px;
+                margin-top: 55px;
+            }
+            .pcdiv1{
+                margin-left: 10px;
+            }
+            .pcdiv2{
+                margin-top: 9px;
+            }
+            .pcdiv3{
+                width: 2px;
+                margin-left: 53px;
+                height: 45px;
+                background-color: #a6a6a6;
+                margin-top: 0px;
+            }
+            .pcdiv4{
+                width: 2px;
+                margin-left: 53px;
+                height: 45px;
+                background-color: #a6a6a6;
+            }
+            .pcdiv5{
+                width: 2px;
+                margin-left: 53px;
+                height: 60px;
+                background-color: #a6a6a6;
+                margin-top: 0px;
+            }
+            .pcdiv6{
+                width: 2px;
+                margin-left: 53px;
+                height: 70px;
+                background-color: #a6a6a6;
+            }
+            .pround1{
+                margin-left: 47px;
+                background-color: #ffffff;
+                border-radius: 50%;
+                height: 15px;
+                border: 4px solid #fe6b6b;
+                width: 15px;
+            }
+            .pcdiv7{
+                margin-top: -22px;
+            }
+            .pcfont1{
+                font-size: 14px;
+                color: #858585;
+                margin-top: 43px;
+            }
+            .pcfont2{
+                font-size: 14px;
+                margin-top: 10px;
+            }
+            .pcimg1{
+                margin-left: 673px;
+                margin-top: -31px;
+            }
+            .pcdiv8{
+                margin-top: -103px;
+            }
+            .pcdiv9{
+                margin-left: 747px;
+                margin-top: 100px;
+                font-size: 13px;
+                color: dimgray;
+            }
+        }
+        /* 大型设备（大台式电脑，1200px 起） */
+        @media (min-width:1200px) {
+            .simplefont1{
+                font-size: 1.4rem;
+            }
+            .perdiv1{
+                margin-top: 15px;
+            }
+            .perdiv2{
+                margin-left: 70px;
+                margin-top: 15px;
+            }
+            .pdiv1{
+                background-position: 0px 0px;
+                width: 60px;
+                background-repeat: no-repeat;
+                height: 60px;
+                border: 1px solid #b5b5b5;
+                border-radius: 50%;
+                background-image: url(pictures/head_1.png);
+                margin-left: 25px;
+                margin-top: 15px;
+            }
+            .pfunction{
+                margin-top: 25px;
+                font-size: 14px;
+                color: #7b7b7b;
+            }
+            .pvertical{
+                width: 3px;
+                height: 29px;
+                background-color: #ff8507;
+                margin-left: 10px;
+                margin-top: -4px;
+            }
+            .perdiv3{
+                margin-left: 30px;
+            }
+            .perdiv4{
+                margin-top: -4px;
+            }
+            .perdiv5{
+                margin-left: 40px;
+                margin-top: 10px;
+            }
+            .perdiv6{
+                margin-left: 20px;
+                margin-top: 25px;
+            }
+            .perdiv7{
+                margin-top: 19px;
+                margin-left: 3px;
+            }
+            .pinput1{
+                border-radius: 24px;
+                width: 100px;
+                height: 22px;
+                color: #4c4c4c;
+                background-color: #fcfcfc;
+                font-size: 13px;
+                border: 1px solid #bdbdbd;
+                outline: none;
+            }
+            .pdiv3{
+                font-size: 13px;
+                color: #757575;
+                margin-left: 28px;
+                margin-top: 55px;
+            }
+            .pcdiv1{
+                margin-left: 10px;
+            }
+            .pcdiv2{
+                margin-top: 9px;
+            }
+            .pcdiv3{
+                width: 2px;
+                margin-left: 53px;
+                height: 45px;
+                background-color: #a6a6a6;
+                margin-top: 0px;
+            }
+            .pcdiv4{
+                width: 2px;
+                margin-left: 53px;
+                height: 45px;
+                background-color: #a6a6a6;
+            }
+            .pcdiv5{
+                width: 2px;
+                margin-left: 53px;
+                height: 60px;
+                background-color: #a6a6a6;
+                margin-top: 0px;
+            }
+            .pcdiv6{
+                width: 2px;
+                margin-left: 53px;
+                height: 70px;
+                background-color: #a6a6a6;
+            }
+            .pround1{
+                margin-left: 47px;
+                background-color: #ffffff;
+                border-radius: 50%;
+                height: 15px;
+                border: 4px solid #fe6b6b;
+                width: 15px;
+            }
+            .pcdiv7{
+                margin-top: -22px;
+            }
+            .pcfont1{
+                font-size: 14px;
+                color: #858585;
+                margin-top: 43px;
+            }
+            .pcfont2{
+                font-size: 14px;
+                margin-top: 10px;
+            }
+            .pcimg1{
+                margin-left: 673px;
+                margin-top: -31px;
+            }
+            .pcdiv8{
+                margin-top: -103px;
+            }
+            .pcdiv9{
+                margin-left: 1120px;
+                margin-top: 100px;
+                font-size: 13px;
+                color: dimgray;
+            }
+        }
+    </style>
+</head>
+<body style="background-color: white">
+<div class="container-fluid">
+    <div class="row">
+        <!--功能列表-->
+        <div class="col-2 pdiv2">
+            <!--欢迎-->
+            <div align="center" class="perdiv1">
+                <h4>Hi,用户昵称3247891</h4>
+            </div>
+            <!--头像-->
+            <div class="pdiv1">
+                <div class="perdiv2"><h5>3247891</h5></div>
+            </div>
+            <!--个人中心-->
+            <div class="row pfunction"style="color: black">
+                <div class="pvertical"style="visibility: hidden"></div>
+                <span class="perdiv3">
+                      <img src="pictures/个人中心_灰.png" height="20" class="perdiv4"/>
+                    <a href="personal.html">个人中心</a>
+                </span>
+            </div>
+            <!--我的竞赛-->
+            <div class="row pfunction">
+                <div class="pvertical"style="visibility: hidden"></div>
+                <span class="perdiv3">
+                     <img src="pictures/竞赛_灰.png" height="20" class="perdiv4"/>
+                    <a href="personal_com.html"target="_self">我的竞赛</a>
+                </span>
+            </div>
+            <!--我的捐款-->
+            <div class="row pfunction">
+                <div class="pvertical"></div>
+                <span class="perdiv3">
+                     <img src="pictures/爱心捐款.png" height="20" class="perdiv4"/>
+                    <a href="personal_cha.html"target="_self"style="color: black">我的捐款</a>
+                </span>
+            </div>
+            <!--我的兼职-->
+            <div class="row pfunction">
+                <div class="pvertical"style="visibility: hidden"></div>
+                <span class="perdiv3">
+                     <img src="pictures/兼职_灰.png" height="20" class="perdiv4"/>
+                     <a href="personal_part_time.html"target="_self">我的兼职</a>
+                </span>
+            </div>
+            <!--我的闲置-->
+            <div class="row pfunction">
+                <div class="pvertical"style="visibility: hidden"></div>
+                <span class="perdiv3">
+                     <img src="pictures/闲置_灰.png" height="20" class="perdiv4"/>
+                     <a href="personal_unused.html"target="_self">我的闲置</a>
+                </span>
+            </div>
+            <!--我的失领-->
+            <div class="row pfunction">
+                <div class="pvertical"style="visibility: hidden"></div>
+                <span class="perdiv3">
+                     <img src="pictures/失物招领_灰.png" height="20" class="perdiv4"/>
+                    <a href="personal_find.html"target="_self">我的失领</a>
+                </span>
+            </div>
+            <!--我的消息-->
+            <div class="row pfunction">
+                <div class="pvertical"style="visibility: hidden"></div>
+                <span class="perdiv3">
+                     <img src="pictures/消息_灰.png" height="20" class="perdiv4"/>
+                    <a href="personal_info.html"target="_self">我的消息</a>
+                </span>
+            </div>
+            <!--帐号设置-->
+            <div class="row pfunction">
+                <div class="pvertical"style="visibility: hidden"></div>
+                <span class="perdiv3">
+                     <img src="pictures/设置_灰.png" height="20" class="perdiv4"/>
+                    <a href="personal_set_up.html"target="_self">帐号设置</a>
+                </span>
+            </div>
+            <!--退出-->
+            <div class="row pfunction">
+                <div class="pvertical"style="visibility: hidden"></div>
+                <span  class="perdiv3">
+                     <img src="pictures/退出_灰.png" height="20" class="perdiv4"/>
+                    <a>退出</a>
+                </span>
+            </div>
+            <div>
+                <br>   <br>   <br>   <br>   <br>
+            </div>
+        </div>
+        <div class="col-10"style="background-color: #f7f7f759;">
+            <div class="row">
+                <div class="perdiv5">
+                    <h3>搜索你想要的</h3>
+                </div>
+                <div>
+                    <img src="pictures/搜索--1.png" height="15"class="perdiv6" />
+                </div>
+                <div class="perdiv7"><input type="text"value=" 我的.."class="pinput1"></div>
+            </div>
+            <div class="pdiv3">
+                以下是您最近活跃的板块
+                <hr>
+            </div>
+            <div class="col-12">
+                <div class="pcdiv1">
+                    <br><br>
+                    <h4>我的捐款</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-2 pcdiv2">
+                    <div>
+                        <div class="pcdiv5"></div>
+                        <div class="pround1"></div>
+                        <div class="pcdiv4"></div>
+                        <div class="pcdiv3"></div>
+                        <div class="pround1"></div>
+                        <div class="pcdiv4"></div>
+                        <div class="pcdiv3"></div>
+                        <div class="pround1"></div>
+                        <div class="pcdiv6"></div>
+                    </div>
+                </div>
+                <div class="col-10 pcdiv7">
+                    <!--part_1-->
+                    <div class="pc_1">
+                        <!--时间-->
+                        <div class="pcfont1">
+                            <br>
+                            01-19 09:41
+                        </div>
+                        <!--事例-->
+                        <div class="pcfont2 row"style="margin-left: 0px;">
+                            <a href="personal_cha2.html"target="_self"style="color: black"> 在“帮助孤贫儿童打败先心病”项目捐献人民币<strong>879</strong>元</a>
+                            <div>
+                                <a href="personal_cha2.html"target="_self"><img src="pictures/右箭头 (1).png" width="20"class="pcimg1"/></a>
+                            </div>
+                        </div>
+                        <br>
+                    </div><br><br><br>
+                    <!--part_2-->
+                    <div class="pc_1 pcdiv8">
+                        <!--时间-->
+                        <div class="pcfont1">
+                            <br>
+                            01-19 09:41
+                        </div>
+                        <!--事例-->
+                        <div class="pcfont2 row"style="margin-left: 0px;">
+                            在“帮助孤贫儿童打败先心病”项目捐献人民币<strong>879</strong>元
+                            <div>
+                                <a><img src="pictures/右箭头 (1).png" width="20"class="pcimg1"/></a>
+                            </div>
+                        </div>
+                        <br>
+                    </div><br><br><br>
+                    <!--part_3-->
+                    <div class="pc_1 pcdiv8">
+                        <!--时间-->
+                        <div class="pcfont1">
+                            <br>
+                            01-19 09:41
+                        </div>
+                        <!--事例-->
+                        <div class="pcfont2 row"style="margin-left: 0px;">
+                            在“帮助孤贫儿童打败先心病”项目捐献人民币<strong>879</strong>元
+                            <div>
+                                <a><img src="pictures/右箭头 (1).png" width="20"class="pcimg1"/></a>
+                            </div>
+                        </div>
+                        <br>
+                    </div><br><br><br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10"></div>
+                <div class="col-1 row">
+                    <a style="visibility: hidden">上一页</a>
+                    <a style="margin-left: 20px">下一页</a>
+                </div>
+                <div class="col-1"></div>
+            </div>
+            <br>  <br>  <br>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>

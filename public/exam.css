@@ -1,0 +1,124 @@
+.espan1{
+    font-size: 10px;
+    color: #696969e0;
+    margin-left: 92px;
+}
+.espan2{
+    margin-left: 230px;
+    font-size: 13px;
+    color: #69696991;
+}
+.eximg1{
+    background-color: #8becef;
+    border-radius: 50%;
+    width: 70px;
+    background-repeat: no-repeat;
+    background-position: 15px 15px;
+    height: 70px;
+    background-image: url(pictures/历年真题.png);
+    margin-left: 40px;
+    margin-top: 25px;
+    margin-bottom: 40px;
+}
+.eximg2{
+    background-color: #4b8eef;
+    border-radius: 50%;
+    width: 70px;
+    background-repeat: no-repeat;
+    background-position: 15px 15px;
+    height: 70px;
+    background-image: url(pictures/模拟试卷.png);
+    margin-left: 50px;
+    margin-top: 25px;
+}
+.eximg3{
+    background-color: #9ef3bb;
+    border-radius: 50%;
+    width: 70px;
+    background-repeat: no-repeat;
+    background-position: 15px 15px;
+    height: 70px;
+    background-image: url(pictures/章节练习.png);
+    margin-left: 50px;
+    margin-top: 25px;
+}
+.eximg4{
+    background-color: #f985c6;
+    border-radius: 50%;
+    width: 70px;
+    background-repeat: no-repeat;
+    background-position: 15px 15px;
+    height: 70px;
+    background-image: url(pictures/错题收藏.png);
+    margin-left: 40px;
+}
+.eximg5{
+    background-color: #efaf8b;
+    border-radius: 50%;
+    width: 70px;
+    background-repeat: no-repeat;
+    background-position: 15px 18px;
+    height: 70px;
+    background-image: url(pictures/每日一练.png);
+    margin-left: 50px;
+}
+.eximg6{
+    background-color: #eaef8b;
+    border-radius: 50%;
+    width: 70px;
+    background-repeat: no-repeat;
+    background-position: 15px 15px;
+    height: 70px;
+    background-image: url(pictures/离线下载.png);
+    margin-left: 50px;
+}
+.exli1{
+    width: 10px;
+    color: #ffffff;
+    height: 10px;
+    border: 1px solid #ffffff00;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 50%;
+    background-color: #50e1ce;
+}
+.examdiv4:hover{
+    transform: scale(1.35);
+    cursor: default;
+    filter: alpha(Opacity=80);
+    -moz-opacity: 0.8;
+    opacity: 0.8;
+    transition: all 2s;
+}
+.examdiv5:hover{
+    transform: scale(1.35);
+    cursor: default;
+    filter: alpha(Opacity=80);
+    -moz-opacity: 0.8;
+    opacity: 0.8;
+    transition: all 2s;
+}
+.examdiv6:hover{
+    transform: scale(1.35);
+    cursor: default;
+    filter: alpha(Opacity=80);
+    -moz-opacity: 0.8;
+    opacity: 0.8;
+    transition: all 2s;
+}
+.examdiv7:hover{
+    transform: scale(1.35);
+    cursor: default;
+    filter: alpha(Opacity=80);
+    -moz-opacity: 0.8;
+    opacity: 0.8;
+    transition: all 2s;
+}
+.examdiv8:hover{
+    transform: scale(1.35);
+    cursor: default;
+    filter: alpha(Opacity=80);
+    -moz-opacity: 0.8;
+    opacity: 0.8;
+    transition: all 2s;
+}

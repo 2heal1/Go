@@ -1,0 +1,150 @@
+.pardiv1{
+    margin-left: 56px;
+    font-weight: bold;
+    margin-top: 2px;
+}
+.pardiv2{
+    background-color: #e3e3e329;
+    font-size: 13px;
+    color: #666666;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.pardiv3{
+    background-color: #3096ff;
+    color: white;
+    width: 37px;
+}
+.pardiv4{
+    margin-left: 30px;
+    width: 37px;
+}
+.pardiv5{
+    margin-top: 10px;
+}
+.parfont1{
+    background-color: #3096ff;
+    font-size: 13px;
+    color: white;
+    margin-left: 5px;
+}
+.parfont2{
+    background-color: #3096ff;
+    font-size: 13px;
+    color: white;
+    margin-left: 5px;
+
+}
+.parfont3{
+    color: #666666;
+    font-size: 13px;
+    margin-left: 15px
+}
+.parfont4{
+    color: #666666;
+    font-size: 13px;
+    margin-left: 15px
+}
+.parfont5{
+    font-size: 13px;
+    color: #838383;
+}
+.parfont6{
+    margin-left: 20px;
+    margin-top: 4px;
+}
+.parfont7{
+    margin-left: 10px;
+    margin-top: 4px;
+}
+.parfont8{
+    margin-left: 5px;
+    margin-top: 4px;
+}
+.parfont9{
+    border: 1px solid #afafaf;
+    line-height: 24px;
+    font-size: 12px;
+    color: #838383;
+    height: 26px;
+}
+.parfont10{
+    border: 1px solid #afafaf;
+    line-height: 24px;
+    font-size: 12px;
+    color: #838383;
+    height: 26px;
+    margin-left: 10px;
+}
+.parhr1{
+    margin-left: 45px;
+    margin-right: 45px;
+    border: 1px solid #eaeaea;
+}
+.parbtn1{
+    height: 47px;
+    width: 110px;
+    border: 1px solid #3096ff;
+    background-color: #3096ff;
+    color: white;
+}
+
+.parbtn2{
+    height: 47px;
+    width: 110px;
+    border: 1px solid #eaeaea9c;
+    background-color: #d4d4d42e;
+    color: #5c5c5c;
+}
+.parbtn2:hover{
+    color:#3096ff ;
+}
+.parbtn3{
+    border: 1px solid beige;
+    width: 100px;
+    color: white;
+    border-radius: 5px;
+    height: 38px;
+    background-color: #3096ff;
+}
+.parbtn3:hover{
+    background-color: #2777c9;
+}
+.parbtn4{
+    height: 43px;
+    width: 364px;
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+    border: 1px solid black;
+    background-color: #000000;
+    margin-top: 50px;
+}
+.pardbtn1{
+    font-size: 27px;
+    color: #fb4d4d;
+    font-weight: bold;
+}
+.pardbtn2{
+    border: 1px solid beige;
+    width: 208px;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: -14px;
+    height: 53px;
+    background-color: #3096ff;
+}
+.pardbtn2:hover{
+    background-color: #2777c9;
+}
+.pardvertical1{
+    width: 4px;
+    height: 23px;
+    background-color: #0784ff;
+    margin-left: 10px;
+    margin-top: 0px;
+}
+.pfabu21{
+    margin-left: 75px;
+}

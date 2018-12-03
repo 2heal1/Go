@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"href="css/bootstrap.min.css">
+    <script src="jquery-1.9.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet"href="index_css.css">
+    <link rel="stylesheet"href="find_detail.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet"href="charity_details.css">
+    <script src="js/jquery-latest.min.js" type="text/javascript"></script>
+    <script src="js/jq22.js"></script>
+    <link rel="stylesheet" href="css/jq22.css">
+    <title>简历</title>
+    <!--自适应-->
+    <style>
+        /* 超小型设备（平板电脑，1px 起） */
+        @media (min-width: 1px) {
+            .simplefont1{
+                font-size: 0.4rem;
+            }
+        }
+        /* 小型设备（平板电脑，768px 起） */
+        @media (min-width: 768px) {
+            .simplefont1{
+                font-size: 1.3rem;
+            }
+            .ppjdiv1{
+                font-size: 13px;
+                color: dimgray;
+                margin-left: 5px;
+                width: 135px;
+                height: 32px;
+            }
+            .ppjdiv2{
+                margin-left: 150px;
+                border: 1px solid black;
+                margin-top: -20px;
+                width: 498px;
+            }
+            .ppjdiv3{
+                font-size: 14px;
+                color: #585858;
+                margin-left: 33px;
+                margin-top: 5px;
+            }
+            .ppjdiv4{
+                font-size: 14px;
+                color: #585858;
+                margin-left: 22px;
+                margin-top: 5px;
+            }
+        }
+
+        /* 中型设备（台式电脑，992px 起） */
+        @media (min-width: 992px) {
+            .simplefont1{
+                font-size: 1.3rem;
+            }
+            .ppjdiv1{
+                font-size: 13px;
+                color: dimgray;
+                margin-left: 5px;
+                width: 165px;
+                height: 32px;
+            }
+            .ppjdiv2{
+                margin-left: 150px;
+                border: 1px solid black;
+                margin-top: -20px;
+                width: 700px;
+            }
+            .ppjdiv3{
+                font-size: 14px;
+                color: #585858;
+                margin-left: 33px;
+                margin-top: 5px;
+            }
+            .ppjdiv4{
+                font-size: 14px;
+                color: #585858;
+                margin-left: 100px;
+                margin-top: 5px;
+            }
+        }
+        /* 大型设备（大台式电脑，1200px 起） */
+        @media (min-width:1200px) {
+            .simplefont1{
+                font-size: 1.4rem;
+            }
+            .ppjdiv1{
+                font-size: 13px;
+                color: dimgray;
+                margin-left: 5px;
+                width: 165px;
+                height: 32px;
+            }
+            .ppjdiv2{
+                margin-left: 150px;
+                border: 1px solid black;
+                margin-top: -20px;
+                width: 700px;
+            }
+            .ppjdiv3{
+                font-size: 14px;
+                color: #585858;
+                margin-left: -8px;
+                margin-top: 5px;
+            }
+            .ppjdiv4{
+                font-size: 14px;
+                color: #585858;
+                margin-left: 100px;
+                margin-top: 5px;
+            }
+        }
+    </style>
+    <style>
+        .charity_btn_1{
+            display: inline-block;
+            position: relative;
+            padding: 3px 5px;
+            overflow: hidden;
+            color: #000;
+            border: 1px solid #c1c1c1;
+            background-color: #fff;
+        }
+        .charity_btn_2{
+            height: 100px;
+            /* position: absolute; */
+            width: 129px;
+            /* left: 0; */
+            text-align: center;
+            outline: none;
+            background-color: #f79595bf;
+            filter: alpha(opacity=0);
+            -moz-opacity: 0;
+            -khtml-opacity: 0;
+            opacity: 0;
+        }
+        input[type=checkbox] {
+            width: 20px;
+            height: 20px;
+            background-color: #fff;
+            -webkit-appearance:none;
+            border: 1px solid #c9c9c9;
+            border-radius: 2px;
+            outline: none;
+        }
+        .inputCheck input[type=checkbox]:checked{
+            background: url("pictures/闪电.png")no-repeat center;
+        }
+    </style>
+</head>
+<body style="background-color: #e3e3e35e;">
+<div  class="container" style="height: 1700px;background-color: white;position: relative;margin-top: -55px">
+    <br>
+    <form id="signupForm" method="post" action="/jieshou.jsp"style="margin-top: 40px;">
+        <fieldset>
+            <div style="border: 1px solid black;">
+                <div class="col-12"style="background-color: #d0d0d0;color: #444444;">填写你的简历信息</div>
+                <hr class="fdhr1">
+                <!--必填信息-->
+                <div>
+                    <div class="row"style="margin-left: 38px;">
+                        <div class="fdvertical"></div>
+                        <div style="margin-left:10px">必填信息</div>
+                    </div>
+                    <!--简历名称-->
+                    <div style="margin-left: 150px;margin-top: 20px;"class="row">
+                        <label for="pjname" style="font-size: 14px;color: #585858;margin-left: 27px;margin-top: 5px;"><span style="color: red">*</span>简历名称：</label>
+                        <input type="text"id="pjname" name="pjname"value="请填写您的简历名称"style="font-size: 13px;color: dimgray;margin-left: 5px;width: 215px;height: 32px;">
+                        <div class="fsinput1"> <span style="color: dimgray">例如:网络安全工程师 </span></div>
+                    </div>
+                    <!--工作经验-->
+                    <div style="margin-left: 150px;margin-top: 20px;"class="row">
+                        <label for="pjexperience" style="font-size: 14px;color: #585858;margin-left: 28px;margin-top: 5px;"><span style="color: red">*</span>工作经验：</label>
+                        <select class="fsinput2" id="pjexperience"name="pjexperience">
+                            <option value ="experience">请选择您的工作经验</option>
+                            <option value ="0to1">0-1年</option>
+                            <option value ="1to3">1年-3年</option>
+                            <option value ="3to6">3年-6年</option>
+                            <option value ="over6">6年以上</option>
+                            <option value ="unlimited">经验不限</option>
+                        </select>
+                        <div class="fsinput1"style="color: dimgray">请选择您的工作经验</div>
+                    </div>
+                    <!--个人学历-->
+                    <div style="margin-left: 150px;margin-top: 20px;"class="row">
+                        <label for="pjeducation" style="font-size: 14px;color: #585858;margin-left: 28px;margin-top: 5px;"><span style="color: red">*</span>个人学历：</label>
+                        <select class="fsinput2" id="pjeducation"name="pjeducation">
+                            <option value ="type">请选择您的学历</option>
+                            <option value ="dazhuan">大专</option>
+                            <option value ="benke">本科</option>
+                            <option value ="other">其他</option>
+                        </select>
+                        <div class="fsinput1"style="color: dimgray">请选择您的学历</div>
+                    </div>
+                    <!--详情-->
+                    <div style="margin-left: 150px;margin-top: 20px;"class="row">
+                        <label for="fsdetail" style="font-size: 14px;color: #585858;margin-left: 55px;margin-top: 5px;"><span style="color: red">*</span>详情：</label>
+                        <input type="text"id="fsdetail" name="fsdetail"class="fsinput3">
+                        <div class="fsinput1"style="color: dimgray">请填写个人的能力、特点及优势所在</div>
+                    </div>
+                    <br>
+                    <hr class="fdhr2">
+                </div>
+                <!--选填信息-->
+                <div style="margin-top: 30px;">
+                    <div class="row"style="margin-left: 38px;">
+                        <div class="fdvertical"></div>
+                        <div style="margin-left:10px;">选填信息：</div>
+                    </div>
+                    <!--简历是否公开-->
+                    <div style="margin-left: 150px;margin-top: 20px;"class="row">
+                        <label for="pjopen" style="font-size: 14px;color: #585858;margin-left: 42px;margin-top: 5px;">简历是否公开：</label>
+                        <select class="fsinput2" id="pjopen"name="pjopen">
+                            <option value ="experience">您的简历是否公开</option>
+                            <option value ="0to1">是</option>
+                            <option value ="1to3">否</option>
+                        </select>
+                        <div class="fsinput1"style="color: dimgray">请选择是否公开您的简历</div>
+                    </div>
+                    <!--工作类型-->
+                    <div style="margin-left: 150px;margin-top: 20px;"class="row">
+                        <label for="pjtype" style="font-size: 14px;color: #585858;margin-left: 70px;margin-top: 5px;">工作类型：</label>
+                        <select class="fsinput2" id="pjtype"name="pjtype">
+                            <option value ="type">请选择您的工作类型</option>
+                            <option value ="full">全职</option>
+                            <option value ="part">兼职</option>
+                            <option value ="other">其他</option>
+                        </select>
+                        <div class="fsinput1"> <span style="color: dimgray">请选择您的工作类型</span></div>
+                    </div>
+                    <br>
+                    <hr class="fdhr2">
+                </div>
+                <!--联系方式-->
+                <div style="margin-top: 30px;">
+                    <div class="row"style="margin-left: 38px;">
+                        <div class="fdvertical"></div>
+                        <div style="margin-left:10px;">联系方式：</div>
+                        <div>
+                            <br><br>
+                            <label for="fsnickname" class="ppjdiv3">称呼：</label>
+                            <input type="text"id="fsnickname" name="fsnickname"class="ppjdiv1">
+
+                            <label for="fsphone" class="ppjdiv4">电话：</label>
+                            <input type="text"id="fsphone" name="fsphone"class="ppjdiv1">
+
+                            <label for="fswechat" class="ppjdiv4">微信：</label>
+                            <input type="text"id="fswechat" name="fswechat"class="ppjdiv1">
+                        </div>
+                    </div>
+
+                    <br>
+                    <hr class="fdhr2"style="background-color: white">
+                </div>
+                <!--上传图片-->
+                <div style="margin-top: 30px;">
+                    <div class="row"style="margin-left: 38px;">
+                        <div class="fdvertical"></div>
+                        <div style="margin-left:10px;">上传图片：</div>
+                    </div>
+                    <div class="ppjdiv2">
+                        <div class="charity_btn_1"style=" margin-top: 20px;margin-left: 20px;">
+                            <input type="file" id="pic" name="pic" required class="charity_btn_2">
+                            <div style="margin-top: -54px;margin-left: 10px;">
+                                +上传相关图片<br><br><br><br>
+                            </div>
+                        </div>
+                        <br> <br> <br> <br> <br> <br><br><br>
+                    </div>
+                    <br>
+                    <div id="container12"style="margin-left: 28px;margin-top: 40px;">
+               <span>
+                   <input type="checkbox"class="inputCheck" id="agree"name="agree">
+                   <label for="agree"></label>
+               </span>
+                    </div>
+                    <div for="agree"style="font-weight: normal;font-size: 15px;margin-left: 54px;margin-top: -33px;">请同意我们的声明<a style="cursor: pointer;margin-left: 14px;color: purple">《发布申明》</a></div><br>
+                    </p>
+                    <p style="margin-left: -19px;">
+                        <input class="chinput2" type="submit" value="立即发布">
+                    </p>
+                </div>
+                <br><br><br>
+            </div>
+        </fieldset>
+    </form>
+</div>
+<!--底部-->
+<div  style="background-color: black;color: white">
+    <div style="margin-left: 215px;">
+        <div>
+            <br>
+            <div style="font-size: 24px;font-weight: bold;">关于我们</div>
+            <hr style=" color: white;width: 170px;background-color: white;">
+            <div style="margin-left: 13px; margin-top: 10px;">在线留言</div>
+            <div style="margin-left: 13px;margin-top: 3px;">招贤纳士</div>
+            <div style="margin-left: 13px;margin-top: 3px;">新闻报道</div>
+        </div>
+        <div style="margin-left: 300px;margin-top: -141px;">
+            <div style="font-size: 24px;font-weight: bold;">帮助中心</div>
+            <hr style=" color: white;width: 170px;background-color: white;">
+            <div style="margin-left: 13px; margin-top: 10px;">常见问题</div>
+            <div style="margin-left: 13px;margin-top: 3px;">侵权举报</div>
+            <div style="margin-left: 13px;margin-top: 3px;">色情举报</div>
+        </div>
+        <div style="margin-top: -141px;margin-left: 555px;">
+            <div style="font-size: 24px;font-weight: bold;">关注我们</div>
+            <hr style=" color: white;width: 170px;background-color: white;">
+            <div style="margin-left: 13px; margin-top: 10px;">下载app</div>
+            <div style="margin-left: 13px;margin-top: 3px;">大学生Go！公众号： <a><img src="pictures/二维码.png" height="20" width="20"/></a></div></div>
+    </div>
+    <div style="margin-left: 1180px;margin-top: -120px;">
+        <div style="font-size: 24px;font-weight: bold;">在线客服</div>
+        <hr style=" color: white;width: 170px;background-color: white;">
+        <div style="margin-left: 2px; margin-top: 10px;">大学生Go!·客服QQ: 641639426</div>
+        <div style="margin-left: 2px;margin-top: 3px;">大学生Go!·官方QQ群: 64161239426</div>
+        <div style="margin-left: 2px;margin-top: 3px;">大学生Go!·客服微信:  <a><img src="pictures/二维码.png" height="20" width="20"/></a></div>
+        <div style="margin-left: 2px;margin-top: 3px;">请在工作日10:00-19:00联系客服</div>
+    </div>
+    <br> <br> <br> <br> <br>
+    <div style="margin-left: 547px;font-size: 13px;">
+        Copyright © 2004 YoungsGo Systems Incorporated. All rights reserved.
+        <br> <br>
+    </div>
+</div>
+</body>
+</html>

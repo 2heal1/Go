@@ -1,0 +1,38 @@
+.fdhr1{
+    width: 90%;
+    margin-top: 33px;
+    background-color: #ff8c1b;
+    margin-left: 48px;
+}
+.fdhr2{
+    width: 90%;
+    background-color: black;
+    margin-left: 47px;
+}
+.fdvertical{
+    width: 5px;
+    height: 25px;
+    background-color: #ff4125;
+    margin-left: 10px;
+    margin-top: -1px;
+}
+.fsinput1{
+    font-size: 13px;
+    margin-top: 3px;
+    margin-left: 10px;
+    color: blue;
+}
+.fsinput2{
+    width: 215px;
+    height: 32px;
+    margin-left: 4px;
+    font-size: 13px;
+}
+.fsinput3{
+    font-size: 13px;
+    color: dimgray;
+    margin-left: 5px;
+    width: 300px;
+    height: 115px;
+    outline: none;
+}

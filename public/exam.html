@@ -1,0 +1,3335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"href="css/bootstrap.min.css">
+    <script src="jquery-1.9.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet"href="index_css.css">
+    <link rel="stylesheet"href="competition.css">
+    <link rel="stylesheet"href="charity.css">
+    <link rel="stylesheet"href="exam.css">
+    <link rel="stylesheet" href="css/jq22.css">
+    <script src="js/banner.js" type="text/javascript"></script>
+    <link href="css/banner3.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/jq222.css">
+    <script src="js/jquery-latest.min.js" type="text/javascript"></script>
+    <script src="js/jq22.js"></script>
+    <title>考试Go！</title>
+    <style>
+
+        #part1_1:hover{
+            box-shadow: 1px 5px 8px 2px #e9e9e9;
+            transition: all 0.8s;
+        }
+        #part1_1{
+            transition: all 2s;
+        }
+        #part2_1{
+            transition: all 0.8s;
+        }
+        #part3_1:hover{
+            box-shadow: 1px 5px 8px 2px #e9e9e9;
+            transition: all 0.8s;
+        }
+        #part3_1{
+            transition: all 2s;
+        }
+        #part4_1{
+            transition: all 0.8s;
+        }
+        .aa{
+            cursor: pointer;
+        }
+        .aa:hover{
+            color: dimgray;
+        }
+
+    </style>
+    <style>
+        input[type=checkbox] {
+            /*-ms-transform: scale(2); !* IE *!*/
+            /*-moz-transform: scale(2); !* FireFox *!*/
+            /*-webkit-transform: scale(2); !* Safari and Chrome *!*/
+            /*-o-transform: scale(2); !* Opera *!*/
+            width: 20px;
+            height: 20px;
+            background-color: #fff;
+            -webkit-appearance:none;
+            border: 1px solid #c9c9c9;
+            border-radius: 2px;
+            outline: none;
+        }
+        .checkBox input[type=checkbox]:checked{
+            background: url("pictures/闪电.png")no-repeat center;
+        }
+    </style>
+    <!--自适应-->
+    <style>
+        /* 超小型设备（平板电脑，1px 起） */
+        @media (min-width: 1px) {
+            .imgbox {
+                width: 531px;
+                height: 300px;
+                position: relative;
+                background-color: #222222;
+                overflow: hidden;
+                border-radius: 5px;
+            }
+            .banner {
+                margin-left: -4px;
+                width: 254px;
+                height: 125px;
+                background-color: aqua;
+                position: relative;
+                overflow: hidden;
+                cursor: pointer;
+            }
+            .charity_i1{
+                height: 43%;
+                margin-left: -703px;
+                width: 20%;
+                margin-top: 0px;
+            }
+            .div3{
+                color: #3a3434;
+                font-weight: bold;
+                display: none;
+            }
+            .div4{
+                color: #3a3434;
+                font-weight: bold;
+                display: block;
+            }
+            .simplefont1{
+                font-size: 0.4rem;
+            }
+            .simplefont2{
+                font-size: 0.4rem;
+            }
+            .cli2{
+                width: 1.5rem;
+                color: #ffffff;
+                height: 1.5rem;
+                border: 0.1rem solid #ffffff00;
+                text-align: center;
+                font-size: 0.6rem;
+                background-color: #50e1ce;
+            }
+            .cli1{
+                width: 1.5rem;
+                color: #747474;
+                height: 1.5rem;
+                border: 0.1rem solid #66666685;
+                text-align: center;
+                font-size: 0.6rem;
+                margin-left: 0.8rem;
+            }
+            .bottom1{
+                font-size: 1.0rem;
+                font-weight: bold;
+            }
+            .bottom2{
+                font-size: 0.6rem;
+                margin-left: 1.3rem;
+                margin-top: 0.3rem;
+            }
+            .bottom3{
+                color: white;
+                width: 8rem;
+                background-color: white;
+            }
+            .bottom4{
+                color: white;
+                width: 16rem;
+                background-color: white;
+            }
+            .bottom5{
+                width: 1.2rem;
+                height: 1.2rem;
+            }
+            .bottom6{
+                font-size: 0.8rem;
+                float: right;
+            }
+            .bottom7{
+                width: 2rem;
+                height: 2rem;
+            }
+            .examdiv1{
+                display: none;
+            }
+            .espan1{
+                font-size: 10px;
+                color: #696969e0;
+                margin-left: 39px;
+            }
+            .examdiv2{
+                margin-left: 3px;
+            }
+            .examdiv3{
+                margin-left: 10px;
+            }
+            .examdiv4{
+                margin-left: 10px;
+            }
+            .examdiv5{
+                margin-top: -8px;
+                margin-left: 134px;
+            }
+            .examdiv6{
+                margin-left: 10px;
+                margin-top: -50px;
+            }
+            .examdiv7{
+                margin-left: 9px;
+                margin-top: 15px;
+            }
+            .examdiv8{
+                margin-top: -70px;
+                margin-left: 0px;
+            }
+            .examdiv9{
+                margin-left: -3px;
+            }
+            .exfont1{
+                color: red;
+                font-size: 12px;
+            }
+            .exfont2{
+                font-size: 14px;
+            }
+            .espan2{
+                font-size: 10px;
+                margin-top: 5px;
+                color: #69696991;
+                margin-left: 120px;
+            }
+            .examdiv8{
+                display: block;
+            }
+            .examdiv9{
+                display: none;
+            }
+            .exfont1{
+                color: red;
+                font-size: 15px;
+            }
+            .exfont2{
+                font-size: 16px;
+            }
+            .espan2{
+                font-size: 13px;
+                color: #69696991;
+                margin-top: 5px;
+                margin-left: 232px;
+            }
+            .examdiv14{
+                display: none;
+            }
+            .examdiv15{
+                display: block;
+            }
+            .espan3{
+                font-size: 10px;
+                color: #69696991;
+                margin-top: 5px;
+                margin-left: 41px;
+            }
+            .espan4{
+                margin-left: 20px;
+            }
+            .espan5{
+                margin-left: 20px;
+            }
+            .espan6{
+                margin-left: 34px;
+            }
+            .espan7{
+                margin-left: -34px
+            }
+            .examdiv10{
+                margin-left: 50px;
+                font-size: 16px;
+            }
+            .examdiv11{
+                color: red;
+                margin-left: 50px;
+                margin-top: 15px;
+                font-size: 12px;
+            }
+            .examdiv12{
+                margin-top: 5px;
+                margin-left: 50px;
+            }
+            .eximg1{
+                background-color: #8becef;
+                border-radius: 50%;
+                width: 70px;
+                background-repeat: no-repeat;
+                background-position: 15px 15px;
+                height: 70px;
+                background-image: url(pictures/历年真题.png);
+                margin-left: 40px;
+                margin-top: 25px;
+                margin-bottom: 40px;
+            }
+            .eximg2{
+                background-color: #4b8eef;
+                border-radius: 50%;
+                width: 70px;
+                background-repeat: no-repeat;
+                background-position: 15px 15px;
+                height: 70px;
+                background-image: url(pictures/模拟试卷.png);
+                margin-left: 50px;
+                margin-top: 25px;
+            }
+            .eximg3{
+                background-color: #9ef3bb;
+                border-radius: 50%;
+                width: 70px;
+                background-repeat: no-repeat;
+                background-position: 15px 15px;
+                height: 70px;
+                background-image: url(pictures/章节练习.png);
+                margin-left: 41px;
+                margin-top: -4px;
+            }
+            .eximg4{
+                background-color: #f985c6;
+                border-radius: 50%;
+                width: 70px;
+                background-repeat: no-repeat;
+                background-position: 15px 15px;
+                height: 70px;
+                background-image: url(pictures/错题收藏.png);
+                margin-left: 51px;
+                margin-top: -3px;
+            }
+            .eximg5{
+                background-color: #efaf8b;
+                border-radius: 50%;
+                width: 70px;
+                background-repeat: no-repeat;
+                background-position: 15px 18px;
+                height: 70px;
+                background-image: url(pictures/每日一练.png);
+                margin-left: 44px;
+                margin-top: 30px;
+            }
+            .eximg6{
+                background-color: #eaef8b;
+                border-radius: 50%;
+                width: 70px;
+                background-repeat: no-repeat;
+                background-position: 15px 15px;
+                height: 70px;
+                background-image: url(pictures/离线下载.png);
+                margin-left: 50px;
+                margin-top: 30px;
+            }
+            .examdiv13{
+                margin-top: 73px;
+                margin-left: 8px;
+            }
+            .examfont1{
+                font-size: 13px;
+            }
+            .exampan1{
+                margin-top: -13px;
+                margin-left: 298px;
+            }
+            .exli1{
+                width: 10px;
+                color: #ffffff;
+                height: 10px;
+                border: 1px solid #ffffff00;
+                text-align: center;
+                font-size: 16px;
+                border-radius: 50%;
+                background-color: #50e1ce;
+                float: left;
+                margin-left: 10px;
+            }
+            .exam1{
+                margin-left: 7px;
+                margin-bottom: 23px
+            }
+
+        }
+        /* 小型设备（平板电脑，768px 起） */
+        @media (min-width: 768px) {
+            .imgbox {
+                width: 742px;
+                height: 300px;
+                position: relative;
+                background-color: #222222;
+                overflow: hidden;
+                border-radius: 5px;
+            }
+            .banner {
+                margin-left: -4px;
+                width: 225px;
+                height: 173px;
+                background-color: aqua;
+                position: relative;
+                overflow: hidden;
+                cursor: pointer;
+            }
+            .charity_i1{
+                height: 59%;
+                margin-left: -703px;
+                width: 19%;
+                margin-top: 0px;
+            }
+            .div3{
+                color: #3a3434;
+                font-weight: bold;
+                font-size: 5px;
+                display: none;
+            }
+            .div4{
+                color: #3a3434;
+                font-weight: bold;
+                display: block;
+            }
+            .simplefont1{
+                font-size: 1.3rem;
+            }
+            .simplefont2{
+                font-size: 1.3rem;
+            }
+            .cli2{
+                width: 2.0rem;
+                color: #ffffff;
+                height: 2.0rem;
+                border: 0.1rem solid #ffffff00;
+                text-align: center;
+                font-size: 1.3rem;
+                background-color: #50e1ce;
+            }
+            .cli1{
+                width: 2.0rem;
+                color: #747474;
+                height: 2.0rem;
+                border: 0.1rem solid #66666685;
+                text-align: center;
+                font-size: 1.3rem;
+                margin-left: 1.6rem;
+            }
+            .bottom1{
+                font-size: 1.4rem;
+                font-weight: bold;
+            }
+            .bottom2{
+                font-size: 0.8rem;
+                margin-left: 1.3rem;
+                margin-top: 0.8rem;
+            }
+            .bottom3{
+                color: white;
+                width: 10rem;
+                background-color: white;
+            }
+            .bottom4{
+                color: white;
+                width: 16rem;
+                background-color: white;
+            }
+            .bottom5{
+                width: 2rem;
+                height: 2rem;
+            }
+            .bottom6{
+                font-size: 0.8rem;
+                float: right;
+            }
+            .bottom7{
+                width: 3rem;
+                height: 3rem;
+            }
+            .examdiv1{
+                display: block;
+            }
+            .espan1{
+                font-size: 10px;
+                color: #696969e0;
+                margin-left: 160px;
+            }
+            .examdiv2{
+                margin-left: 15px;
+            }
+            .examdiv3{
+                margin-left: 10px;
+            }
+            .examdiv4{
+                margin-left: 10px;
+            }
+            .examdiv5{
+                margin-top: -8px;
+                margin-left: 134px;
+            }
+            .examdiv6{
+                margin-left: 10px;
+                margin-top: -50px;
+            }
+            .examdiv7{
+                margin-left: 9px;
+                margin-top: 15px;
+            }
+            .examdiv8{
+                margin-top: -70px;
+                margin-left: 87px;
+            }
+            .examdiv9{
+                margin-left: -3px;
+            }
+            .exfont1{
+                color: red;
+                font-size: 12px;
+            }
+            .exfont2{
+                font-size: 14px;
+            }
+            .espan2{
+                font-size: 10px;
+                margin-top: 5px;
+                color: #69696991;
+                margin-left: 120px;
+            }
+            .examdiv8{
+                display: none;
+            }
+            .examdiv9{
+                display: block;
+            }
+            .exfont1{
+                color: red;
+                font-size: 15px;
+            }
+            .exfont2{
+                font-size: 16px;
+            }
+            .espan2{
+                font-size: 13px;
+                color: #69696991;
+                margin-top: 5px;
+                margin-left: 80px;
+            }
+            .examdiv14{
+                display: block;
+            }
+            .examdiv15{
+                display: none;
+            }
+            .espan3{
+                font-size: 10px;
+                color: #69696991;
+                margin-top: 5px;
+                margin-left: 41px;
+            }
+            .espan4{
+                margin-left: 20px;
+            }
+            .espan5{
+                margin-left: 20px;
+            }
+            .espan6{
+                margin-left: 34px;
+            }
+            .espan7{
+                margin-left: -34px
+            }
+            .examdiv10{
+                margin-left: 50px;
+                font-size: 16px;
+            }
+            .examdiv11{
+                color: red;
+                margin-left: 50px;
+                margin-top: 15px;
+                font-size: 12px;
+            }
+            .examdiv12{
+                margin-top: 5px;
+                margin-left: 50px;
+            }
+            .eximg1{
+                background-color: #8becef;
+                border-radius: 50%;
+                width: 70px;
+                background-repeat: no-repeat;
+                background-position: 15px 15px;
+                height: 70px;
+                background-image: url(pictures/历年真题.png);
+                margin-left: 40px;
+                margin-top: 25px;
+                margin-bottom: 40px;
+            }
+            .eximg2{
+                background-color: #4b8eef;
+                border-radius: 50%;
+                width: 70px;
+                background-repeat: no-repeat;
+                background-position: 15px 15px;
+                height: 70px;
+                background-image: url(pictures/模拟试卷.png);
+                margin-left: 50px;
+                margin-top: 25px;
+            }
+            .eximg3{
+                background-color: #9ef3bb;
+                border-radius: 50%;
+                width: 70px;
+                background-repeat: no-repeat;
+                background-position: 15px 15px;
+                height: 70px;
+                background-image: url(pictures/章节练习.png);
+                margin-left: 41px;
+                margin-top: -4px;
+            }
+            .eximg4{
+                background-color: #f985c6;
+                border-radius: 50%;
+                width: 70px;
+                background-repeat: no-repeat;
+                background-position: 15px 15px;
+                height: 70px;
+                background-image: url(pictures/错题收藏.png);
+                margin-left: 51px;
+                margin-top: -3px;
+            }
+            .eximg5{
+                background-color: #efaf8b;
+                border-radius: 50%;
+                width: 70px;
+                background-repeat: no-repeat;
+                background-position: 15px 18px;
+                height: 70px;
+                background-image: url(pictures/每日一练.png);
+                margin-left: 44px;
+                margin-top: 30px;
+            }
+            .eximg6{
+                background-color: #eaef8b;
+                border-radius: 50%;
+                width: 70px;
+                background-repeat: no-repeat;
+                background-position: 15px 15px;
+                height: 70px;
+                background-image: url(pictures/离线下载.png);
+                margin-left: 50px;
+                margin-top: 30px;
+            }
+            .examdiv13{
+                margin-top: 73px;
+                margin-left: 8px;
+            }
+            .examfont1{
+                font-size: 13px;
+            }
+            .exampan1{
+                margin-top: -13px;
+                margin-left: 298px;
+            }
+            .exli1{
+                width: 10px;
+                color: #ffffff;
+                height: 10px;
+                border: 1px solid #ffffff00;
+                text-align: center;
+                font-size: 16px;
+                border-radius: 50%;
+                background-color: #50e1ce;
+                float: left;
+                margin-left: 10px;
+            }
+            .exam1{
+                margin-left: 7px;
+                margin-bottom: 23px
+            }
+        }
+
+        /* 中型设备（台式电脑，992px 起） */
+        @media (min-width: 992px) {
+            .imgbox {
+                width: 885px;
+                height: 300px;
+                position: relative;
+                background-color: #222222;
+                overflow: hidden;
+                border-radius: 5px;
+            }
+            .banner {
+                margin-left: 4px;
+                width: 288px;
+                height: 172px;
+                background-color: aqua;
+                position: relative;
+                overflow: hidden;
+                cursor: pointer;
+            }
+            .charity_i1{
+                height: 58%;
+                margin-left: -687px;
+                width: 22%;
+                margin-top: 0px;
+            }
+            .div3{
+                color: #3a3434;
+                font-weight: bold;
+                font-size: 10px;
+                display: block;
+            }
+            .div4{
+                color: #3a3434;
+                font-weight: bold;
+                display: none;
+            }
+            .simplefont1{
+                font-size: 1.3rem;
+            }
+            .simplefont2{
+                font-size: 1.0rem;
+            }
+            .cli2{
+                width: 2.2rem;
+                color: #ffffff;
+                height: 2.2rem;
+                border: 0.1rem solid #ffffff00;
+                text-align: center;
+                font-size: 1.4rem;
+                background-color: #50e1ce;
+            }
+            .cli1{
+                width: 2.2rem;
+                color: #747474;
+                height: 2.2rem;
+                border: 0.1rem solid #66666685;
+                text-align: center;
+                font-size: 1.4rem;
+                margin-left: 1.8rem;
+            }
+            .bottom1{
+                font-size: 2.2rem;
+                font-weight: bold;
+            }
+            .bottom2{
+                font-size: 1.4rem;
+                margin-left: 1.3rem;
+                margin-top: 1.0rem;
+            }
+            .bottom3{
+                color: white;
+                width: 17rem;
+                background-color: white;
+            }
+            .bottom4{
+                color: white;
+                width: 22rem;
+                background-color: white;
+            }
+            .bottom5{
+                width: 2rem;
+                height: 2rem;
+            }
+            .bottom6{
+                font-size: 1.0rem;
+                float: right;
+            }
+            .bottom7{
+                width: 4rem;
+                height: 4rem;
+            }
+            .examdiv1{
+                display: block;
+            }
+            .espan1{
+                font-size: 10px;
+                color: #696969e0;
+                margin-left: 95px;
+            }
+            .examdiv2{
+                margin-left: 15px;
+            }
+            .examdiv3{
+                margin-left: 10px;
+            }
+            .examdiv4{
+                margin-left: 10px;
+            }
+            .examdiv5{
+                margin-top: -8px;
+                margin-left: 169px;
+            }
+            .examdiv6{
+                margin-left: 10px;
+                margin-top: -50px;
+            }
+            .examdiv7{
+                margin-left: 9px;
+                margin-top: 15px;
+            }
+            .examdiv8{
+                margin-top: 10px;
+                margin-left: 10px;
+            }
+            .examdiv9{
+                margin-left: -3px;
+            }
+            .exfont1{
+                color: red;
+                font-size: 12px;
+            }
+            .exfont2{
+                font-size: 16px;
+            }
+            .espan2{
+                font-size: 11px;
+                margin-top: 7px;
+                color: #69696991;
+                margin-left: 165px;
+            }
+            .examdiv8{
+                display: none;
+            }
+            .examdiv9{
+                display: block;
+            }
+            .exfont1{
+                color: red;
+                font-size: 15px;
+            }
+            .exfont2{
+                font-size: 16px;
+            }
+            .espan2{
+                font-size: 13px;
+                color: #69696991;
+                margin-top: 5px;
+                margin-left: 165px;
+            }
+            .examdiv14{
+                display: block;
+            }
+            .examdiv15{
+                display: none;
+            }
+            .espan3{
+                font-size: 12px;
+                color: #69696991;
+                margin-top: 5px;
+                margin-left: 177px;
+            }
+            .espan4{
+                margin-left: 20px;
+            }
+            .espan5{
+                margin-left: 20px;
+            }
+            .espan6{
+                margin-left: 34px;
+            }
+            .espan7{
+                margin-left: -34px
+            }
+            .examdiv10{
+                margin-left: 50px;
+                font-size: 16px;
+            }
+            .examdiv11{
+                color: red;
+                margin-left: 50px;
+                margin-top: 15px;
+                font-size: 12px;
+            }
+            .examdiv12{
+                margin-top: 5px;
+                margin-left: 50px;
+            }
+            .eximg1{
+                background-color: #8becef;
+                border-radius: 50%;
+                width: 70px;
+                background-repeat: no-repeat;
+                background-position: 15px 15px;
+                height: 70px;
+                background-image: url(pictures/历年真题.png);
+                margin-left: 40px;
+                margin-top: 25px;
+                margin-bottom: 40px;
+            }
+            .eximg2{
+                background-color: #4b8eef;
+                border-radius: 50%;
+                width: 70px;
+                background-repeat: no-repeat;
+                background-position: 15px 15px;
+                height: 70px;
+                background-image: url(pictures/模拟试卷.png);
+                margin-left: 50px;
+                margin-top: 25px;
+            }
+            .eximg3{
+                background-color: #9ef3bb;
+                border-radius: 50%;
+                width: 70px;
+                background-repeat: no-repeat;
+                background-position: 15px 15px;
+                height: 70px;
+                background-image: url(pictures/章节练习.png);
+                margin-left: 40px;
+                margin-top: -9px;
+            }
+            .eximg4{
+                background-color: #f985c6;
+                border-radius: 50%;
+                width: 70px;
+                background-repeat: no-repeat;
+                background-position: 15px 15px;
+                height: 70px;
+                background-image: url(pictures/错题收藏.png);
+                margin-left: 55px;
+                margin-top: -9px;
+            }
+            .eximg5{
+                background-color: #efaf8b;
+                border-radius: 50%;
+                width: 70px;
+                background-repeat: no-repeat;
+                background-position: 15px 18px;
+                height: 70px;
+                background-image: url(pictures/每日一练.png);
+                margin-left: 42px;
+                margin-top: 35px;
+            }
+            .eximg6{
+                background-color: #eaef8b;
+                border-radius: 50%;
+                width: 70px;
+                background-repeat: no-repeat;
+                background-position: 15px 15px;
+                height: 70px;
+                background-image: url(pictures/离线下载.png);
+                margin-left: 53px;
+                margin-top: 35px;
+            }
+            .examdiv13{
+                margin-top: 73px;
+                margin-left: 8px;
+            }
+            .examfont1{
+                font-size: 13px;
+            }
+            .exampan1{
+                margin-top: -13px;
+                margin-left: 438px;
+            }
+            .exli1{
+                width: 10px;
+                color: #ffffff;
+                height: 10px;
+                border: 1px solid #ffffff00;
+                text-align: center;
+                font-size: 16px;
+                border-radius: 50%;
+                background-color: #50e1ce;
+                float: left;
+                margin-left: 10px;
+            }
+            .exam1{
+                margin-left: 7px;
+                margin-bottom: 23px
+            }
+        }
+        /* 大型设备（大台式电脑，1200px 起） */
+        @media (min-width:1200px) {
+            .imgbox {
+                width: 1367px;
+                height: 300px;
+                position: relative;
+                background-color: #222222;
+                overflow: hidden;
+                border-radius: 5px;
+            }
+            .banner {
+                margin-left: 4px;
+                width: 354px;
+                height: 173px;
+                background-color: aqua;
+                position: relative;
+                overflow: hidden;
+                cursor: pointer;
+            }
+            .charity_i1{
+                height: 64%;
+                margin-left: -685px;
+                width: 27%;
+                margin-top: 0px;
+            }
+            .div3{
+                color: #3a3434;
+                font-weight: bold;
+                font-size: 13px;
+                display: block;
+            }
+            .div4{
+                color: #3a3434;
+                font-weight: bold;
+                display: none;
+            }
+            .simplefont1{
+                font-size: 1.4rem;
+            }
+            .simplefont2{
+                font-size: 1.4rem;
+            }
+            .cli2{
+                float: left;
+                width: 2.5rem;
+                color: #ffffff;
+                height: 2.5rem;
+                border: 0.1rem solid #ffffff00;
+                text-align: center;
+                font-size: 1.6rem;
+                background-color: #50e1ce;
+            }
+            .cli1{
+                width: 2.5rem;
+                color: #747474;
+                height: 2.5rem;
+                border: 0.1rem solid #66666685;
+                text-align: center;
+                font-size: 1.6rem;
+                margin-left: 2rem;
+            }
+            .bottom1{
+                font-size: 2.4rem;
+                font-weight: bold;
+            }
+            .bottom2{
+                font-size: 1.4rem;
+                margin-left: 1.3rem;
+                margin-top: 1.0rem;
+            }
+            .bottom3{
+                color: white;
+                width: 17rem;
+                background-color: white;
+            }
+            .bottom4{
+                color: white;
+                width: 22rem;
+                background-color: white;
+            }
+            .bottom5{
+                width: 2rem;
+                height: 2rem;
+            }
+            .bottom6{
+                font-size: 1.2rem;
+                float: right;
+            }
+            .bottom7{
+                width: 4rem;
+                height: 4rem;
+            }
+            .examdiv1{
+                display: block;
+            }
+            .espan1{
+                font-size: 10px;
+                color: #696969e0;
+                margin-left: 95px;
+            }
+            .examdiv2{
+                margin-left: 15px;
+            }
+            .examdiv3{
+                margin-left: 10px;
+            }
+            .examdiv4{
+                margin-left: 10px;
+            }
+            .examdiv5{
+                margin-top: -8px;
+                margin-left: 205px;
+            }
+            .examdiv6{
+                margin-left: 10px;
+                margin-top: -50px;
+            }
+            .examdiv7{
+                margin-left: 9px;
+                margin-top: 15px;
+            }
+            .examdiv8{
+                margin-top: 10px;
+                margin-left: 10px;
+            }
+            .examdiv9{
+                margin-left: -3px;
+            }
+            .exfont1{
+                color: red;
+                font-size: 15px;
+            }
+            .exfont2{
+                font-size: 16px;
+            }
+            .espan2{
+                font-size: 13px;
+                color: #69696991;
+                margin-top: 5px;
+                margin-left: 232px;
+            }
+            .examdiv14{
+                display: block;
+            }
+            .examdiv15{
+                display: none;
+            }
+            .espan3{
+                font-size: 13px;
+                color: #69696991;
+                margin-top: 5px;
+                margin-left: 315px;
+            }
+            .espan4{
+                margin-left: 20px;
+            }
+            .espan5{
+                margin-left: 20px;
+            }
+            .espan6{
+                margin-left: 34px;
+            }
+            .espan7{
+                margin-left: -34px
+            }
+            .examdiv10{
+                margin-left: 50px;
+                font-size: 16px;
+            }
+            .examdiv11{
+                color: red;
+                margin-left: 50px;
+                margin-top: 15px;
+                font-size: 15px;
+            }
+            .examdiv12{
+                margin-top: 5px;
+                margin-left: 50px;
+            }
+            .eximg1{
+                background-color: #8becef;
+                border-radius: 50%;
+                width: 70px;
+                background-repeat: no-repeat;
+                background-position: 15px 15px;
+                height: 70px;
+                background-image: url(pictures/历年真题.png);
+                margin-left: 40px;
+                margin-top: 25px;
+                margin-bottom: 40px;
+            }
+            .eximg2{
+                background-color: #4b8eef;
+                border-radius: 50%;
+                width: 70px;
+                background-repeat: no-repeat;
+                background-position: 15px 15px;
+                height: 70px;
+                background-image: url(pictures/模拟试卷.png);
+                margin-left: 50px;
+                margin-top: 25px;
+            }
+            .eximg3{
+                background-color: #9ef3bb;
+                border-radius: 50%;
+                width: 70px;
+                background-repeat: no-repeat;
+                background-position: 15px 15px;
+                height: 70px;
+                background-image: url(pictures/章节练习.png);
+                margin-left: 50px;
+                margin-top: 25px;
+            }
+            .eximg4{
+                background-color: #f985c6;
+                border-radius: 50%;
+                width: 70px;
+                background-repeat: no-repeat;
+                background-position: 15px 15px;
+                height: 70px;
+                background-image: url(pictures/错题收藏.png);
+                margin-left: 40px;
+                margin-top: 25px;
+            }
+            .eximg5{
+                background-color: #efaf8b;
+                border-radius: 50%;
+                width: 70px;
+                background-repeat: no-repeat;
+                background-position: 15px 18px;
+                height: 70px;
+                background-image: url(pictures/每日一练.png);
+                margin-left: 50px;
+                margin-top: 25px;
+            }
+            .eximg6{
+                background-color: #eaef8b;
+                border-radius: 50%;
+                width: 70px;
+                background-repeat: no-repeat;
+                background-position: 15px 15px;
+                height: 70px;
+                background-image: url(pictures/离线下载.png);
+                margin-left: 50px;
+                margin-top: 25px;
+            }
+            .examdiv13{
+                margin-top: 73px;
+                margin-left: 8px;
+            }
+            .examfont1{
+                font-size: 14px;
+            }
+            .exampan1{
+                margin-top: -13px;
+                margin-left: 581px;
+            }
+            .exli1{
+                width: 10px;
+                color: #ffffff;
+                height: 10px;
+                border: 1px solid #ffffff00;
+                text-align: center;
+                font-size: 16px;
+                border-radius: 50%;
+                background-color: #50e1ce;
+                float: left;
+                margin-left: 10px;
+            }
+            .exam1{
+                margin-left: 7px;
+                margin-bottom: 23px
+            }
+        }
+    </style>
+</head>
+<body style="background-color: rgba(245, 227, 207, 0.37);">
+<img src="pictures/exam.png" class="img-thumbnail"style="z-index: -2;"/>
+<div  class="container" style="height: auto;background-color: white;position: relative;margin-top: -55px">
+    <!--导航1-->
+    <div class="div3">
+        <div class="row">
+            <div class="col-3" style=" margin-left: 35px;margin-top: 17px;">
+                <a href="index.html"target="_blank"><img src="pictures/logo.png" width="200px"class="img-thumbnail" /></a>
+            </div>
+            <div class="col-1 aa"style="margin-top: 14px;">
+                <a style="width: 57px;color: #3a3434;"href="competition.html"target="_blank">竞赛Go!</a>
+            </div>
+            <div class="col-1 aa"style="margin-top: 14px;margin-left: -10px">
+                <a style="width: 57px;color: #3a3434;"href="exam.html"target="_blank">考试Go!</a>
+            </div>
+            <div class="col-1 aa"style="margin-top: 14px;margin-left: -10px">
+                <a href="charity.html"target="_blank"style="color: #3a3434;">捐款Go!</a>
+            </div>
+            <div class="col-1 aa"style="margin-top: 14px;margin-left: -10px">
+                <a href="parttime.html"target="_blank"style="color: #3a3434;">兼职Go!</a>
+            </div>
+            <div class="col-1 aa"style="margin-top: 14px;margin-left: -10px">
+                <a href="unused.html"target="_blank"style="color: #3a3434;">闲置Go!</a>
+            </div>
+            <div class="col-1 aa"style="margin-top: 14px;margin-left: -10px">
+                <a href="find.html"target="_blank"style="color: #3a3434;">失领Go!</a>
+            </div>
+            <div class="col-2 col-lg-1"style="margin-top: 14px;margin-left: -10px">
+                <input type="text" value="搜索..."style="color: #696969c2;font-size: 13px;margin-left: -10px;width: 62px">
+            </div>
+            <div class="col-1 col-lg-2"style="margin-top: 14px;margin-left: -10px">
+                <a id="reg"onclick="display3()">注册</a>
+                &nbsp;&nbsp;
+                <a id="log"onclick="display1()">登录</a>
+            </div>
+        </div>
+    </div>
+    <!--导航2折叠-->
+    <div class="div4">
+        <div id='cssmenu'>
+            <ul>
+                <li><a href='index.html'target="_blank">大学生Go!</a></li>
+                <li><a href='competition.html'target="_blank">竞赛Go!</a>
+                </li>
+                <li><a href='exam.html'target="_blank">考试Go!</a></li>
+                <li><a href='charity.html'target="_blank">捐款Go!</a></li>
+                <li><a href='parttime.html'target="_blank">兼职Go!</a></li>
+                <li><a href='find.html'target="_blank">失领Go!</a></li>
+                <li><a id="reg2"onclick="display3()">注册</a></li>
+                <li><a id="log2"onclick="display1()">登录</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="login"style="display: none;z-index: 999;position: relative;top: -80px;">
+
+        <div class="login">
+            <form action="#" method="post" class="container offset1 loginform">
+                <div id="owl-login">
+                    <div class="hand"></div>
+                    <div class="hand hand-r"></div>
+                    <div class="arms">
+                        <div class="arm"></div>
+                        <div class="arm arm-r"></div>
+                    </div>
+                </div>
+                <div class="pad">
+                    <input type="hidden" name="_csrf" value="9IAtUxV2CatyxHiK2LxzOsT6wtBE6h8BpzOmk=">
+                    <div class="control-group">
+                        <div class="controls">
+                            <label for="email" class="control-label fa fa-envelope"></label>
+                            <input id="email" type="email" name="email" placeholder="Email" tabindex="1" autofocus="autofocus" class="form-control input-medium">
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <div class="controls">
+                            <label for="password" class="control-label fa fa-asterisk"></label>
+                            <input id="password" type="password" name="password" placeholder="Password" tabindex="2" class="form-control input-medium">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-actions">
+                    <a href="#" tabindex="5" class="btn pull-left btn-link text-muted"id="noid"onclick="change1()">没有帐号?</a>
+                    <button type="button" tabindex="6" class="btn"id="cancel"onmouseenter="hover1()"onmouseleave="levae1()"style="color: #75797c;background-color: #1a8fb400"onclick="display2()">取消</button>
+                    <button type="submit" tabindex="4" class="btn "id="btn_login"onmouseenter="hover2()"onmouseleave="levae2()"style="color: #75797c;background-color: #1a8fb400">登录</button>
+                </div>
+            </form>
+        </div>
+
+        <script src="js/jquery.min.js"></script>
+        <script>
+            $(function() {
+
+                $('#login #password').focus(function() {
+                    $('#owl-login').addClass('password');
+                }).blur(function() {
+                    $('#owl-login').removeClass('password');
+                });
+            });
+        </script>
+    </div>
+    <br>
+    <br><br><br>
+    <div class="row">
+        <div class="col-8 chdiv1 examdiv14">
+            <div style="margin-top: 25px;font-size: 16px;margin-left: 9px;">
+                考试头条
+                <hr>
+            </div>
+            <div class="row">
+                <div class="col-6 simplefont2">
+                    <div class="banner"style="margin-top: 3px;">
+                        <img class="change pre"  src="images/pre.png" style="display: none">
+                        <img class="change next" src="images/next.png"style="display: none" >
+                        <div class="cirbox"style="    bottom: 6px;" >
+                            <div class="cir cr"style="background-color: white"></div>
+                            <div class="cir"style="background-color: white"></div>
+                            <div class="cir"style="background-color: white"></div>
+                            <div class="cir"style="background-color: white"></div>
+                        </div>
+                        <div class="imgbox" style="width: 1367px">
+                            <img class="img im charity_i1" src="pictures/exam_1.png">
+                            <img class="img charity_i1" src="pictures/exam_2.jpg">
+                            <img class="img im charity_i1" src="pictures/exam_3.png">
+                            <img class="img charity_i1" src="pictures/exam_4.png">
+                        </div>
+                    </div>
+                    <div style="margin-top: 31px;font-size: 1.6rem">
+                        热门专题
+                        <hr style="margin-top: 20px">
+                    </div>
+                    <div class="row">
+                        <div class="examdiv2">2017年咨询工程师报名时间及入口</div>
+                        <div class="espan1">2018-07-08</div>
+                    </div>
+                    <div class="row">
+                        <div class="examdiv2">2017年咨询工程师报名时间及入口</div>
+                        <div class="espan1">2018-07-08</div>
+                    </div>
+                    <div class="row">
+                        <div class="examdiv2">2017年咨询工程师报名时间及入口</div>
+                        <div class="espan1">2018-07-08</div>
+                    </div>
+                    <div class="row">
+                        <div class="examdiv2">2017年咨询工程师报名时间及入口</div>
+                        <div class="espan1">2018-07-08</div>
+                    </div>
+                    <div class="row">
+                        <div class="examdiv2">2017年咨询工程师报名时间及入口</div>
+                        <div class="espan1">2018-07-08</div>
+                    </div>
+                    <div class="row">
+                        <div class="examdiv2">2017年咨询工程师报名时间及入口</div>
+                        <div class="espan1">2018-07-08</div>
+                    </div>
+                    <div class="row">
+                        <div class="examdiv2">2017年咨询工程师报名时间及入口</div>
+                        <div class="espan1">2018-07-08</div>
+                    </div>
+                    <div class="row">
+                        <div class="examdiv2">2017年咨询工程师报名时间及入口</div>
+                        <div class="espan1">2018-07-08</div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <!--module1-->
+                    <div>
+                     <div class="exfont1 row">
+                       <div class="examdiv2"><a href="exam2.html"target="_blank"style="color: red">2018年执业医师资格考试大纲汇总</a></div>
+                        <div class="examdiv2">|</div>
+                        <div class="examdiv2"><a>护士考试大纲</a></div>
+                    </div>
+                     <div style="margin-top: 10px;"class="row">
+                        <div style="color: #e09f07;"class="simplefont2 examdiv2"><a>热点</a></div>
+                         <div style="color: #e09f07;"class="simplefont2 examdiv2">|</div>
+                        <div class="simplefont2 examdiv2"><a>2018卫生资格考试大纲</a></div>
+                         <div style="color: #e09f07;"class="simplefont2 examdiv2">|</div>
+                         <div class="simplefont2 examdiv2"><a>医学高级职称考试</a></div>
+                    </div>
+                     <div style="margin-top: 5px;"class="row">
+                         <div style="color: #e09f07;"class="simplefont2 examdiv2"><a>热点</a></div>
+                         <div style="color: #e09f07;"class="simplefont2 examdiv2">|</div>
+                         <div class="simplefont2 examdiv2"><a>医师一年两试试点</a></div>
+                         <div style="color: #e09f07;"class="simplefont2 examdiv2">|</div>
+                         <div class="simplefont2 examdiv2"><a>医师电子化注册常见问题</a></div>
+                        <hr>
+                    </div>
+                    </div>
+                    <!--module1-->
+                    <div style="margin-top: 20px">
+                        <div class="exfont1 row">
+                            <div class="examdiv2"><a>2018年执业医师资格考试大纲汇总</a></div>
+                            <div class="examdiv2">|</div>
+                            <div class="examdiv2"><a>护士考试大纲</a></div>
+                        </div>
+                        <div style="margin-top: 10px;"class="row">
+                            <div style="color: #e09f07;"class="simplefont2 examdiv2"><a>热点</a></div>
+                            <div style="color: #e09f07;"class="simplefont2 examdiv2">|</div>
+                            <div class="simplefont2 examdiv2"><a>2018卫生资格考试大纲</a></div>
+                            <div style="color: #e09f07;"class="simplefont2 examdiv2">|</div>
+                            <div class="simplefont2 examdiv2"><a>医学高级职称考试</a></div>
+                        </div>
+                        <div style="margin-top: 5px;"class="row">
+                            <div style="color: #e09f07;"class="simplefont2 examdiv2"><a>热点</a></div>
+                            <div style="color: #e09f07;"class="simplefont2 examdiv2">|</div>
+                            <div class="simplefont2 examdiv2"><a>医师一年两试试点</a></div>
+                            <div style="color: #e09f07;"class="simplefont2 examdiv2">|</div>
+                            <div class="simplefont2 examdiv2"><a>医师电子化注册常见问题</a></div>
+                            <hr>
+                        </div>
+                    </div>
+                    <!--module1-->
+                    <div style="margin-top: 20px">
+                        <div class="exfont1 row">
+                            <div class="examdiv2"><a>2018年执业医师资格考试大纲汇总</a></div>
+                            <div class="examdiv2">|</div>
+                            <div class="examdiv2"><a>护士考试大纲</a></div>
+                        </div>
+                        <div style="margin-top: 10px;"class="row">
+                            <div style="color: #e09f07;"class="simplefont2 examdiv2"><a>热点</a></div>
+                            <div style="color: #e09f07;"class="simplefont2 examdiv2">|</div>
+                            <div class="simplefont2 examdiv2"><a>2018卫生资格考试大纲</a></div>
+                            <div style="color: #e09f07;"class="simplefont2 examdiv2">|</div>
+                            <div class="simplefont2 examdiv2"><a>医学高级职称考试</a></div>
+                        </div>
+                        <div style="margin-top: 5px;"class="row">
+                            <div style="color: #e09f07;"class="simplefont2 examdiv2"><a>热点</a></div>
+                            <div style="color: #e09f07;"class="simplefont2 examdiv2">|</div>
+                            <div class="simplefont2 examdiv2"><a>医师一年两试试点</a></div>
+                            <div style="color: #e09f07;"class="simplefont2 examdiv2">|</div>
+                            <div class="simplefont2 examdiv2"><a>医师电子化注册常见问题</a></div>
+                            <hr>
+                        </div>
+                    </div>
+                    <!--module1-->
+                    <div style="margin-top: 20px">
+                        <div class="exfont1 row">
+                            <div class="examdiv2"><a>2018年执业医师资格考试大纲汇总</a></div>
+                            <div class="examdiv2">|</div>
+                            <div class="examdiv2"><a>护士考试大纲</a></div>
+                        </div>
+                        <div style="margin-top: 10px;"class="row">
+                            <div style="color: #e09f07;"class="simplefont2 examdiv2"><a>热点</a></div>
+                            <div style="color: #e09f07;"class="simplefont2 examdiv2">|</div>
+                            <div class="simplefont2 examdiv2"><a>2018卫生资格考试大纲</a></div>
+                            <div style="color: #e09f07;"class="simplefont2 examdiv2">|</div>
+                            <div class="simplefont2 examdiv2"><a>医学高级职称考试</a></div>
+                        </div>
+                        <div style="margin-top: 5px;"class="row">
+                            <div style="color: #e09f07;"class="simplefont2 examdiv2"><a>热点</a></div>
+                            <div style="color: #e09f07;"class="simplefont2 examdiv2">|</div>
+                            <div class="simplefont2 examdiv2"><a>医师一年两试试点</a></div>
+                            <div style="color: #e09f07;"class="simplefont2 examdiv2">|</div>
+                            <div class="simplefont2 examdiv2"><a>医师电子化注册常见问题</a></div>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-4  chborder3 examdiv1">
+          <div style="margin-top: 25px;"class="row exfont2 examdiv3">
+              <div>精品题库</div>
+              <div class="espan2">MORE +</div>
+              <hr>
+          </div>
+            <!--题库选择-->
+            <div>
+                <div>
+                    <img src="pictures/ex_1.png" height="50%" width="50%" class="examdiv4 img-thumbnail"/>
+                    <img src="pictures/ex_2.png" height="30%" width="30%" class="examdiv4 img-thumbnail"/>
+                    <img src="pictures/ex_3.png" height="30%" width="30%" class="examdiv5 img-thumbnail"/>
+                    <img src="pictures/ex_4.png" height="50%" width="50%" class="examdiv6 img-thumbnail"/>
+                </div>
+                <img src="pictures/ex_5.png" height="30%" width="30%" class="examdiv7 img-thumbnail"/>
+                <img src="pictures/ex_6.png" height=60%" width="60%" class="img-thumbnail examdiv8"/>
+                <img src="pictures/ex_7.png" height="30%" width="30%"class="examdiv7 img-thumbnail"/>
+                <img src="pictures/ex_8.png" height="60%" width="60%"class="img-thumbnail examdiv8"/>
+            </div>
+            <!--公众号-->
+            <div>
+                <div style="margin-top: 25px;"class="row exfont2 examdiv3">
+                    公众号
+                    <hr>
+                </div>
+                <div class="examdiv9">
+                    <div class="row"style="margin-left: 0">
+                        <div class="col-6">
+                            扫一扫<br>关注我们最新资讯
+                        </div>
+                        <div class="col-6">
+                            <img src="pictures/public.jpg" height="100" width="100"class="img-thumbnail"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 chdiv1 examdiv15">
+            <div style="margin-top: 25px;font-size: 16px;margin-left: 9px;">
+                考试头条
+                <hr>
+            </div>
+            <div class="row">
+                <div class="col-6 simplefont2">
+                    <div class="banner"style="margin-top: 3px;">
+                        <img class="change pre"  src="images/pre.png" style="display: none">
+                        <img class="change next" src="images/next.png"style="display: none" >
+                        <div class="cirbox"style="    bottom: 6px;" >
+                            <div class="cir cr"style="background-color: white"></div>
+                            <div class="cir"style="background-color: white"></div>
+                            <div class="cir"style="background-color: white"></div>
+                            <div class="cir"style="background-color: white"></div>
+                        </div>
+                        <div class="imgbox" style="width: 1367px">
+                            <img class="img im charity_i1" src="pictures/exam_1.png">
+                            <img class="img charity_i1" src="pictures/exam_2.jpg">
+                            <img class="img im charity_i1" src="pictures/exam_3.png">
+                            <img class="img charity_i1" src="pictures/exam_4.png">
+                        </div>
+                    </div>
+                    <div style="margin-top: 31px;font-size: 1.6rem">
+                        热门专题
+                        <hr style="margin-top: 20px">
+                    </div>
+                    <div class="row">
+                        <div class="examdiv2">2017年咨询工程师报名时间及入口</div>
+                        <div class="espan1">2018-07-08</div>
+                    </div>
+                    <div class="row">
+                        <div class="examdiv2">2017年咨询工程师报名时间及入口</div>
+                        <div class="espan1">2018-07-08</div>
+                    </div>
+                    <div class="row">
+                        <div class="examdiv2">2017年咨询工程师报名时间及入口</div>
+                        <div class="espan1">2018-07-08</div>
+                    </div>
+                    <div class="row">
+                        <div class="examdiv2">2017年咨询工程师报名时间及入口</div>
+                        <div class="espan1">2018-07-08</div>
+                    </div>
+                    <div class="row">
+                        <div class="examdiv2">2017年咨询工程师报名时间及入口</div>
+                        <div class="espan1">2018-07-08</div>
+                    </div>
+                    <div class="row">
+                        <div class="examdiv2">2017年咨询工程师报名时间及入口</div>
+                        <div class="espan1">2018-07-08</div>
+                    </div>
+                    <div class="row">
+                        <div class="examdiv2">2017年咨询工程师报名时间及入口</div>
+                        <div class="espan1">2018-07-08</div>
+                    </div>
+                    <div class="row">
+                        <div class="examdiv2">2017年咨询工程师报名时间及入口</div>
+                        <div class="espan1">2018-07-08</div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <!--module1-->
+                    <div>
+                        <div class="exfont1 row">
+                            <div class="examdiv2"><a>2018年执业医师资格考试大纲汇总</a></div>
+                            <div class="examdiv2">|</div>
+                            <div class="examdiv2"><a>护士考试大纲</a></div>
+                        </div>
+                        <div style="margin-top: 10px;"class="row">
+                            <div style="color: #e09f07;"class="simplefont2 examdiv2"><a>热点</a></div>
+                            <div style="color: #e09f07;"class="simplefont2 examdiv2">|</div>
+                            <div class="simplefont2 examdiv2"><a>2018卫生资格考试大纲</a></div>
+                            <div style="color: #e09f07;"class="simplefont2 examdiv2">|</div>
+                            <div class="simplefont2 examdiv2"><a>医学高级职称考试</a></div>
+                        </div>
+                        <div style="margin-top: 5px;"class="row">
+                            <div style="color: #e09f07;"class="simplefont2 examdiv2"><a>热点</a></div>
+                            <div style="color: #e09f07;"class="simplefont2 examdiv2">|</div>
+                            <div class="simplefont2 examdiv2"><a>医师一年两试试点</a></div>
+                            <div style="color: #e09f07;"class="simplefont2 examdiv2">|</div>
+                            <div class="simplefont2 examdiv2"><a>医师电子化注册常见问题</a></div>
+                            <hr>
+                        </div>
+                    </div>
+                    <!--module1-->
+                    <div style="margin-top: 20px">
+                        <div class="exfont1 row">
+                            <div class="examdiv2"><a>2018年执业医师资格考试大纲汇总</a></div>
+                            <div class="examdiv2">|</div>
+                            <div class="examdiv2"><a>护士考试大纲</a></div>
+                        </div>
+                        <div style="margin-top: 10px;"class="row">
+                            <div style="color: #e09f07;"class="simplefont2 examdiv2"><a>热点</a></div>
+                            <div style="color: #e09f07;"class="simplefont2 examdiv2">|</div>
+                            <div class="simplefont2 examdiv2"><a>2018卫生资格考试大纲</a></div>
+                            <div style="color: #e09f07;"class="simplefont2 examdiv2">|</div>
+                            <div class="simplefont2 examdiv2"><a>医学高级职称考试</a></div>
+                        </div>
+                        <div style="margin-top: 5px;"class="row">
+                            <div style="color: #e09f07;"class="simplefont2 examdiv2"><a>热点</a></div>
+                            <div style="color: #e09f07;"class="simplefont2 examdiv2">|</div>
+                            <div class="simplefont2 examdiv2"><a>医师一年两试试点</a></div>
+                            <div style="color: #e09f07;"class="simplefont2 examdiv2">|</div>
+                            <div class="simplefont2 examdiv2"><a>医师电子化注册常见问题</a></div>
+                            <hr>
+                        </div>
+                    </div>
+                    <!--module1-->
+                    <div style="margin-top: 20px">
+                        <div class="exfont1 row">
+                            <div class="examdiv2"><a>2018年执业医师资格考试大纲汇总</a></div>
+                            <div class="examdiv2">|</div>
+                            <div class="examdiv2"><a>护士考试大纲</a></div>
+                        </div>
+                        <div style="margin-top: 10px;"class="row">
+                            <div style="color: #e09f07;"class="simplefont2 examdiv2"><a>热点</a></div>
+                            <div style="color: #e09f07;"class="simplefont2 examdiv2">|</div>
+                            <div class="simplefont2 examdiv2"><a>2018卫生资格考试大纲</a></div>
+                            <div style="color: #e09f07;"class="simplefont2 examdiv2">|</div>
+                            <div class="simplefont2 examdiv2"><a>医学高级职称考试</a></div>
+                        </div>
+                        <div style="margin-top: 5px;"class="row">
+                            <div style="color: #e09f07;"class="simplefont2 examdiv2"><a>热点</a></div>
+                            <div style="color: #e09f07;"class="simplefont2 examdiv2">|</div>
+                            <div class="simplefont2 examdiv2"><a>医师一年两试试点</a></div>
+                            <div style="color: #e09f07;"class="simplefont2 examdiv2">|</div>
+                            <div class="simplefont2 examdiv2"><a>医师电子化注册常见问题</a></div>
+                            <hr>
+                        </div>
+                    </div>
+                    <!--module1-->
+                    <div style="margin-top: 20px">
+                        <div class="exfont1 row">
+                            <div class="examdiv2"><a>2018年执业医师资格考试大纲汇总</a></div>
+                            <div class="examdiv2">|</div>
+                            <div class="examdiv2"><a>护士考试大纲</a></div>
+                        </div>
+                        <div style="margin-top: 10px;"class="row">
+                            <div style="color: #e09f07;"class="simplefont2 examdiv2"><a>热点</a></div>
+                            <div style="color: #e09f07;"class="simplefont2 examdiv2">|</div>
+                            <div class="simplefont2 examdiv2"><a>2018卫生资格考试大纲</a></div>
+                            <div style="color: #e09f07;"class="simplefont2 examdiv2">|</div>
+                            <div class="simplefont2 examdiv2"><a>医学高级职称考试</a></div>
+                        </div>
+                        <div style="margin-top: 5px;"class="row">
+                            <div style="color: #e09f07;"class="simplefont2 examdiv2"><a>热点</a></div>
+                            <div style="color: #e09f07;"class="simplefont2 examdiv2">|</div>
+                            <div class="simplefont2 examdiv2"><a>医师一年两试试点</a></div>
+                            <div style="color: #e09f07;"class="simplefont2 examdiv2">|</div>
+                            <div class="simplefont2 examdiv2"><a>医师电子化注册常见问题</a></div>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--医药类-->
+    <div class="row">
+        <div class="col-8 examdiv14"style="border: 1px solid;border-color: #69696921;">
+            <!--小导航-->
+            <div class="espan5">
+                <div style="margin-top: 20px;">
+                    <span ><a>医药类</a></span>
+                    <span style="color: dimgray;"class="espan4"><a>执业医师</a></span>
+                    <span style="color: dimgray;"class="espan4"><a>卫生资格</a></span>
+                    <span style="color: dimgray;"class="espan4"><a>职业护士</a></span>
+                    <span style="color: dimgray;"class="espan4"><a>医学高级</a></span>
+                    <span class="espan3">MORE +</span>
+                    <hr>
+                </div>
+            </div>
+            <!--图片-->
+            <div class="row examfont1" >
+                <div class="col-6 espan6">
+                    <div class="row">
+                        <div class="col-6">
+                            <img src="pictures/p_1.png" height="80%" width="100%"/>
+                            <div style="color: #696969b5;"align="center">
+                                2018年执业医师考试报名
+                                时间及入口
+                            </div>
+                        </div>
+                       <div class="col-6">
+                           <img src="pictures/p_2.png" height="80%" width="100%"/>
+                           <div style="color: #696969b5;"align="center">
+                               2018年执业医师考试资格
+                               审核时间
+                           </div>
+                       </div>
+                    </div>
+                    <div class="row"style="margin-top: 4rem">
+                        <div class="col-6">
+                            <img src="pictures/p_1.png" height="80%" width="100%"/>
+                            <div style="color: #696969b5;"align="center">
+                                2018年执业医师考试报名
+                                时间及入口
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <img src="pictures/p_2.png" height="80%" width="100%"/>
+                            <div style="color: #696969b5;"align="center">
+                                2018年执业医师考试资格
+                                审核时间
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 espan7 ">
+                    <div class="examdiv10">
+                        <a><span>热门资讯</span></a>
+                        <a><span style="color: #696969b5;">最新资讯</span></a>
+                        <a><span style="color: #696969b5;">最新试卷</span></a>
+                    </div>
+                    <div class="examdiv11">
+                        2018年全国各省执业药师考试报名通知汇.....
+                    </div>
+                    <!--热点-->
+                    <div class="examdiv12 row">
+                        <div style="color: #e09f07;"class="simplefont2 "><a>热点</a></div>
+                        <div style="color: #e09f07;"class="simplefont2 examdiv2">|</div>
+                        <div class="simplefont2 examdiv2 "><a>2018卫生资格考试大纲</a></div>
+                    </div>
+                    <!--热点-->
+                    <div class="examdiv12 row">
+                        <div style="color: #e09f07;"class="simplefont2 "><a>热点</a></div>
+                        <div style="color: #e09f07;"class="simplefont2 examdiv2">|</div>
+                        <div class="simplefont2 examdiv2 "><a>2018卫生资格考试大纲</a></div>
+                    </div>
+                    <!--考试信息-->
+                    <div class="examdiv12 simplefont2">
+                        <span><a>内蒙古自治区2018年住院医师规培招生简章</a></span>
+                    </div>
+                    <div class="examdiv12 simplefont2">
+                        <span><a>内蒙古自治区2018年住院医师规培招生简章</a></span>
+                    </div>
+                    <div class="examdiv12 simplefont2">
+                        <span><a>内蒙古自治区2018年住院医师规培招生简章</a></span>
+                    </div>
+                    <div class="examdiv12 simplefont2">
+                        <span><a>内蒙古自治区2018年住院医师规培招生简章</a></span>
+                    </div>
+                    <div class="examdiv12 simplefont2">
+                        <span><a>内蒙古自治区2018年住院医师规培招生简章</a></span>
+                    </div>
+                    <div class="examdiv12 simplefont2">
+                        <span><a>内蒙古自治区2018年住院医师规培招生简章</a></span>
+                    </div>
+                    <br><br><br><br>
+                </div>
+            </div>
+        </div>
+        <!--右侧-->
+        <div class="col-4 chborder3 examdiv1">
+            <div style="margin-top: 25px;"class="row exfont2 examdiv3">
+                <div>执业医师</div>
+                <hr>
+            </div>
+            <!--相应模块-->
+            <div>
+                <div class="row">
+                    <div class="eximg1">
+                        <div class="examdiv13"><a>历年真题</a></div>
+                    </div>
+                    <div class="eximg2">
+                        <div class="examdiv13"><a>历年真题</a></div>
+                    </div>
+                    <div class="eximg3">
+                        <div class="examdiv13"><a>历年真题</a></div>
+                    </div>
+                    <div class="eximg4">
+                        <div class="examdiv13"><a>历年真题</a></div>
+                    </div>
+                    <div class="eximg5">
+                        <div class="examdiv13"><a>历年真题</a></div>
+                    </div>
+                    <div class="eximg6">
+                        <div class="examdiv13"><a>历年真题</a></div>
+                    </div>
+                </div>
+                <br><br><br><br>
+            </div>
+        </div>
+        <div class="col-12 examdiv15"style="border: 1px solid;border-color: #69696921;">
+            <!--小导航-->
+            <div class="espan5">
+                <div style="margin-top: 20px;">
+                    <span ><a>医药类</a></span>
+                    <span style="color: dimgray;"class="espan4"><a>执业医师</a></span>
+                    <span style="color: dimgray;"class="espan4"><a>卫生资格</a></span>
+                    <span style="color: dimgray;"class="espan4"><a>职业护士</a></span>
+                    <span style="color: dimgray;"class="espan4"><a>医学高级</a></span>
+                    <span class="espan3">MORE +</span>
+                    <hr>
+                </div>
+            </div>
+            <!--图片-->
+            <div class="row examfont1" >
+                <div class="col-6 espan6">
+                    <div class="row">
+                        <div class="col-6">
+                            <img src="pictures/p_1.png" height="80%" width="100%"/>
+                            <div style="color: #696969b5;"align="center">
+                                2018年执业医师考试报名
+                                时间及入口
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <img src="pictures/p_2.png" height="80%" width="100%"/>
+                            <div style="color: #696969b5;"align="center">
+                                2018年执业医师考试资格
+                                审核时间
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row"style="margin-top: 4rem">
+                        <div class="col-6">
+                            <img src="pictures/p_1.png" height="80%" width="100%"/>
+                            <div style="color: #696969b5;"align="center">
+                                2018年执业医师考试报名
+                                时间及入口
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <img src="pictures/p_2.png" height="80%" width="100%"/>
+                            <div style="color: #696969b5;"align="center">
+                                2018年执业医师考试资格
+                                审核时间
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 espan7 ">
+                    <div class="examdiv10">
+                        <a><span>热门资讯</span></a>
+                        <a><span style="color: #696969b5;">最新资讯</span></a>
+                        <a><span style="color: #696969b5;">最新试卷</span></a>
+                    </div>
+                    <div class="examdiv11">
+                        2018年全国各省执业药师考试报名通知汇.....
+                    </div>
+                    <!--热点-->
+                    <div class="examdiv12 row">
+                        <div style="color: #e09f07;"class="simplefont2 "><a>热点</a></div>
+                        <div style="color: #e09f07;"class="simplefont2 examdiv2">|</div>
+                        <div class="simplefont2 examdiv2 "><a>2018卫生资格考试大纲</a></div>
+                    </div>
+                    <!--热点-->
+                    <div class="examdiv12 row">
+                        <div style="color: #e09f07;"class="simplefont2 "><a>热点</a></div>
+                        <div style="color: #e09f07;"class="simplefont2 examdiv2">|</div>
+                        <div class="simplefont2 examdiv2 "><a>2018卫生资格考试大纲</a></div>
+                    </div>
+                    <!--考试信息-->
+                    <div class="examdiv12 simplefont2">
+                        <span><a>内蒙古自治区2018年住院医师规培招生简章</a></span>
+                    </div>
+                    <div class="examdiv12 simplefont2">
+                        <span><a>内蒙古自治区2018年住院医师规培招生简章</a></span>
+                    </div>
+                    <div class="examdiv12 simplefont2">
+                        <span><a>内蒙古自治区2018年住院医师规培招生简章</a></span>
+                    </div>
+                    <div class="examdiv12 simplefont2">
+                        <span><a>内蒙古自治区2018年住院医师规培招生简章</a></span>
+                    </div>
+                    <div class="examdiv12 simplefont2">
+                        <span><a>内蒙古自治区2018年住院医师规培招生简章</a></span>
+                    </div>
+                    <div class="examdiv12 simplefont2">
+                        <span><a>内蒙古自治区2018年住院医师规培招生简章</a></span>
+                    </div>
+                    <br><br><br><br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--医药类-->
+    <div class="row">
+        <div class="col-8 examdiv14"style="border: 1px solid;border-color: #69696921;">
+            <!--小导航-->
+            <div class="espan5">
+                <div style="margin-top: 20px;">
+                    <span ><a>医药类</a></span>
+                    <span style="color: dimgray;"class="espan4"><a>执业医师</a></span>
+                    <span style="color: dimgray;"class="espan4"><a>卫生资格</a></span>
+                    <span style="color: dimgray;"class="espan4"><a>职业护士</a></span>
+                    <span style="color: dimgray;"class="espan4"><a>医学高级</a></span>
+                    <span class="espan3">MORE +</span>
+                    <hr>
+                </div>
+            </div>
+            <!--图片-->
+            <div class="row examfont1" >
+                <div class="col-6 espan6">
+                    <div class="row">
+                        <div class="col-6">
+                            <img src="pictures/p_1.png" height="80%" width="100%"/>
+                            <div style="color: #696969b5;"align="center">
+                                2018年执业医师考试报名
+                                时间及入口
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <img src="pictures/p_2.png" height="80%" width="100%"/>
+                            <div style="color: #696969b5;"align="center">
+                                2018年执业医师考试资格
+                                审核时间
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row"style="margin-top: 4rem">
+                        <div class="col-6">
+                            <img src="pictures/p_1.png" height="80%" width="100%"/>
+                            <div style="color: #696969b5;"align="center">
+                                2018年执业医师考试报名
+                                时间及入口
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <img src="pictures/p_2.png" height="80%" width="100%"/>
+                            <div style="color: #696969b5;"align="center">
+                                2018年执业医师考试资格
+                                审核时间
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 espan7 ">
+                    <div class="examdiv10">
+                        <a><span>热门资讯</span></a>
+                        <a><span style="color: #696969b5;">最新资讯</span></a>
+                        <a><span style="color: #696969b5;">最新试卷</span></a>
+                    </div>
+                    <div class="examdiv11">
+                        2018年全国各省执业药师考试报名通知汇.....
+                    </div>
+                    <!--热点-->
+                    <div class="examdiv12 row">
+                        <div style="color: #e09f07;"class="simplefont2 "><a>热点</a></div>
+                        <div style="color: #e09f07;"class="simplefont2 examdiv2">|</div>
+                        <div class="simplefont2 examdiv2 "><a>2018卫生资格考试大纲</a></div>
+                    </div>
+                    <!--热点-->
+                    <div class="examdiv12 row">
+                        <div style="color: #e09f07;"class="simplefont2 "><a>热点</a></div>
+                        <div style="color: #e09f07;"class="simplefont2 examdiv2">|</div>
+                        <div class="simplefont2 examdiv2 "><a>2018卫生资格考试大纲</a></div>
+                    </div>
+                    <!--考试信息-->
+                    <div class="examdiv12 simplefont2">
+                        <span><a>内蒙古自治区2018年住院医师规培招生简章</a></span>
+                    </div>
+                    <div class="examdiv12 simplefont2">
+                        <span><a>内蒙古自治区2018年住院医师规培招生简章</a></span>
+                    </div>
+                    <div class="examdiv12 simplefont2">
+                        <span><a>内蒙古自治区2018年住院医师规培招生简章</a></span>
+                    </div>
+                    <div class="examdiv12 simplefont2">
+                        <span><a>内蒙古自治区2018年住院医师规培招生简章</a></span>
+                    </div>
+                    <div class="examdiv12 simplefont2">
+                        <span><a>内蒙古自治区2018年住院医师规培招生简章</a></span>
+                    </div>
+                    <div class="examdiv12 simplefont2">
+                        <span><a>内蒙古自治区2018年住院医师规培招生简章</a></span>
+                    </div>
+                    <br><br><br><br>
+                </div>
+            </div>
+        </div>
+        <!--右侧-->
+        <div class="col-4 chborder3 examdiv1">
+            <div style="margin-top: 25px;"class="row exfont2 examdiv3">
+                <div>执业医师</div>
+                <hr>
+            </div>
+            <!--相应模块-->
+            <div>
+                <div class="row">
+                    <div class="eximg1">
+                        <div class="examdiv13"><a>历年真题</a></div>
+                    </div>
+                    <div class="eximg2">
+                        <div class="examdiv13"><a>历年真题</a></div>
+                    </div>
+                    <div class="eximg3">
+                        <div class="examdiv13"><a>历年真题</a></div>
+                    </div>
+                    <div class="eximg4">
+                        <div class="examdiv13"><a>历年真题</a></div>
+                    </div>
+                    <div class="eximg5">
+                        <div class="examdiv13"><a>历年真题</a></div>
+                    </div>
+                    <div class="eximg6">
+                        <div class="examdiv13"><a>历年真题</a></div>
+                    </div>
+                </div>
+                <br><br><br><br>
+            </div>
+        </div>
+        <div class="col-12 examdiv15"style="border: 1px solid;border-color: #69696921;">
+            <!--小导航-->
+            <div class="espan5">
+                <div style="margin-top: 20px;">
+                    <span ><a>医药类</a></span>
+                    <span style="color: dimgray;"class="espan4"><a>执业医师</a></span>
+                    <span style="color: dimgray;"class="espan4"><a>卫生资格</a></span>
+                    <span style="color: dimgray;"class="espan4"><a>职业护士</a></span>
+                    <span style="color: dimgray;"class="espan4"><a>医学高级</a></span>
+                    <span class="espan3">MORE +</span>
+                    <hr>
+                </div>
+            </div>
+            <!--图片-->
+            <div class="row examfont1" >
+                <div class="col-6 espan6">
+                    <div class="row">
+                        <div class="col-6">
+                            <img src="pictures/p_1.png" height="80%" width="100%"/>
+                            <div style="color: #696969b5;"align="center">
+                                2018年执业医师考试报名
+                                时间及入口
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <img src="pictures/p_2.png" height="80%" width="100%"/>
+                            <div style="color: #696969b5;"align="center">
+                                2018年执业医师考试资格
+                                审核时间
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row"style="margin-top: 4rem">
+                        <div class="col-6">
+                            <img src="pictures/p_1.png" height="80%" width="100%"/>
+                            <div style="color: #696969b5;"align="center">
+                                2018年执业医师考试报名
+                                时间及入口
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <img src="pictures/p_2.png" height="80%" width="100%"/>
+                            <div style="color: #696969b5;"align="center">
+                                2018年执业医师考试资格
+                                审核时间
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 espan7 ">
+                    <div class="examdiv10">
+                        <a><span>热门资讯</span></a>
+                        <a><span style="color: #696969b5;">最新资讯</span></a>
+                        <a><span style="color: #696969b5;">最新试卷</span></a>
+                    </div>
+                    <div class="examdiv11">
+                        2018年全国各省执业药师考试报名通知汇.....
+                    </div>
+                    <!--热点-->
+                    <div class="examdiv12 row">
+                        <div style="color: #e09f07;"class="simplefont2 "><a>热点</a></div>
+                        <div style="color: #e09f07;"class="simplefont2 examdiv2">|</div>
+                        <div class="simplefont2 examdiv2 "><a>2018卫生资格考试大纲</a></div>
+                    </div>
+                    <!--热点-->
+                    <div class="examdiv12 row">
+                        <div style="color: #e09f07;"class="simplefont2 "><a>热点</a></div>
+                        <div style="color: #e09f07;"class="simplefont2 examdiv2">|</div>
+                        <div class="simplefont2 examdiv2 "><a>2018卫生资格考试大纲</a></div>
+                    </div>
+                    <!--考试信息-->
+                    <div class="examdiv12 simplefont2">
+                        <span><a>内蒙古自治区2018年住院医师规培招生简章</a></span>
+                    </div>
+                    <div class="examdiv12 simplefont2">
+                        <span><a>内蒙古自治区2018年住院医师规培招生简章</a></span>
+                    </div>
+                    <div class="examdiv12 simplefont2">
+                        <span><a>内蒙古自治区2018年住院医师规培招生简章</a></span>
+                    </div>
+                    <div class="examdiv12 simplefont2">
+                        <span><a>内蒙古自治区2018年住院医师规培招生简章</a></span>
+                    </div>
+                    <div class="examdiv12 simplefont2">
+                        <span><a>内蒙古自治区2018年住院医师规培招生简章</a></span>
+                    </div>
+                    <div class="examdiv12 simplefont2">
+                        <span><a>内蒙古自治区2018年住院医师规培招生简章</a></span>
+                    </div>
+                    <br><br><br><br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--考试试题-->
+    <div class="row">
+        <div class="col-8 examdiv14"style="border: 1px solid;border-color: #69696921;">
+            <!--小导航-->
+            <div class="espan5">
+                <div style="margin-top: 20px;">
+                    <span><a>考试试题</a></span>
+                    <ul style="list-style: none;"class="exampan1">
+                        <li style="float: left;"class="exli1">
+                        </li>
+                        <li style="background-color: #ceefea;" class="exli1">
+                        </li>
+                        <li style="background-color: #ceefea;"class="exli1">
+                        </li>
+                        <li style="background-color: #ceefea;"class="exli1">
+                        </li>
+                        <li style="background-color: #ceefea;"class="exli1">
+                        </li>
+                        <br>
+                    </ul>
+                    <hr style="margin-left: 20px;margin-top: -1px;">
+                </div>
+            </div>
+            <!--题目-->
+            <div class="row examfont1">
+                <div class="col-6 espan6" style="margin-top: 15px">
+                    <div>
+                      <div style="margin-bottom: 20px;">
+                          <a>
+                          <img src="pictures/试卷.png" height="20" width="20"/>
+                          <span style="color: #45ade3">[多项选择题]</span>
+                          <span>我国的国际收支统计申报具有如下特...</span>
+                          </a>
+                      </div>
+                        <div style="margin-bottom: 20px;">
+                            <a>
+                                <img src="pictures/试卷.png" height="20" width="20"/>
+                                <span style="color: #45ade3">[多项选择题]</span>
+                                <span>我国的国际收支统计申报体系从内容...</span>
+                            </a>
+                        </div>
+                        <div style="margin-bottom: 20px;">
+                            <a>
+                                <img src="pictures/试卷.png" height="20" width="20"/>
+                                <span style="color: #45ade3">[单项选择题]</span>
+                                <span>我国的国际收支统计申报具有如下特...</span>
+                            </a>
+                        </div>
+                        <div style="margin-bottom: 20px;">
+                            <a>
+                                <img src="pictures/试卷.png" height="20" width="20"/>
+                                <span style="color: #45ade3">[问答题]</span>
+                                <span>保险公司是否承保货损的赔偿？是赔...</span>
+                            </a>
+                        </div>
+                        <div style="margin-bottom: 20px;">
+                            <a>
+                                <img src="pictures/试卷.png" height="20" width="20"/>
+                                <span style="color: #45ade3">[单项选择题]</span>
+                                <span>Which statement...</span>
+                            </a>
+                        </div>
+                        <div style="margin-bottom: 20px;">
+                            <a>
+                                <img src="pictures/试卷.png" height="20" width="20"/>
+                                <span style="color: #45ade3">[名字解释]</span>
+                                <span>文字课程</span>
+                            </a>
+                        </div>
+                        <div style="margin-bottom: 20px;">
+                            <a>
+                                <img src="pictures/试卷.png" height="20" width="20"/>
+                                <span style="color: #45ade3">[名次解释]</span>
+                                <span>理解课程</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6 col-lg-6 "style="margin-left: -34px;margin-top: 15px">
+                    <div>
+                        <div style="margin-bottom: 20px;">
+                            <a>
+                                <img src="pictures/试卷.png" height="20" width="20"/>
+                                <span style="color: #45ade3">[多项选择题]</span>
+                                <span>我国的国际收支统计申报具有如下特...</span>
+                            </a>
+                        </div>
+                        <div style="margin-bottom: 20px;">
+                            <a>
+                                <img src="pictures/试卷.png" height="20" width="20"/>
+                                <span style="color: #45ade3">[多项选择题]</span>
+                                <span>我国的国际收支统计申报体系从内容...</span>
+                            </a>
+                        </div>
+                        <div style="margin-bottom: 20px;">
+                            <a>
+                                <img src="pictures/试卷.png" height="20" width="20"/>
+                                <span style="color: #45ade3">[单项选择题]</span>
+                                <span>我国的国际收支统计申报具有如下特...</span>
+                            </a>
+                        </div>
+                        <div style="margin-bottom: 20px;">
+                            <a>
+                                <img src="pictures/试卷.png" height="20" width="20"/>
+                                <span style="color: #45ade3">[问答题]</span>
+                                <span>保险公司是否承保货损的赔偿？是赔...</span>
+                            </a>
+                        </div>
+                        <div style="margin-bottom: 20px;">
+                            <a>
+                                <img src="pictures/试卷.png" height="20" width="20"/>
+                                <span style="color: #45ade3">[单项选择题]</span>
+                                <span>Which statement...</span>
+                            </a>
+                        </div>
+                        <div style="margin-bottom: 20px;">
+                            <a>
+                                <img src="pictures/试卷.png" height="20" width="20"/>
+                                <span style="color: #45ade3">[名字解释]</span>
+                                <span>文字课程</span>
+                            </a>
+                        </div>
+                        <div style="margin-bottom: 20px;">
+                            <a>
+                                <img src="pictures/试卷.png" height="20" width="20"/>
+                                <span style="color: #45ade3">[名次解释]</span>
+                                <span>理解课程</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--右侧-->
+        <div class="col-4 chborder3 examdiv1">
+            <div style="margin-top: 25px;"class="row exfont2 examdiv3">
+                <div>每日一练</div>
+                <div class="espan2">MORE +</div>
+                <hr>
+            </div>
+            <!--相应模块-->
+            <div class="row examfont1 exam1" >
+                <img src="pictures/日历2.png" height="18" />
+                <div>初级通信工程师每日一练(2018-07-24)</div>
+            </div>
+            <div class="row examfont1 exam1" >
+                <img src="pictures/日历2.png" height="18" />
+                <div>初级通信工程师每日一练(2018-07-24)</div>
+            </div>
+            <div class="row examfont1 exam1" >
+                <img src="pictures/日历2.png" height="18" />
+                <div>初级通信工程师每日一练(2018-07-24)</div>
+            </div>
+            <div class="row examfont1 exam1" >
+                <img src="pictures/日历2.png" height="18" />
+                <div>初级通信工程师每日一练(2018-07-24)</div>
+            </div>
+            <div class="row examfont1 exam1" >
+                <img src="pictures/日历2.png" height="18" />
+                <div>初级通信工程师每日一练(2018-07-24)</div>
+            </div>
+            <div class="row examfont1 exam1" >
+                <img src="pictures/日历2.png" height="18" />
+                <div>初级通信工程师每日一练(2018-07-24)</div>
+            </div>
+            <div class="row examfont1 exam1" >
+                <img src="pictures/日历2.png" height="18" />
+                <div>初级通信工程师每日一练(2018-07-24)</div>
+            </div>
+        </div>
+        <div class="col-12 examdiv14 examdiv15"style="border: 1px solid;border-color: #69696921;">
+            <!--小导航-->
+            <div class="espan5">
+                <div style="margin-top: 20px;">
+                    <span><a>考试试题</a></span>
+                    <ul style="list-style: none;"class="exampan1">
+                        <li style="float: left;"class="exli1">
+                        </li>
+                        <li style="background-color: #ceefea;" class="exli1">
+                        </li>
+                        <li style="background-color: #ceefea;"class="exli1">
+                        </li>
+                        <li style="background-color: #ceefea;"class="exli1">
+                        </li>
+                        <li style="background-color: #ceefea;"class="exli1">
+                        </li>
+                        <br>
+                    </ul>
+                    <hr style="margin-left: 20px;margin-top: -1px;">
+                </div>
+            </div>
+            <!--题目-->
+            <div class="row examfont1">
+                <div class="col-6 espan6" style="margin-top: 15px">
+                    <div>
+                        <div style="margin-bottom: 20px;">
+                            <a>
+                                <img src="pictures/试卷.png" height="20" width="20"/>
+                                <span style="color: #45ade3">[多项选择题]</span>
+                                <span>我国的国际收支统计申报具有如下特...</span>
+                            </a>
+                        </div>
+                        <div style="margin-bottom: 20px;">
+                            <a>
+                                <img src="pictures/试卷.png" height="20" width="20"/>
+                                <span style="color: #45ade3">[多项选择题]</span>
+                                <span>我国的国际收支统计申报体系从内容...</span>
+                            </a>
+                        </div>
+                        <div style="margin-bottom: 20px;">
+                            <a>
+                                <img src="pictures/试卷.png" height="20" width="20"/>
+                                <span style="color: #45ade3">[单项选择题]</span>
+                                <span>我国的国际收支统计申报具有如下特...</span>
+                            </a>
+                        </div>
+                        <div style="margin-bottom: 20px;">
+                            <a>
+                                <img src="pictures/试卷.png" height="20" width="20"/>
+                                <span style="color: #45ade3">[问答题]</span>
+                                <span>保险公司是否承保货损的赔偿？是赔...</span>
+                            </a>
+                        </div>
+                        <div style="margin-bottom: 20px;">
+                            <a>
+                                <img src="pictures/试卷.png" height="20" width="20"/>
+                                <span style="color: #45ade3">[单项选择题]</span>
+                                <span>Which statement...</span>
+                            </a>
+                        </div>
+                        <div style="margin-bottom: 20px;">
+                            <a>
+                                <img src="pictures/试卷.png" height="20" width="20"/>
+                                <span style="color: #45ade3">[名字解释]</span>
+                                <span>文字课程</span>
+                            </a>
+                        </div>
+                        <div style="margin-bottom: 20px;">
+                            <a>
+                                <img src="pictures/试卷.png" height="20" width="20"/>
+                                <span style="color: #45ade3">[名次解释]</span>
+                                <span>理解课程</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6 col-lg-6 "style="margin-left: -34px;margin-top: 15px">
+                    <div>
+                        <div style="margin-bottom: 20px;">
+                            <a>
+                                <img src="pictures/试卷.png" height="20" width="20"/>
+                                <span style="color: #45ade3">[多项选择题]</span>
+                                <span>我国的国际收支统计申报具有如下特...</span>
+                            </a>
+                        </div>
+                        <div style="margin-bottom: 20px;">
+                            <a>
+                                <img src="pictures/试卷.png" height="20" width="20"/>
+                                <span style="color: #45ade3">[多项选择题]</span>
+                                <span>我国的国际收支统计申报体系从内容...</span>
+                            </a>
+                        </div>
+                        <div style="margin-bottom: 20px;">
+                            <a>
+                                <img src="pictures/试卷.png" height="20" width="20"/>
+                                <span style="color: #45ade3">[单项选择题]</span>
+                                <span>我国的国际收支统计申报具有如下特...</span>
+                            </a>
+                        </div>
+                        <div style="margin-bottom: 20px;">
+                            <a>
+                                <img src="pictures/试卷.png" height="20" width="20"/>
+                                <span style="color: #45ade3">[问答题]</span>
+                                <span>保险公司是否承保货损的赔偿？是赔...</span>
+                            </a>
+                        </div>
+                        <div style="margin-bottom: 20px;">
+                            <a>
+                                <img src="pictures/试卷.png" height="20" width="20"/>
+                                <span style="color: #45ade3">[单项选择题]</span>
+                                <span>Which statement...</span>
+                            </a>
+                        </div>
+                        <div style="margin-bottom: 20px;">
+                            <a>
+                                <img src="pictures/试卷.png" height="20" width="20"/>
+                                <span style="color: #45ade3">[名字解释]</span>
+                                <span>文字课程</span>
+                            </a>
+                        </div>
+                        <div style="margin-bottom: 20px;">
+                            <a>
+                                <img src="pictures/试卷.png" height="20" width="20"/>
+                                <span style="color: #45ade3">[名次解释]</span>
+                                <span>理解课程</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!--医药类-->
+    <div class="row">
+        <div class="col-8 examdiv14"style="border: 1px solid;border-color: #69696921;">
+            <!--小导航-->
+            <div class="espan5">
+                <div style="margin-top: 20px;">
+                    <span ><a>医药类</a></span>
+                    <span style="color: dimgray;"class="espan4"><a>执业医师</a></span>
+                    <span style="color: dimgray;"class="espan4"><a>卫生资格</a></span>
+                    <span style="color: dimgray;"class="espan4"><a>职业护士</a></span>
+                    <span style="color: dimgray;"class="espan4"><a>医学高级</a></span>
+                    <span class="espan3">MORE +</span>
+                    <hr>
+                </div>
+            </div>
+            <!--图片-->
+            <div class="row examfont1" >
+                <div class="col-6 espan6">
+                    <div class="row">
+                        <div class="col-6">
+                            <img src="pictures/p_1.png" height="80%" width="100%"/>
+                            <div style="color: #696969b5;"align="center">
+                                2018年执业医师考试报名
+                                时间及入口
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <img src="pictures/p_2.png" height="80%" width="100%"/>
+                            <div style="color: #696969b5;"align="center">
+                                2018年执业医师考试资格
+                                审核时间
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row"style="margin-top: 4rem">
+                        <div class="col-6">
+                            <img src="pictures/p_1.png" height="80%" width="100%"/>
+                            <div style="color: #696969b5;"align="center">
+                                2018年执业医师考试报名
+                                时间及入口
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <img src="pictures/p_2.png" height="80%" width="100%"/>
+                            <div style="color: #696969b5;"align="center">
+                                2018年执业医师考试资格
+                                审核时间
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 espan7 ">
+                    <div class="examdiv10">
+                        <a><span>热门资讯</span></a>
+                        <a><span style="color: #696969b5;">最新资讯</span></a>
+                        <a><span style="color: #696969b5;">最新试卷</span></a>
+                    </div>
+                    <div class="examdiv11">
+                        2018年全国各省执业药师考试报名通知汇.....
+                    </div>
+                    <!--热点-->
+                    <div class="examdiv12 row">
+                        <div style="color: #e09f07;"class="simplefont2 "><a>热点</a></div>
+                        <div style="color: #e09f07;"class="simplefont2 examdiv2">|</div>
+                        <div class="simplefont2 examdiv2 "><a>2018卫生资格考试大纲</a></div>
+                    </div>
+                    <!--热点-->
+                    <div class="examdiv12 row">
+                        <div style="color: #e09f07;"class="simplefont2 "><a>热点</a></div>
+                        <div style="color: #e09f07;"class="simplefont2 examdiv2">|</div>
+                        <div class="simplefont2 examdiv2 "><a>2018卫生资格考试大纲</a></div>
+                    </div>
+                    <!--考试信息-->
+                    <div class="examdiv12 simplefont2">
+                        <span><a>内蒙古自治区2018年住院医师规培招生简章</a></span>
+                    </div>
+                    <div class="examdiv12 simplefont2">
+                        <span><a>内蒙古自治区2018年住院医师规培招生简章</a></span>
+                    </div>
+                    <div class="examdiv12 simplefont2">
+                        <span><a>内蒙古自治区2018年住院医师规培招生简章</a></span>
+                    </div>
+                    <div class="examdiv12 simplefont2">
+                        <span><a>内蒙古自治区2018年住院医师规培招生简章</a></span>
+                    </div>
+                    <div class="examdiv12 simplefont2">
+                        <span><a>内蒙古自治区2018年住院医师规培招生简章</a></span>
+                    </div>
+                    <div class="examdiv12 simplefont2">
+                        <span><a>内蒙古自治区2018年住院医师规培招生简章</a></span>
+                    </div>
+                    <br><br><br><br>
+                </div>
+            </div>
+        </div>
+        <!--右侧-->
+        <div class="col-4 chborder3 examdiv1">
+            <div style="margin-top: 25px;"class="row exfont2 examdiv3">
+                <div>执业医师</div>
+                <hr>
+            </div>
+            <!--相应模块-->
+            <div>
+                <div class="row">
+                    <div class="eximg1">
+                        <div class="examdiv13"><a>历年真题</a></div>
+                    </div>
+                    <div class="eximg2">
+                        <div class="examdiv13"><a>历年真题</a></div>
+                    </div>
+                    <div class="eximg3">
+                        <div class="examdiv13"><a>历年真题</a></div>
+                    </div>
+                    <div class="eximg4">
+                        <div class="examdiv13"><a>历年真题</a></div>
+                    </div>
+                    <div class="eximg5">
+                        <div class="examdiv13"><a>历年真题</a></div>
+                    </div>
+                    <div class="eximg6">
+                        <div class="examdiv13"><a>历年真题</a></div>
+                    </div>
+                </div>
+                <br><br><br><br>
+            </div>
+        </div>
+        <div class="col-12 examdiv15"style="border: 1px solid;border-color: #69696921;">
+            <!--小导航-->
+            <div class="espan5">
+                <div style="margin-top: 20px;">
+                    <span ><a>医药类</a></span>
+                    <span style="color: dimgray;"class="espan4"><a>执业医师</a></span>
+                    <span style="color: dimgray;"class="espan4"><a>卫生资格</a></span>
+                    <span style="color: dimgray;"class="espan4"><a>职业护士</a></span>
+                    <span style="color: dimgray;"class="espan4"><a>医学高级</a></span>
+                    <span class="espan3">MORE +</span>
+                    <hr>
+                </div>
+            </div>
+            <!--图片-->
+            <div class="row examfont1" >
+                <div class="col-6 espan6">
+                    <div class="row">
+                        <div class="col-6">
+                            <img src="pictures/p_1.png" height="80%" width="100%"/>
+                            <div style="color: #696969b5;"align="center">
+                                2018年执业医师考试报名
+                                时间及入口
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <img src="pictures/p_2.png" height="80%" width="100%"/>
+                            <div style="color: #696969b5;"align="center">
+                                2018年执业医师考试资格
+                                审核时间
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row"style="margin-top: 4rem">
+                        <div class="col-6">
+                            <img src="pictures/p_1.png" height="80%" width="100%"/>
+                            <div style="color: #696969b5;"align="center">
+                                2018年执业医师考试报名
+                                时间及入口
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <img src="pictures/p_2.png" height="80%" width="100%"/>
+                            <div style="color: #696969b5;"align="center">
+                                2018年执业医师考试资格
+                                审核时间
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 espan7 ">
+                    <div class="examdiv10">
+                        <a><span>热门资讯</span></a>
+                        <a><span style="color: #696969b5;">最新资讯</span></a>
+                        <a><span style="color: #696969b5;">最新试卷</span></a>
+                    </div>
+                    <div class="examdiv11">
+                        2018年全国各省执业药师考试报名通知汇.....
+                    </div>
+                    <!--热点-->
+                    <div class="examdiv12 row">
+                        <div style="color: #e09f07;"class="simplefont2 "><a>热点</a></div>
+                        <div style="color: #e09f07;"class="simplefont2 examdiv2">|</div>
+                        <div class="simplefont2 examdiv2 "><a>2018卫生资格考试大纲</a></div>
+                    </div>
+                    <!--热点-->
+                    <div class="examdiv12 row">
+                        <div style="color: #e09f07;"class="simplefont2 "><a>热点</a></div>
+                        <div style="color: #e09f07;"class="simplefont2 examdiv2">|</div>
+                        <div class="simplefont2 examdiv2 "><a>2018卫生资格考试大纲</a></div>
+                    </div>
+                    <!--考试信息-->
+                    <div class="examdiv12 simplefont2">
+                        <span><a>内蒙古自治区2018年住院医师规培招生简章</a></span>
+                    </div>
+                    <div class="examdiv12 simplefont2">
+                        <span><a>内蒙古自治区2018年住院医师规培招生简章</a></span>
+                    </div>
+                    <div class="examdiv12 simplefont2">
+                        <span><a>内蒙古自治区2018年住院医师规培招生简章</a></span>
+                    </div>
+                    <div class="examdiv12 simplefont2">
+                        <span><a>内蒙古自治区2018年住院医师规培招生简章</a></span>
+                    </div>
+                    <div class="examdiv12 simplefont2">
+                        <span><a>内蒙古自治区2018年住院医师规培招生简章</a></span>
+                    </div>
+                    <div class="examdiv12 simplefont2">
+                        <span><a>内蒙古自治区2018年住院医师规培招生简章</a></span>
+                    </div>
+                    <br><br><br><br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--医药类-->
+    <div class="row">
+        <div class="col-8 examdiv14"style="border: 1px solid;border-color: #69696921;">
+            <!--小导航-->
+            <div class="espan5">
+                <div style="margin-top: 20px;">
+                    <span ><a>医药类</a></span>
+                    <span style="color: dimgray;"class="espan4"><a>执业医师</a></span>
+                    <span style="color: dimgray;"class="espan4"><a>卫生资格</a></span>
+                    <span style="color: dimgray;"class="espan4"><a>职业护士</a></span>
+                    <span style="color: dimgray;"class="espan4"><a>医学高级</a></span>
+                    <span class="espan3">MORE +</span>
+                    <hr>
+                </div>
+            </div>
+            <!--图片-->
+            <div class="row examfont1" >
+                <div class="col-6 espan6">
+                    <div class="row">
+                        <div class="col-6">
+                            <img src="pictures/p_1.png" height="80%" width="100%"/>
+                            <div style="color: #696969b5;"align="center">
+                                2018年执业医师考试报名
+                                时间及入口
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <img src="pictures/p_2.png" height="80%" width="100%"/>
+                            <div style="color: #696969b5;"align="center">
+                                2018年执业医师考试资格
+                                审核时间
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row"style="margin-top: 4rem">
+                        <div class="col-6">
+                            <img src="pictures/p_1.png" height="80%" width="100%"/>
+                            <div style="color: #696969b5;"align="center">
+                                2018年执业医师考试报名
+                                时间及入口
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <img src="pictures/p_2.png" height="80%" width="100%"/>
+                            <div style="color: #696969b5;"align="center">
+                                2018年执业医师考试资格
+                                审核时间
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 espan7 ">
+                    <div class="examdiv10">
+                        <a><span>热门资讯</span></a>
+                        <a><span style="color: #696969b5;">最新资讯</span></a>
+                        <a><span style="color: #696969b5;">最新试卷</span></a>
+                    </div>
+                    <div class="examdiv11">
+                        2018年全国各省执业药师考试报名通知汇.....
+                    </div>
+                    <!--热点-->
+                    <div class="examdiv12 row">
+                        <div style="color: #e09f07;"class="simplefont2 "><a>热点</a></div>
+                        <div style="color: #e09f07;"class="simplefont2 examdiv2">|</div>
+                        <div class="simplefont2 examdiv2 "><a>2018卫生资格考试大纲</a></div>
+                    </div>
+                    <!--热点-->
+                    <div class="examdiv12 row">
+                        <div style="color: #e09f07;"class="simplefont2 "><a>热点</a></div>
+                        <div style="color: #e09f07;"class="simplefont2 examdiv2">|</div>
+                        <div class="simplefont2 examdiv2 "><a>2018卫生资格考试大纲</a></div>
+                    </div>
+                    <!--考试信息-->
+                    <div class="examdiv12 simplefont2">
+                        <span><a>内蒙古自治区2018年住院医师规培招生简章</a></span>
+                    </div>
+                    <div class="examdiv12 simplefont2">
+                        <span><a>内蒙古自治区2018年住院医师规培招生简章</a></span>
+                    </div>
+                    <div class="examdiv12 simplefont2">
+                        <span><a>内蒙古自治区2018年住院医师规培招生简章</a></span>
+                    </div>
+                    <div class="examdiv12 simplefont2">
+                        <span><a>内蒙古自治区2018年住院医师规培招生简章</a></span>
+                    </div>
+                    <div class="examdiv12 simplefont2">
+                        <span><a>内蒙古自治区2018年住院医师规培招生简章</a></span>
+                    </div>
+                    <div class="examdiv12 simplefont2">
+                        <span><a>内蒙古自治区2018年住院医师规培招生简章</a></span>
+                    </div>
+                    <br><br><br><br>
+                </div>
+            </div>
+        </div>
+        <!--右侧-->
+        <div class="col-4 chborder3 examdiv1">
+            <div style="margin-top: 25px;"class="row exfont2 examdiv3">
+                <div>执业医师</div>
+                <hr>
+            </div>
+            <!--相应模块-->
+            <div>
+                <div class="row">
+                    <div class="eximg1">
+                        <div class="examdiv13"><a>历年真题</a></div>
+                    </div>
+                    <div class="eximg2">
+                        <div class="examdiv13"><a>历年真题</a></div>
+                    </div>
+                    <div class="eximg3">
+                        <div class="examdiv13"><a>历年真题</a></div>
+                    </div>
+                    <div class="eximg4">
+                        <div class="examdiv13"><a>历年真题</a></div>
+                    </div>
+                    <div class="eximg5">
+                        <div class="examdiv13"><a>历年真题</a></div>
+                    </div>
+                    <div class="eximg6">
+                        <div class="examdiv13"><a>历年真题</a></div>
+                    </div>
+                </div>
+                <br><br><br><br>
+            </div>
+        </div>
+        <div class="col-12 examdiv15"style="border: 1px solid;border-color: #69696921;">
+            <!--小导航-->
+            <div class="espan5">
+                <div style="margin-top: 20px;">
+                    <span ><a>医药类</a></span>
+                    <span style="color: dimgray;"class="espan4"><a>执业医师</a></span>
+                    <span style="color: dimgray;"class="espan4"><a>卫生资格</a></span>
+                    <span style="color: dimgray;"class="espan4"><a>职业护士</a></span>
+                    <span style="color: dimgray;"class="espan4"><a>医学高级</a></span>
+                    <span class="espan3">MORE +</span>
+                    <hr>
+                </div>
+            </div>
+            <!--图片-->
+            <div class="row examfont1" >
+                <div class="col-6 espan6">
+                    <div class="row">
+                        <div class="col-6">
+                            <img src="pictures/p_1.png" height="80%" width="100%"/>
+                            <div style="color: #696969b5;"align="center">
+                                2018年执业医师考试报名
+                                时间及入口
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <img src="pictures/p_2.png" height="80%" width="100%"/>
+                            <div style="color: #696969b5;"align="center">
+                                2018年执业医师考试资格
+                                审核时间
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row"style="margin-top: 4rem">
+                        <div class="col-6">
+                            <img src="pictures/p_1.png" height="80%" width="100%"/>
+                            <div style="color: #696969b5;"align="center">
+                                2018年执业医师考试报名
+                                时间及入口
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <img src="pictures/p_2.png" height="80%" width="100%"/>
+                            <div style="color: #696969b5;"align="center">
+                                2018年执业医师考试资格
+                                审核时间
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 espan7 ">
+                    <div class="examdiv10">
+                        <a><span>热门资讯</span></a>
+                        <a><span style="color: #696969b5;">最新资讯</span></a>
+                        <a><span style="color: #696969b5;">最新试卷</span></a>
+                    </div>
+                    <div class="examdiv11">
+                        2018年全国各省执业药师考试报名通知汇.....
+                    </div>
+                    <!--热点-->
+                    <div class="examdiv12 row">
+                        <div style="color: #e09f07;"class="simplefont2 "><a>热点</a></div>
+                        <div style="color: #e09f07;"class="simplefont2 examdiv2">|</div>
+                        <div class="simplefont2 examdiv2 "><a>2018卫生资格考试大纲</a></div>
+                    </div>
+                    <!--热点-->
+                    <div class="examdiv12 row">
+                        <div style="color: #e09f07;"class="simplefont2 "><a>热点</a></div>
+                        <div style="color: #e09f07;"class="simplefont2 examdiv2">|</div>
+                        <div class="simplefont2 examdiv2 "><a>2018卫生资格考试大纲</a></div>
+                    </div>
+                    <!--考试信息-->
+                    <div class="examdiv12 simplefont2">
+                        <span><a>内蒙古自治区2018年住院医师规培招生简章</a></span>
+                    </div>
+                    <div class="examdiv12 simplefont2">
+                        <span><a>内蒙古自治区2018年住院医师规培招生简章</a></span>
+                    </div>
+                    <div class="examdiv12 simplefont2">
+                        <span><a>内蒙古自治区2018年住院医师规培招生简章</a></span>
+                    </div>
+                    <div class="examdiv12 simplefont2">
+                        <span><a>内蒙古自治区2018年住院医师规培招生简章</a></span>
+                    </div>
+                    <div class="examdiv12 simplefont2">
+                        <span><a>内蒙古自治区2018年住院医师规培招生简章</a></span>
+                    </div>
+                    <div class="examdiv12 simplefont2">
+                        <span><a>内蒙古自治区2018年住院医师规培招生简章</a></span>
+                    </div>
+                    <br><br><br><br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--考试试题-->
+    <div class="row">
+        <div class="col-8 examdiv14"style="border: 1px solid;border-color: #69696921;">
+            <!--小导航-->
+            <div class="espan5">
+                <div style="margin-top: 20px;">
+                    <span><a>考试试题</a></span>
+                    <ul style="list-style: none;"class="exampan1">
+                        <li style="float: left;"class="exli1">
+                        </li>
+                        <li style="background-color: #ceefea;" class="exli1">
+                        </li>
+                        <li style="background-color: #ceefea;"class="exli1">
+                        </li>
+                        <li style="background-color: #ceefea;"class="exli1">
+                        </li>
+                        <li style="background-color: #ceefea;"class="exli1">
+                        </li>
+                        <br>
+                    </ul>
+                    <hr style="margin-left: 20px;margin-top: -1px;">
+                </div>
+            </div>
+            <!--题目-->
+            <div class="row examfont1">
+                <div class="col-6 espan6" style="margin-top: 15px">
+                    <div>
+                        <div style="margin-bottom: 20px;">
+                            <a>
+                                <img src="pictures/试卷.png" height="20" width="20"/>
+                                <span style="color: #45ade3">[多项选择题]</span>
+                                <span>我国的国际收支统计申报具有如下特...</span>
+                            </a>
+                        </div>
+                        <div style="margin-bottom: 20px;">
+                            <a>
+                                <img src="pictures/试卷.png" height="20" width="20"/>
+                                <span style="color: #45ade3">[多项选择题]</span>
+                                <span>我国的国际收支统计申报体系从内容...</span>
+                            </a>
+                        </div>
+                        <div style="margin-bottom: 20px;">
+                            <a>
+                                <img src="pictures/试卷.png" height="20" width="20"/>
+                                <span style="color: #45ade3">[单项选择题]</span>
+                                <span>我国的国际收支统计申报具有如下特...</span>
+                            </a>
+                        </div>
+                        <div style="margin-bottom: 20px;">
+                            <a>
+                                <img src="pictures/试卷.png" height="20" width="20"/>
+                                <span style="color: #45ade3">[问答题]</span>
+                                <span>保险公司是否承保货损的赔偿？是赔...</span>
+                            </a>
+                        </div>
+                        <div style="margin-bottom: 20px;">
+                            <a>
+                                <img src="pictures/试卷.png" height="20" width="20"/>
+                                <span style="color: #45ade3">[单项选择题]</span>
+                                <span>Which statement...</span>
+                            </a>
+                        </div>
+                        <div style="margin-bottom: 20px;">
+                            <a>
+                                <img src="pictures/试卷.png" height="20" width="20"/>
+                                <span style="color: #45ade3">[名字解释]</span>
+                                <span>文字课程</span>
+                            </a>
+                        </div>
+                        <div style="margin-bottom: 20px;">
+                            <a>
+                                <img src="pictures/试卷.png" height="20" width="20"/>
+                                <span style="color: #45ade3">[名次解释]</span>
+                                <span>理解课程</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6 col-lg-6 "style="margin-left: -34px;margin-top: 15px">
+                    <div>
+                        <div style="margin-bottom: 20px;">
+                            <a>
+                                <img src="pictures/试卷.png" height="20" width="20"/>
+                                <span style="color: #45ade3">[多项选择题]</span>
+                                <span>我国的国际收支统计申报具有如下特...</span>
+                            </a>
+                        </div>
+                        <div style="margin-bottom: 20px;">
+                            <a>
+                                <img src="pictures/试卷.png" height="20" width="20"/>
+                                <span style="color: #45ade3">[多项选择题]</span>
+                                <span>我国的国际收支统计申报体系从内容...</span>
+                            </a>
+                        </div>
+                        <div style="margin-bottom: 20px;">
+                            <a>
+                                <img src="pictures/试卷.png" height="20" width="20"/>
+                                <span style="color: #45ade3">[单项选择题]</span>
+                                <span>我国的国际收支统计申报具有如下特...</span>
+                            </a>
+                        </div>
+                        <div style="margin-bottom: 20px;">
+                            <a>
+                                <img src="pictures/试卷.png" height="20" width="20"/>
+                                <span style="color: #45ade3">[问答题]</span>
+                                <span>保险公司是否承保货损的赔偿？是赔...</span>
+                            </a>
+                        </div>
+                        <div style="margin-bottom: 20px;">
+                            <a>
+                                <img src="pictures/试卷.png" height="20" width="20"/>
+                                <span style="color: #45ade3">[单项选择题]</span>
+                                <span>Which statement...</span>
+                            </a>
+                        </div>
+                        <div style="margin-bottom: 20px;">
+                            <a>
+                                <img src="pictures/试卷.png" height="20" width="20"/>
+                                <span style="color: #45ade3">[名字解释]</span>
+                                <span>文字课程</span>
+                            </a>
+                        </div>
+                        <div style="margin-bottom: 20px;">
+                            <a>
+                                <img src="pictures/试卷.png" height="20" width="20"/>
+                                <span style="color: #45ade3">[名次解释]</span>
+                                <span>理解课程</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--右侧-->
+        <div class="col-4 chborder3 examdiv1">
+            <div style="margin-top: 25px;"class="row exfont2 examdiv3">
+                <div>每日一练</div>
+                <div class="espan2">MORE +</div>
+                <hr>
+            </div>
+            <!--相应模块-->
+            <div class="row examfont1 exam1" >
+                <img src="pictures/日历2.png" height="18" />
+                <div>初级通信工程师每日一练(2018-07-24)</div>
+            </div>
+            <div class="row examfont1 exam1" >
+                <img src="pictures/日历2.png" height="18" />
+                <div>初级通信工程师每日一练(2018-07-24)</div>
+            </div>
+            <div class="row examfont1 exam1" >
+                <img src="pictures/日历2.png" height="18" />
+                <div>初级通信工程师每日一练(2018-07-24)</div>
+            </div>
+            <div class="row examfont1 exam1" >
+                <img src="pictures/日历2.png" height="18" />
+                <div>初级通信工程师每日一练(2018-07-24)</div>
+            </div>
+            <div class="row examfont1 exam1" >
+                <img src="pictures/日历2.png" height="18" />
+                <div>初级通信工程师每日一练(2018-07-24)</div>
+            </div>
+            <div class="row examfont1 exam1" >
+                <img src="pictures/日历2.png" height="18" />
+                <div>初级通信工程师每日一练(2018-07-24)</div>
+            </div>
+            <div class="row examfont1 exam1" >
+                <img src="pictures/日历2.png" height="18" />
+                <div>初级通信工程师每日一练(2018-07-24)</div>
+            </div>
+        </div>
+        <div class="col-12 examdiv14 examdiv15"style="border: 1px solid;border-color: #69696921;">
+            <!--小导航-->
+            <div class="espan5">
+                <div style="margin-top: 20px;">
+                    <span><a>考试试题</a></span>
+                    <ul style="list-style: none;"class="exampan1">
+                        <li style="float: left;"class="exli1">
+                        </li>
+                        <li style="background-color: #ceefea;" class="exli1">
+                        </li>
+                        <li style="background-color: #ceefea;"class="exli1">
+                        </li>
+                        <li style="background-color: #ceefea;"class="exli1">
+                        </li>
+                        <li style="background-color: #ceefea;"class="exli1">
+                        </li>
+                        <br>
+                    </ul>
+                    <hr style="margin-left: 20px;margin-top: -1px;">
+                </div>
+            </div>
+            <!--题目-->
+            <div class="row examfont1">
+                <div class="col-6 espan6" style="margin-top: 15px">
+                    <div>
+                        <div style="margin-bottom: 20px;">
+                            <a>
+                                <img src="pictures/试卷.png" height="20" width="20"/>
+                                <span style="color: #45ade3">[多项选择题]</span>
+                                <span>我国的国际收支统计申报具有如下特...</span>
+                            </a>
+                        </div>
+                        <div style="margin-bottom: 20px;">
+                            <a>
+                                <img src="pictures/试卷.png" height="20" width="20"/>
+                                <span style="color: #45ade3">[多项选择题]</span>
+                                <span>我国的国际收支统计申报体系从内容...</span>
+                            </a>
+                        </div>
+                        <div style="margin-bottom: 20px;">
+                            <a>
+                                <img src="pictures/试卷.png" height="20" width="20"/>
+                                <span style="color: #45ade3">[单项选择题]</span>
+                                <span>我国的国际收支统计申报具有如下特...</span>
+                            </a>
+                        </div>
+                        <div style="margin-bottom: 20px;">
+                            <a>
+                                <img src="pictures/试卷.png" height="20" width="20"/>
+                                <span style="color: #45ade3">[问答题]</span>
+                                <span>保险公司是否承保货损的赔偿？是赔...</span>
+                            </a>
+                        </div>
+                        <div style="margin-bottom: 20px;">
+                            <a>
+                                <img src="pictures/试卷.png" height="20" width="20"/>
+                                <span style="color: #45ade3">[单项选择题]</span>
+                                <span>Which statement...</span>
+                            </a>
+                        </div>
+                        <div style="margin-bottom: 20px;">
+                            <a>
+                                <img src="pictures/试卷.png" height="20" width="20"/>
+                                <span style="color: #45ade3">[名字解释]</span>
+                                <span>文字课程</span>
+                            </a>
+                        </div>
+                        <div style="margin-bottom: 20px;">
+                            <a>
+                                <img src="pictures/试卷.png" height="20" width="20"/>
+                                <span style="color: #45ade3">[名次解释]</span>
+                                <span>理解课程</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6 col-lg-6 "style="margin-left: -34px;margin-top: 15px">
+                    <div>
+                        <div style="margin-bottom: 20px;">
+                            <a>
+                                <img src="pictures/试卷.png" height="20" width="20"/>
+                                <span style="color: #45ade3">[多项选择题]</span>
+                                <span>我国的国际收支统计申报具有如下特...</span>
+                            </a>
+                        </div>
+                        <div style="margin-bottom: 20px;">
+                            <a>
+                                <img src="pictures/试卷.png" height="20" width="20"/>
+                                <span style="color: #45ade3">[多项选择题]</span>
+                                <span>我国的国际收支统计申报体系从内容...</span>
+                            </a>
+                        </div>
+                        <div style="margin-bottom: 20px;">
+                            <a>
+                                <img src="pictures/试卷.png" height="20" width="20"/>
+                                <span style="color: #45ade3">[单项选择题]</span>
+                                <span>我国的国际收支统计申报具有如下特...</span>
+                            </a>
+                        </div>
+                        <div style="margin-bottom: 20px;">
+                            <a>
+                                <img src="pictures/试卷.png" height="20" width="20"/>
+                                <span style="color: #45ade3">[问答题]</span>
+                                <span>保险公司是否承保货损的赔偿？是赔...</span>
+                            </a>
+                        </div>
+                        <div style="margin-bottom: 20px;">
+                            <a>
+                                <img src="pictures/试卷.png" height="20" width="20"/>
+                                <span style="color: #45ade3">[单项选择题]</span>
+                                <span>Which statement...</span>
+                            </a>
+                        </div>
+                        <div style="margin-bottom: 20px;">
+                            <a>
+                                <img src="pictures/试卷.png" height="20" width="20"/>
+                                <span style="color: #45ade3">[名字解释]</span>
+                                <span>文字课程</span>
+                            </a>
+                        </div>
+                        <div style="margin-bottom: 20px;">
+                            <a>
+                                <img src="pictures/试卷.png" height="20" width="20"/>
+                                <span style="color: #45ade3">[名次解释]</span>
+                                <span>理解课程</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!--页码-->
+    <div style="margin-top: 52px;"class="row">
+        <div class="col-4">
+
+        </div>
+        <div class="col-5">
+            <ul style="list-style: none;">
+                <li style="float: left"class="cli2">
+                    1
+                </li>
+                <li class="cli1">
+                    2
+                </li>
+                <li class="cli1">
+                    3
+                </li>
+                <li class="cli1">
+                    4
+                </li>
+                <li style="border: 0"class="cli1">
+                    <img src="pictures/省略.png" height="20" width="20"class="img-thumbnail"/>
+                </li>
+            </ul>
+        </div>
+        <div class="col-3">
+
+        </div>
+
+    </div>
+
+    <br> <br> <br><br><br><br>
+</div>
+<br><br><br><br>
+<br><br><br><br>
+<!--底部-->
+<div class="container-fluid"style="padding-left: 0;padding-right: 0">
+    <div  style="background-color: black;color: white">
+        <div class="row">
+            <div class="col-3">
+                <div style="float: right">
+                    <br>
+                    <div class="bottom1">关于我们</div>
+                    <hr class="bottom3">
+                    <div class="bottom2">在线留言</div>
+                    <div class="bottom2">招贤纳士</div>
+                    <div class="bottom2">新闻报道</div>
+                </div>
+            </div>
+            <div class="col-2">
+                <div style="float: right">
+                    <br>
+                    <div class="bottom1">帮助中心</div>
+                    <hr class="bottom3">
+                    <div class="bottom2">常见问题</div>
+                    <div class="bottom2">侵权举报</div>
+                    <div class="bottom2">色情举报</div>
+                </div>
+            </div>
+            <div class="col-2">
+                <div style="float: right">
+                    <br>
+                    <div class="bottom1">关注我们</div>
+                    <hr class="bottom3">
+                    <div class="bottom2">下载app</div>
+                    <div class="bottom2">
+                        大学生Go！公众号： <a><img src="pictures/二维码.png" class="bottom5"id="erweima1"/></a>
+                    </div>
+                    <br>
+                    <img src="pictures/二维码.png" class="bottom7"id="erweima2"style="visibility: hidden;float: right"/>
+                </div>
+            </div>
+            <div class="col-3">
+                <div style="float: right">
+                    <br>
+                    <div class="bottom1">在线客服</div>
+                    <hr class="bottom4">
+                    <div class="bottom2">大学生Go!·客服QQ: 641639426</div>
+                    <div class="bottom2">大学生Go!·官方QQ群: 64161239426</div>
+                    <div class="bottom2">大学生Go!·客服微信:  <a><img src="pictures/二维码.png" class="bottom5"id="erweima3"/></a></div>
+                    <div class="bottom2">请在工作日10:00-19:00联系客服</div>
+                </div>
+            </div>
+            <div class="col-2">
+                <br> <br> <br> <br> <br> <br> <br>
+                <img src="pictures/二维码.png" class="bottom7"id="erweima4"style="visibility: hidden;"/>
+            </div>
+        </div>
+        <br> <br> <br> <br> <br>
+        <div class="row">
+            <div class="col-4">
+
+            </div>
+            <div class="col-6 bottom6">
+                Copyright © 2004 YoungsGo Systems Incorporated. All rights reserved.
+                <br> <br>
+            </div>
+            <div class="col-2">
+
+            </div>
+        </div>
+    </div>
+</div>
+<!--登录注册-->
+<script>
+    function display1() {
+        var a=document.getElementById("noid");
+        if(a){
+        }
+        else{
+            document.getElementById("btn_login").innerText="登录";
+            document.getElementById("haveid").innerText="没有帐号?";
+            document.getElementById("haveid").id="noid";
+        }
+        document.getElementById("login").style.display="block";
+    }
+    function display2() {
+        document.getElementById("login").style.display="none";
+    }
+    function display3() {
+        var a=document.getElementById("noid");
+        if(a){
+            document.getElementById("btn_login").innerText="注册";
+            document.getElementById("noid").innerText="已有帐号 立刻登录Go！";
+            document.getElementById("noid").id="haveid";
+        }
+        else{
+        }
+        document.getElementById("login").style.display="block";
+    }
+    function hover1() {
+        document.getElementById("cancel").style.color="white";
+        document.getElementById("cancel").style.backgroundColor="#1a8fb4";
+        document.getElementById("cancel").style.borderColor="#357ebd";
+    }
+    function levae1() {
+        document.getElementById("cancel").style.color="#75797c";
+        document.getElementById("cancel").style.backgroundColor="#1a8fb400";
+        document.getElementById("cancel").style.border="0";
+    }
+    function hover2() {
+        document.getElementById("btn_login").style.color="white";
+        document.getElementById("btn_login").style.backgroundColor="#1a8fb4";
+        document.getElementById("btn_login").style.borderColor="#357ebd";
+    }
+    function levae2() {
+        document.getElementById("btn_login").style.color="#75797c";
+        document.getElementById("btn_login").style.backgroundColor="#1a8fb400";
+        document.getElementById("btn_login").style.border="0";
+    }
+
+
+    function change1() {
+        var a=document.getElementById("noid");
+        if(a){
+            document.getElementById("btn_login").innerText="注册";
+            document.getElementById("noid").innerText="已有帐号 立刻登录Go！";
+            document.getElementById("noid").id="haveid";
+        }
+        else{
+            document.getElementById("btn_login").innerText="登录";
+            document.getElementById("haveid").innerText="没有帐号?";
+            document.getElementById("haveid").id="noid";
+        }
+    }
+    function under1() {
+        document.getElementById("a1").style.textDecoration="underline";
+    }
+    function removeun() {
+        document.getElementById("a1").style.textDecoration="none";
+    }
+
+</script>
+</body>
+</html>

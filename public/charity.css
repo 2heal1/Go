@@ -1,0 +1,48 @@
+.chbtn1{
+    width: 140px;
+    background-color: #ff6902e6;
+    height: 50px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 9px;
+}
+.chbtn2{
+    color: white;
+    border: 0;
+    box-shadow: 1px 1px 1px 1px #d2a17e;
+    background-color: orange;
+    border-radius: 2px;
+}
+.chborder{
+    border: 1px solid;
+    margin-bottom: 30px;
+    border-right: 0;
+    border-left: 0;
+    border-bottom: 0;
+    border-color: #69696924;
+}
+.chborder2{
+    border: 1px solid;
+    border-color: #f3f3f3;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+}
+.chborder3{
+    border: 1px solid;
+    border-right: 0;
+    border-color: #d9d9d969;
+}
+.chhr1{
+    background-color: orange;
+    margin-left: 1px;
+    margin-top: -22px;
+    width: 45px;
+}
+.chdiv1{
+    border: 1px solid;
+    border-right: 0;
+    border-left: 0;
+    border-color: #6b6b6b24;
+}

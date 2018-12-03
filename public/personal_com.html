@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>个人_我的竞赛</title>
+    <link rel="stylesheet"href="css/bootstrap.min.css">
+    <script src="jquery-1.9.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet"href="index_css.css">
+    <script src="js/jquery-latest.min.js" type="text/javascript"></script>
+    <script src="js/jq22.js"></script>
+    <link rel="stylesheet" href="css/jq22.css">
+    <link rel="stylesheet" href="personal.css">
+    <!--自适应-->
+    <style>
+        /* 超小型设备（平板电脑，1px 起） */
+        @media (min-width: 1px) {
+            .simplefont1{
+                font-size: 0.4rem;
+            }
+        }
+        /* 小型设备（平板电脑，768px 起） */
+        @media (min-width: 768px) {
+            .simplefont1{
+                font-size: 1.3rem;
+            }
+            .perdiv1{
+                margin-top: 15px;
+            }
+            .perdiv2{
+                margin-left: 70px;
+                margin-top: 15px;
+            }
+            .pdiv1{
+                background-position: 0px 0px;
+                width: 60px;
+                background-repeat: no-repeat;
+                height: 60px;
+                border: 1px solid #b5b5b5;
+                border-radius: 50%;
+                background-image: url(pictures/head_1.png);
+                margin-left: -13px;
+                margin-top: 15px;
+            }
+            .pfunction{
+                margin-top: 25px;
+                font-size: 12px;
+                color: #7b7b7b;
+            }
+            .pvertical{
+                width: 3px;
+                height: 22px;
+                background-color: #ff8507;
+                margin-left: 10px;
+                margin-top: -4px;
+            }
+            .perdiv3{
+                margin-left: 8px;
+            }
+            .perdiv4{
+                margin-top: -4px;
+            }
+            .perdiv5{
+                margin-left: 40px;
+                margin-top: 10px;
+            }
+            .perdiv6{
+                margin-left: 20px;
+                margin-top: 39px;
+            }
+            .perdiv7{
+                margin-top: 35px;
+                margin-left: 3px;
+            }
+            .pinput1{
+                border-radius: 24px;
+                width: 100px;
+                height: 22px;
+                color: #4c4c4c;
+                background-color: #fcfcfc;
+                font-size: 13px;
+                border: 1px solid #bdbdbd;
+                outline: none;
+            }
+            .pcomdiv1{
+                margin-left: 355px;
+            }
+            .pcomdiv2{
+                margin-left: 50px;
+            }
+            .pcomdiv3{
+                margin-left: 388px;
+            }
+            .pcomdiv4{
+                margin-left: 102px;
+            }
+            .pcomdiv5{
+                margin-left: 113px;
+            }
+            .pcomdiv6{
+                margin-top: 28px;
+                margin-left: 15px;
+            }
+            .pcomdiv7{
+                margin-top: 28px;
+                margin-left: 80px;
+            }
+            .pcomdiv8{
+                margin-top: 28px;
+                margin-left: 46.2rem;
+            }
+            .pcomdiv9{
+                width: 73px;
+                height: 73px;
+            }
+            .pcomdiv10{
+                margin-top: 28px;
+            }
+            .pcomdiv11{
+                height: 64px;
+                margin-top: 10px;
+            }
+        }
+
+        /* 中型设备（台式电脑，992px 起） */
+        @media (min-width: 992px) {
+            .simplefont1{
+                font-size: 1.3rem;
+            }
+            .perdiv1{
+                margin-top: 15px;
+            }
+            .perdiv2{
+                margin-left: 70px;
+                margin-top: 15px;
+            }
+            .pdiv1{
+                background-position: 0px 0px;
+                width: 60px;
+                background-repeat: no-repeat;
+                height: 60px;
+                border: 1px solid #b5b5b5;
+                border-radius: 50%;
+                background-image: url(pictures/head_1.png);
+                margin-left: 15px;
+                margin-top: 15px;
+            }
+            .pfunction{
+                margin-top: 25px;
+                font-size: 14px;
+                color: #7b7b7b;
+            }
+            .pvertical{
+                width: 3px;
+                height: 29px;
+                background-color: #ff8507;
+                margin-left: 10px;
+                margin-top: -4px;
+            }
+            .perdiv3{
+                margin-left: 30px;
+            }
+            .perdiv4{
+                margin-top: -4px;
+            }
+            .perdiv5{
+                margin-left: 40px;
+                margin-top: 10px;
+            }
+            .perdiv6{
+                margin-left: 20px;
+                margin-top: 39px;
+            }
+            .perdiv7{
+                margin-top: 35px;
+                margin-left: 3px;
+            }
+            .pinput1{
+                border-radius: 24px;
+                width: 100px;
+                height: 22px;
+                color: #4c4c4c;
+                background-color: #fcfcfc;
+                font-size: 13px;
+                border: 1px solid #bdbdbd;
+                outline: none;
+            }
+            .pcomdiv1{
+                margin-left: 455px;
+            }
+            .pcomdiv2{
+                margin-left: 50px;
+            }
+            .pcomdiv3{
+                margin-left: 488px;
+            }
+            .pcomdiv4{
+                margin-left: 106px;
+            }
+            .pcomdiv5{
+                margin-left: 113px;
+            }
+            .pcomdiv6{
+                margin-top: 28px;
+                margin-left: 15px;
+            }
+            .pcomdiv7{
+                margin-top: 28px;
+                margin-left: 80px;
+            }
+            .pcomdiv8{
+                margin-top: 28px;
+                margin-left: 46.2rem;
+            }
+            .pcomdiv9{
+                width: 73px;
+                height: 73px;
+            }
+            .pcomdiv10{
+                margin-top: 28px;
+            }
+            .pcomdiv11{
+                height: 64px;
+                margin-top: 10px;
+            }
+
+        }
+        /* 大型设备（大台式电脑，1200px 起） */
+        @media (min-width:1200px) {
+            .simplefont1{
+                font-size: 1.4rem;
+            }
+            .perdiv1{
+                margin-top: 15px;
+            }
+            .perdiv2{
+                margin-left: 70px;
+                margin-top: 15px;
+            }
+            .pdiv1{
+                background-position: 0px 0px;
+                width: 60px;
+                background-repeat: no-repeat;
+                height: 60px;
+                border: 1px solid #b5b5b5;
+                border-radius: 50%;
+                background-image: url(pictures/head_1.png);
+                margin-left: 25px;
+                margin-top: 15px;
+            }
+            .pfunction{
+                margin-top: 25px;
+                font-size: 14px;
+                color: #7b7b7b;
+            }
+            .pvertical{
+                width: 3px;
+                height: 29px;
+                background-color: #ff8507;
+                margin-left: 10px;
+                margin-top: -4px;
+            }
+            .perdiv3{
+                margin-left: 30px;
+            }
+            .perdiv4{
+                margin-top: -4px;
+            }
+            .perdiv5{
+                margin-left: 40px;
+                margin-top: 10px;
+            }
+            .perdiv6{
+                margin-left: 20px;
+                margin-top: 25px;
+            }
+            .perdiv7{
+                margin-top: 19px;
+                margin-left: 3px;
+            }
+            .pinput1{
+                border-radius: 24px;
+                width: 100px;
+                height: 22px;
+                color: #4c4c4c;
+                background-color: #fcfcfc;
+                font-size: 13px;
+                border: 1px solid #bdbdbd;
+                outline: none;
+            }
+            .pcomdiv1{
+                margin-left: 750px;
+            }
+            .pcomdiv2{
+                margin-left: 50px;
+            }
+            .pcomdiv3{
+                margin-left: 788px;
+            }
+            .pcomdiv4{
+                margin-left: 111px;
+            }
+            .pcomdiv5{
+                margin-left: 123px;
+            }
+            .pcomdiv6{
+                margin-top: 28px;
+                margin-left: 15px;
+            }
+            .pcomdiv7{
+                margin-top: 28px;
+                margin-left: 80px;
+            }
+            .pcomdiv8{
+                margin-top: 28px;
+                margin-left: 58.4rem;
+            }
+            .pcomdiv9{
+                width: 73px;
+                height: 73px;
+            }
+            .pcomdiv10{
+                margin-top: 28px;
+            }
+            .pcomdiv11{
+                height: 64px;
+                margin-top: 10px;
+            }
+        }
+    </style>
+</head>
+<body style="background-color: white">
+<div class="container-fluid">
+    <div class="row">
+        <!--功能列表-->
+        <div class="col-2 pdiv2">
+            <!--欢迎-->
+            <div align="center" class="perdiv1">
+                <h4>Hi,用户昵称3247891</h4>
+            </div>
+            <!--头像-->
+            <div class="pdiv1">
+                <div class="perdiv2"><h5>3247891</h5></div>
+            </div>
+            <!--个人中心-->
+            <div class="row pfunction"style="color: black">
+                <div class="pvertical"style="visibility: hidden"></div>
+                <span class="perdiv3">
+                      <img src="pictures/个人中心_灰.png" height="20" class="perdiv4"/>
+                    <a href="personal.html"style="color: black">个人中心</a>
+                </span>
+            </div>
+            <!--我的竞赛-->
+            <div class="row pfunction">
+                <div class="pvertical"></div>
+                <span class="perdiv3">
+                     <img src="pictures/竞赛.png" height="20" class="perdiv4"/>
+                    <a href="personal_com.html"target="_self"style="color: black">我的竞赛</a>
+                </span>
+            </div>
+            <!--我的捐款-->
+            <div class="row pfunction">
+                <div class="pvertical"style="visibility: hidden"></div>
+                <span class="perdiv3">
+                     <img src="pictures/爱心捐款_灰.png" height="20" class="perdiv4"/>
+                    <a href="personal_cha.html"target="_self">我的捐款</a>
+                </span>
+            </div>
+            <!--我的兼职-->
+            <div class="row pfunction">
+                <div class="pvertical"style="visibility: hidden"></div>
+                <span class="perdiv3">
+                     <img src="pictures/兼职_灰.png" height="20" class="perdiv4"/>
+                     <a href="personal_part_time.html"target="_self">我的兼职</a>
+                </span>
+            </div>
+            <!--我的闲置-->
+            <div class="row pfunction">
+                <div class="pvertical"style="visibility: hidden"></div>
+                <span class="perdiv3">
+                     <img src="pictures/闲置_灰.png" height="20" class="perdiv4"/>
+                     <a href="personal_unused.html"target="_self">我的闲置</a>
+                </span>
+            </div>
+            <!--我的失领-->
+            <div class="row pfunction">
+                <div class="pvertical"style="visibility: hidden"></div>
+                <span class="perdiv3">
+                     <img src="pictures/失物招领_灰.png" height="20" class="perdiv4"/>
+                    <a href="personal_find.html"target="_self">我的失领</a>
+                </span>
+            </div>
+            <!--我的消息-->
+            <div class="row pfunction">
+                <div class="pvertical"style="visibility: hidden"></div>
+                <span class="perdiv3">
+                     <img src="pictures/消息_灰.png" height="20" class="perdiv4"/>
+                    <a href="personal_info.html"target="_self">我的消息</a>
+                </span>
+            </div>
+            <!--帐号设置-->
+            <div class="row pfunction">
+                <div class="pvertical"style="visibility: hidden"></div>
+                <span class="perdiv3">
+                     <img src="pictures/设置_灰.png" height="20" class="perdiv4"/>
+                    <a href="personal_set_up.html"target="_self">帐号设置</a>
+                </span>
+            </div>
+            <!--退出-->
+            <div class="row pfunction">
+                <div class="pvertical"style="visibility: hidden"></div>
+                <span  class="perdiv3">
+                     <img src="pictures/退出_灰.png" height="20" class="perdiv4"/>
+                    <a>退出</a>
+                </span>
+            </div>
+            <div>
+                <br>   <br>   <br>   <br>   <br>
+            </div>
+        </div>
+        <div class="col-10 simplefont1"style="background-color: #f7f7f759;">
+            <div class="row">
+                <div class="perdiv5">
+                    <h3>搜索你想要的</h3>
+                </div>
+                <div>
+                    <img src="pictures/搜索--1.png" height="15"class="perdiv6" />
+                </div>
+                <div class="perdiv7"><input type="text"value=" 我的.."class="pinput1"></div>
+            </div>
+            <div class="col-12" style="background-color: #ffffff87">
+                <div style="margin-left: 10px">
+                    <br><br>
+                    <h4>2018年全国大学生数学建模竞赛</h4>
+                    <div class="row">
+                        <div class="pcomdiv1"><img src="pictures/newlatter.png" height="20" /></div>
+                        <span>
+                        新消息
+                        </span>
+                        <div class="pcomdiv2">
+                            <img src="pictures/目标人数.png" height="20" />
+                        </div>
+                        <span>
+                        目标人数
+                        </span>
+                        <div class="pcomdiv2">
+                            <img src="pictures/人数.png" height="20" />
+                        </div>
+                        <span>
+                        现有人数
+                        </span>
+                    </div>
+                    <div class="row">
+                        <div class="pcomdiv3"><h4>0</h4></div>
+                        <div class="pcomdiv4">
+                           <h4>5</h4>
+                        </div>
+                        <div class="pcomdiv5">
+                           <h4>3</h4>
+                        </div>
+                    </div>
+                </div>
+                <!--队长1-->
+                <div class="row pcomdiv11"style="background-color: #f9f9f97a;margin-left: 10px">
+                    <div class="col-2"><img src="pictures/head.jpg"  class="pcomdiv9" /></div>
+                    <div class="col-3"><div class="pcomdiv10"><a><h6>用户昵称2213547</h6></a></div></div>
+                    <div class="col-1"><div class="pcomdiv10"><a><h6>队长</h6></a></div></div>
+                    <div class="col-3"><div class="pcomdiv10"><a><h6>擅长数学分析</h6></a></div></div>
+                    <div class="col-3"><div class="pcomdiv10"><a><h6>给他留言</h6></a></div></div>
+
+                </div>
+                <!--队长2-->
+                <div class="row pcomdiv11"style="background-color: #ffffff;margin-left: 10px">
+                    <div class="col-2"><img src="pictures/head.jpg"  class="pcomdiv9" /></div>
+                    <div class="col-3"><div class="pcomdiv10"><a><h6>用户昵称2213547</h6></a></div></div>
+                    <div class="col-1"><div class="pcomdiv10"><a><h6>队长</h6></a></div></div>
+                    <div class="col-3"><div class="pcomdiv10"><a><h6>擅长数学分析</h6></a></div></div>
+                    <div class="col-3"><div class="pcomdiv10"><a><h6>给他留言</h6></a></div></div>
+
+                </div>
+                <!--队长1-->
+                <div class="row pcomdiv11"style="background-color: #f9f9f97a;margin-left: 10px">
+                    <div class="col-2"><img src="pictures/head.jpg"  class="pcomdiv9" /></div>
+                    <div class="col-3"><div class="pcomdiv10"><a><h6>用户昵称2213547</h6></a></div></div>
+                    <div class="col-1"><div class="pcomdiv10"><a><h6>队长</h6></a></div></div>
+                    <div class="col-3"><div class="pcomdiv10"><a><h6>擅长数学分析</h6></a></div></div>
+                    <div class="col-3"><div class="pcomdiv10"><a><h6>给他留言</h6></a></div></div>
+
+                </div>
+                <!--队长2-->
+                <div class="row pcomdiv11"style="background-color: #ffffff;margin-left: 10px">
+                    <div class="col-2"><img src="pictures/head.jpg"  class="pcomdiv9" /></div>
+                    <div class="col-3"><div class="pcomdiv10"><a><h6>用户昵称2213547</h6></a></div></div>
+                    <div class="col-1"><div class="pcomdiv10"><a><h6>队长</h6></a></div></div>
+                    <div class="col-3"><div class="pcomdiv10"><a><h6>擅长数学分析</h6></a></div></div>
+                    <div class="col-3"><div class="pcomdiv10"><a><h6>给他留言</h6></a></div></div>
+
+                </div>
+            </div>
+            <div class="row"style="margin-top: 10px">
+                <div class="col-10"></div>
+                <div class="col-2 row">
+                    <a style="visibility: hidden">上一页</a>
+                    <a style="margin-left: 20px">下一页</a>
+                </div>
+                <div class="col-1"></div>
+            </div>
+            <br>  <br>  <br>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>

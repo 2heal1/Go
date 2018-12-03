@@ -1,0 +1,109 @@
+.updbtn1{
+    /*height: 48px;*/
+    /*width: 140px;*/
+    /*font-size: 17px;*/
+    /*color: black;*/
+    /*font-weight: bold;*/
+    /*border-radius: 5px;*/
+    /*border: 1px solid black;*/
+    /*background-color: #ffffff;*/
+    background-color: #f0f8ff00;
+    width: 220px;
+    font-weight: bold;
+    font-size: 30px;
+    border-radius: 14px;
+    height: 67px;
+    cursor: pointer;
+}
+.updbtn1:hover{
+    background-color: black;
+    color: white;
+}
+.updbtn2{
+    font-size: 16px;
+    border: 1px solid #ececec;
+    /* padding: 0; */
+    color: #fa7310;
+    width: 140px;
+    height: 42px;
+    background-color: #f6f6f6;
+}
+.cda1:hover{
+    cursor: default;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    transition: all 2s;
+}
+.cda1:after{
+    content:'';
+    width:0;
+    height:6px;
+    position:absolute;
+    left:0;
+    bottom:19px;
+    border-radius: 5px;
+    background: #fc5a00;
+    transition:width 0.3s ;
+}
+.cda1:hover::after {
+    margin-left: 23px;
+    width: 10%;
+}
+.cda2:hover{
+    cursor: default;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    transition: all 2s;
+}
+.cda2:after{
+    content:'';
+    width:0;
+    height:6px;
+    position:absolute;
+    left:0;
+    bottom:19px;
+    border-radius: 5px;
+    background: #fc5a00;
+    transition:width 0.3s ;
+}
+.cda2:hover::after {
+    margin-left: 151px;
+    width: 11%;
+}
+.cda3:hover{
+    cursor: default;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    transition: all 2s;
+}
+.cda3:after{
+    content:'';
+    width:0;
+    height:6px;
+    position:absolute;
+    left:0;
+    bottom:19px;
+    border-radius: 5px;
+    background: #fc5a00;
+    transition:width 0.3s ;
+}
+.cda3:hover::after {
+    margin-left: 307px;
+    width: 10%;
+}
+.cdhr1{
+    height: 4px;
+    background-color: #fc5a00;
+    border-radius: 5px;
+    width: 112px;
+    margin-left: -22px;
+    border: 1px solid #fc5a00;
+}
+.cdfont1{
+    font-size: 17px;
+    color: dimgray;
+    font-weight: bold;
+}

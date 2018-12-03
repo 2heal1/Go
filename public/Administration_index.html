@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Mosaddek">
+    <meta name="keyword" content="FlatLab, Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
+    <link rel="shortcut icon" href="img/favicon.html">
+
+    <title>大学生Go!后台管理系统</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/Administration_bootstrap.min.css" rel="stylesheet">
+    <link href="css/Administration_bootstrap-reset.css" rel="stylesheet">
+    <!--external css-->
+    <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <link href="assets/jquery-easy-pie-chart/jquery.easy-pie-chart.css" rel="stylesheet" type="text/css" media="screen"/>
+    <link rel="stylesheet" href="css/Administration_owl.carousel.css" type="text/css">
+    <!-- Custom styles for this template -->
+    <link href="css/Administration_style.css" rel="stylesheet">
+    <link href="css/Administration_style-responsive.css" rel="stylesheet" />
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 tooltipss and media queries -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+  <section id="container" class="">
+      <!--头部-->
+      <header class="header white-bg">
+            <div class="sidebar-toggle-box">
+                <div data-original-title="Toggle Navigation" data-placement="right" class="icon-reorder tooltips"></div>
+            </div>
+            <!--标题-->
+            <a href="#" class="logo">大学生<span>Go!</span></a>
+            <div class="nav notify-row" id="top_menu">
+                <!--  通知  -->
+                <ul class="nav top-menu">
+                    <!-- 任务 -->
+                    <li class="dropdown">
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                            <i class="icon-tasks"></i>
+                            <span class="badge bg-success">6</span>
+                        </a>
+                        <ul class="dropdown-menu extended tasks-bar">
+                            <div class="notify-arrow notify-arrow-green"></div>
+                            <li>
+                                <p class="green">你有6个待处理的任务</p>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="task-info">
+                                        <div class="desc">闲置信息审核</div>
+                                        <div class="percent">40%</div>
+                                    </div>
+                                    <div class="progress progress-striped">
+                                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                                            <span class="sr-only">40% Complete (success)</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="task-info">
+                                        <div class="desc">闲置信息审核</div>
+                                        <div class="percent">60%</div>
+                                    </div>
+                                    <div class="progress progress-striped">
+                                        <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                                            <span class="sr-only">60% Complete (warning)</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="task-info">
+                                        <div class="desc">修复100个Bug</div>
+                                        <div class="percent">87%</div>
+                                    </div>
+                                    <div class="progress progress-striped">
+                                        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 87%">
+                                            <span class="sr-only">87% Complete</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="task-info">
+                                        <div class="desc">竞赛信息审核</div>
+                                        <div class="percent">33%</div>
+                                    </div>
+                                    <div class="progress progress-striped">
+                                        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 33%">
+                                            <span class="sr-only">33% Complete (danger)</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="task-info">
+                                        <div class="desc">捐款信息审核</div>
+                                        <div class="percent">45%</div>
+                                    </div>
+                                    <div class="progress progress-striped active">
+                                        <div class="progress-bar"  role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%">
+                                            <span class="sr-only">45% Complete</span>
+                                        </div>
+                                    </div>
+
+                                </a>
+                            </li>
+                            <li class="external">
+                                <a href="#">请参阅所有任务</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- 信息-->
+                    <li id="header_inbox_bar" class="dropdown">
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                            <i class="icon-envelope-alt"></i>
+                            <span class="badge bg-important">5</span>
+                        </a>
+                        <ul class="dropdown-menu extended inbox">
+                            <div class="notify-arrow notify-arrow-red"></div>
+                            <li>
+                                <p class="red">你有5条新消息</p>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="photo"><img alt="avatar" src="img/avatar-mini.jpg"></span>
+                                    <span class="subject">
+                                    <span class="from">U2h</span>
+                                    <span class="time">刚刚</span>
+                                    </span>
+                                    <span class="message">
+                                        这是一个很棒的计划
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="photo"><img alt="avatar" src="img/avatar-mini2.jpg"></span>
+                                    <span class="subject">
+                                    <span class="from">波少</span>
+                                    <span class="time">10 分钟前</span>
+                                    </span>
+                                    <span class="message">
+                                     嗨，最近怎么样？
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="photo"><img alt="avatar" src="img/avatar-mini3.jpg"></span>
+                                    <span class="subject">
+                                    <span class="from">毛虫</span>
+                                    <span class="time">3小时前</span>
+                                    </span>
+                                    <span class="message">
+                                        This is awesome dashboard.
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="photo"><img alt="avatar" src="img/avatar-mini4.jpg"></span>
+                                    <span class="subject">
+                                    <span class="from">Jondi Rose</span>
+                                    <span class="time">刚刚</span>
+                                    </span>
+                                    <span class="message">
+                                        下午4点A-116开会
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">查看所有消息</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- 通知-->
+                    <li id="header_notification_bar" class="dropdown">
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+
+                            <i class="icon-bell-alt"></i>
+                            <span class="badge bg-warning">7</span>
+                        </a>
+                        <ul class="dropdown-menu extended notification">
+                            <div class="notify-arrow notify-arrow-yellow"></div>
+                            <li>
+                                <p class="yellow">你有7个新通知</p>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="label label-danger"><i class="icon-bolt"></i></span>
+                                    服务器 # 3超载
+                                    <span class="small italic">34 分钟前</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="label label-warning"><i class="icon-bell"></i></span>
+                                    服务器 #10 没有编码
+                                    <span class="small italic">1 小时前</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="label label-danger"><i class="icon-bolt"></i></span>
+                                    服务器 # 5超载
+                                    <span class="small italic">4 小时前</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="label label-success"><i class="icon-plus"></i></span>
+                                    服务器 # 4超载
+                                    <span class="small italic">刚刚</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="label label-info"><i class="icon-bullhorn"></i></span>
+                                    应用程序错误
+                                    <span class="small italic">10 分钟前</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">查看所有通知</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="top-nav ">
+                <!--搜索和用户信息-->
+                <ul class="nav pull-right top-menu">
+                    <li>
+                        <input type="text" class="form-control search" placeholder="Search">
+                    </li>
+                    <!-- 用户登录个人信息-->
+                    <li class="dropdown">
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                            <img alt="" src="img/avatar1_small.jpg">
+                            <span class="username">Jhon Doue</span>
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu extended logout">
+                            <div class="log-arrow-up"></div>
+                            <li><a href="#"><i class=" icon-suitcase"></i>文件</a></li>
+                            <li><a href="#"><i class="icon-cog"></i> 设置</a></li>
+                            <li><a href="#"><i class="icon-bell-alt"></i> 通知</a></li>
+                            <li><a href="Administration_login.html"><i class="icon-key"></i>注销</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </header>
+      <aside>
+          <div id="sidebar"  class="nav-collapse ">
+              <!-- 菜单栏-->
+              <ul class="sidebar-menu">
+                  <li class="active">
+                      <a class="" href="Administration_index.html">
+                          <i class="icon-user"></i>
+                          <span>我的管理</span>
+                      </a>
+                  </li>
+                  <li>
+                      <a class="" href="Administration_calendar.html">
+                          <i class="icon-dashboard"></i>
+                          <span>我的日历</span>
+                          <span class="label label-danger pull-right mail-info">2</span>
+                      </a>
+                  </li>
+                  <li>
+                      <a class="" href="Administration_charts.html">
+                          <i class="icon-th"></i>
+                          <span>相关图表</span>
+                      </a>
+                  </li>
+                  <li>
+                      <a class="" href="Administration_basic_table.html">
+                          <i class="icon-glass"></i>
+                          <span>申请列表</span>
+                      </a>
+                  </li>
+                  <li>
+                      <a class="" href="Administration_inbox.html">
+                          <i class="icon-envelope"></i>
+                          <span>信件</span>
+                          <span class="label label-danger pull-right mail-info">2</span>
+                      </a>
+                  </li>
+              </ul>
+              <!-- sidebar menu end-->
+          </div>
+      </aside>
+      <!--主要内容-->
+      <section id="main-content">
+          <section class="wrapper">
+              <!--state overview start-->
+              <div class="row state-overview">
+                  <div class="col-lg-3 col-sm-6">
+                      <section class="panel">
+                          <div class="symbol terques">
+                              <i class="icon-user"></i>
+                          </div>
+                          <div class="value">
+                              <h1>212</h1>
+                              <p>审核申请</p>
+                          </div>
+                      </section>
+                  </div>
+                  <div class="col-lg-3 col-sm-6">
+                      <section class="panel">
+                          <div class="symbol red">
+                              <i class="icon-tags"></i>
+                          </div>
+                          <div class="value">
+                              <h1>140</h1>
+                              <p>错误编码</p>
+                          </div>
+                      </section>
+                  </div>
+                  <div class="col-lg-3 col-sm-6">
+                      <section class="panel">
+                          <div class="symbol yellow">
+                              <i class="icon-shopping-cart"></i>
+                          </div>
+                          <div class="value">
+                              <h1>345</h1>
+                              <p>新命令</p>
+                          </div>
+                      </section>
+                  </div>
+                  <div class="col-lg-3 col-sm-6">
+                      <section class="panel">
+                          <div class="symbol blue">
+                              <i class="icon-bar-chart"></i>
+                          </div>
+                          <div class="value">
+                              <h1>34,500</h1>
+                              <p>Bug</p>
+                          </div>
+                      </section>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-lg-8">
+                      <!--申请图表-->
+                      <div class="border-head">
+                          <h3>申请图表</h3>
+                      </div>
+                      <div class="custom-bar-chart">
+                          <div class="bar">
+                              <div class="title">一月</div>
+                              <div class="value tooltips" data-original-title="80%" data-toggle="tooltip" data-placement="top">80%</div>
+                          </div>
+                          <div class="bar doted">
+                              <div class="title">二月</div>
+                              <div class="value tooltips" data-original-title="50%" data-toggle="tooltip" data-placement="top">50%</div>
+                          </div>
+                          <div class="bar ">
+                              <div class="title">三月</div>
+                              <div class="value tooltips" data-original-title="40%" data-toggle="tooltip" data-placement="top">40%</div>
+                          </div>
+                          <div class="bar doted">
+                              <div class="title">四月</div>
+                              <div class="value tooltips" data-original-title="55%" data-toggle="tooltip" data-placement="top">55%</div>
+                          </div>
+                          <div class="bar">
+                              <div class="title">五月</div>
+                              <div class="value tooltips" data-original-title="20%" data-toggle="tooltip" data-placement="top">20%</div>
+                          </div>
+                          <div class="bar doted">
+                              <div class="title">六月</div>
+                              <div class="value tooltips" data-original-title="39%" data-toggle="tooltip" data-placement="top">39%</div>
+                          </div>
+                          <div class="bar">
+                              <div class="title">七月</div>
+                              <div class="value tooltips" data-original-title="75%" data-toggle="tooltip" data-placement="top">75%</div>
+                          </div>
+                          <div class="bar doted">
+                              <div class="title">八月</div>
+                              <div class="value tooltips" data-original-title="45%" data-toggle="tooltip" data-placement="top">45%</div>
+                          </div>
+                          <div class="bar ">
+                              <div class="title">九月</div>
+                              <div class="value tooltips" data-original-title="50%" data-toggle="tooltip" data-placement="top">50%</div>
+                          </div>
+                          <div class="bar doted">
+                              <div class="title">十月</div>
+                              <div class="value tooltips" data-original-title="42%" data-toggle="tooltip" data-placement="top">42%</div>
+                          </div>
+                          <div class="bar ">
+                              <div class="title">十一月</div>
+                              <div class="value tooltips" data-original-title="60%" data-toggle="tooltip" data-placement="top">60%</div>
+                          </div>
+                          <div class="bar doted">
+                              <div class="title">十二月</div>
+                              <div class="value tooltips" data-original-title="90%" data-toggle="tooltip" data-placement="top">90%</div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-4">
+                      <!--用户活跃指数-->
+                      <div class="panel terques-chart">
+                          <div class="panel-body chart-texture">
+                              <div class="chart">
+                                  <div class="heading">
+                                      <span>周五</span>
+                                      <strong>57,00 人| 15%</strong>
+                                  </div>
+                                  <div class="sparkline" data-type="line" data-resize="true" data-height="75" data-width="90%" data-line-width="1" data-line-color="#fff" data-spot-color="#fff" data-fill-color="" data-highlight-line-color="#fff" data-spot-radius="4" data-data="[200,135,667,333,526,996,564,123,890,564,455]"></div>
+                              </div>
+                          </div>
+                          <div class="chart-tittle">
+                              <span class="title">新的用户</span>
+                              <span class="value">
+                                  <a href="#" class="active">竞赛Go!</a>
+                                  |
+                                  <a href="#">捐款Go!</a>
+                                  |
+                                  <a href="#">闲置Go！</a>
+                              </span>
+                          </div>
+                      </div>
+                      <!--总用户指数-->
+                      <div class="panel green-chart">
+                          <div class="panel-body">
+                              <div class="chart">
+                                  <div class="heading">
+                                      <span>六月</span>
+                                      <strong>23 天 | 65%</strong>
+                                  </div>
+                                  <div id="barchart"></div>
+                              </div>
+                          </div>
+                          <div class="chart-tittle">
+                              <span class="title">总用户</span>
+                              <span class="value">76,54,678 人</span>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-lg-4">
+                      <!--用户信息-->
+                      <section class="panel">
+                          <div class="panel-body">
+                              <a href="#" class="task-thumb">
+                                  <img src="img/avatar1.jpg" alt="">
+                              </a>
+                              <div class="task-thumb-details">
+                                  <h1><a href="#">Anjelina Joli</a></h1>
+                                  <p>Java工程师</p>
+                              </div>
+                          </div>
+                          <table class="table table-hover personal-task">
+                              <tbody>
+                                <tr>
+                                    <td>
+                                        <i class=" icon-tasks"></i>
+                                    </td>
+                                    <td>新任务发布</td>
+                                    <td> 02</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <i class="icon-warning-sign"></i>
+                                    </td>
+                                    <td>任务待定</td>
+                                    <td> 14</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <i class="icon-envelope"></i>
+                                    </td>
+                                    <td>收件箱</td>
+                                    <td> 45</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <i class=" icon-bell-alt"></i>
+                                    </td>
+                                    <td>新通知</td>
+                                    <td> 09</td>
+                                </tr>
+                              </tbody>
+                          </table>
+                      </section>
+                  </div>
+                  <div class="col-lg-8">
+                      <!--工作进展-->
+                      <section class="panel">
+                          <div class="panel-body progress-panel">
+                              <div class="task-progress">
+                                  <h1>工作进展</h1>
+                                  <p>Anjelina Joli</p>
+                              </div>
+                              <div class="task-option">
+                                  <select class="styled">
+                                      <option>Anjelina Joli</option>
+                                      <option>Tom Crouse</option>
+                                      <option>Jhon Due</option>
+                                  </select>
+                              </div>
+                          </div>
+                          <table class="table table-hover personal-task">
+                              <tbody>
+                              <tr>
+                                  <td>1</td>
+                                  <td>
+                                      目标Bug
+                                  </td>
+                                  <td>
+                                      <span class="badge bg-important">75%</span>
+                                  </td>
+                                  <td>
+                                    <div id="work-progress1"></div>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>2</td>
+                                  <td>
+                                      错误编码
+                                  </td>
+                                  <td>
+                                      <span class="badge bg-success">43%</span>
+                                  </td>
+                                  <td>
+                                      <div id="work-progress2"></div>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>3</td>
+                                  <td>
+                                      审核申请
+                                  </td>
+                                  <td>
+                                      <span class="badge bg-info">67%</span>
+                                  </td>
+                                  <td>
+                                      <div id="work-progress3"></div>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>4</td>
+                                  <td>
+                                      用户申请
+                                  </td>
+                                  <td>
+                                      <span class="badge bg-warning">30%</span>
+                                  </td>
+                                  <td>
+                                      <div id="work-progress4"></div>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>5</td>
+                                  <td>
+                                      审核申请
+                                  </td>
+                                  <td>
+                                      <span class="badge bg-primary">15%</span>
+                                  </td>
+                                  <td>
+                                      <div id="work-progress5"></div>
+                                  </td>
+                              </tr>
+                              </tbody>
+                          </table>
+                      </section>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-lg-12">
+                      <!--时间线-->
+                      <section class="panel">
+                          <div class="panel-body">
+                                  <div class="text-center mbot30">
+                                      <h3 class="timeline-title">时间线</h3>
+                                      <p class="t-info">这是一个项目时间表</p>
+                                  </div>
+
+                                  <div class="timeline">
+                                      <article class="timeline-item">
+                                          <div class="timeline-desk">
+                                              <div class="panel">
+                                                  <div class="panel-body">
+                                                      <span class="arrow"></span>
+                                                      <span class="timeline-icon red"></span>
+                                                      <span class="timeline-date">08:25 am</span>
+                                                      <h1 class="red">7月12日 | 周日</h1>
+                                                      <p>在Sasop开会</p>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </article>
+                                      <article class="timeline-item alt">
+                                          <div class="timeline-desk">
+                                              <div class="panel">
+                                                  <div class="panel-body">
+                                                      <span class="arrow-alt"></span>
+                                                      <span class="timeline-icon green"></span>
+                                                      <span class="timeline-date">10:00 am</span>
+                                                      <h1 class="green">7月10日 | 周三</h1>
+                                                      <p><a href="#">U2h</a> 增加了新的要求 <span><a href="#" class="green">修复10个Bug</a></span></p>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </article>
+                                      <article class="timeline-item">
+                                          <div class="timeline-desk">
+                                              <div class="panel">
+                                                  <div class="panel-body">
+                                                      <span class="arrow"></span>
+                                                      <span class="timeline-icon blue"></span>
+                                                      <span class="timeline-date">11:35 am</span>
+                                                      <h1 class="blue">7月5日 | 周一</h1>
+                                                      <p><a href="#">Air Jordan P</a> 上传了 <span><a href="#" class="blue">PARTY TIME</a></span></p>
+                                                      <div class="album">
+                                                          <a href="#">
+                                                              <img alt="" src="img/sm-img-1.jpg">
+                                                          </a>
+                                                          <a href="#">
+                                                              <img alt="" src="img/sm-img-2.jpg">
+                                                          </a>
+                                                          <a href="#">
+                                                              <img alt="" src="img/sm-img-3.jpg">
+                                                          </a>
+                                                          <a href="#">
+                                                              <img alt="" src="img/sm-img-1.jpg">
+                                                          </a>
+                                                          <a href="#">
+                                                              <img alt="" src="img/sm-img-2.jpg">
+                                                          </a>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </article>
+                                      <article class="timeline-item alt">
+                                          <div class="timeline-desk">
+                                              <div class="panel">
+                                                  <div class="panel-body">
+                                                      <span class="arrow-alt"></span>
+                                                      <span class="timeline-icon purple"></span>
+                                                      <span class="timeline-date">3:20 pm</span>
+                                                      <h1 class="purple">6月29日 | 周六</h1>
+                                                      <p>波在Phsam</p>
+                                                      <div class="notification">
+                                                          <i class=" icon-exclamation-sign"></i> 增加了 <a href="#">6个新任务</a>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </article>
+                                      <article class="timeline-item">
+                                          <div class="timeline-desk">
+                                              <div class="panel">
+                                                  <div class="panel-body">
+                                                      <span class="arrow"></span>
+                                                      <span class="timeline-icon light-green"></span>
+                                                      <span class="timeline-date">07:49 pm</span>
+                                                      <h1 class="light-green">6月10日 | Friday</h1>
+                                                      <p><a href="#">U2h</a> 增加了新的人物 <span><a href="#" class="light-green">波</a></span> 接收了任务</p>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </article>
+                                  </div>
+
+                                  <div class="clearfix">&nbsp;</div>
+                              </div>
+                      </section>
+                  </div>
+              </div>
+
+          </section>
+      </section>
+      <!--main content end-->
+  </section>
+
+    <!-- js placed at the end of the document so the pages load faster -->
+    <script src="js/Administration_jquery.js"></script>
+    <script src="js/Administration_jquery-1.8.3.min.js"></script>
+    <script src="js/Administration_bootstrap.min.js"></script>
+    <script src="js/Administration_jquery.scrollTo.min.js"></script>
+    <script src="js/Administration_jquery.nicescroll.js" type="text/javascript"></script>
+    <script src="js/Administration_jquery.sparkline.js" type="text/javascript"></script>
+    <script src="assets/jquery-easy-pie-chart/jquery.easy-pie-chart.js"></script>
+    <script src="js/Administration_owl.carousel.js" ></script>
+    <script src="js/Administration_jquery.customSelect.min.js" ></script>
+
+    <!--common script for all pages-->
+    <script src="js/Administration_common-scripts.js"></script>
+
+    <!--script for this page-->
+    <script src="js/Administration_sparkline-chart.js"></script>
+    <script src="js/Administration_easy-pie-chart.js"></script>
+
+  <script>
+
+      //owl carousel
+
+      $(document).ready(function() {
+          $("#owl-demo").owlCarousel({
+              navigation : true,
+              slideSpeed : 300,
+              paginationSpeed : 400,
+              singleItem : true
+
+          });
+      });
+
+      //custom select box
+
+      $(function(){
+          $('select.styled').customSelect();
+      });
+
+  </script>
+
+  </body>
+</html>

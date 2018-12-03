@@ -1,0 +1,77 @@
+.cfont1{
+    font-size: 15px;
+    color: dimgray;
+    font-weight: 600;
+}
+.cfont2{
+    color: #50e1ce;
+    font-weight: 600;
+    font-size: 15px;
+}
+.cfont3{
+    font-size: 20px;
+    color: dimgray;
+    font-weight: 600;
+}
+.cfont4{
+    font-size: 15px;
+    color: #696969c4;
+    font-weight: 600;
+}
+.cfont5{
+    font-size: 14px;
+    color: #6969698f;
+}
+.charity_f1{
+    font-size: 20px;
+    color: dimgray;
+    font-weight: 600;
+}
+.charity_f2{
+    font-size: 25px;
+    color: red;
+    font-weight: 600;
+}
+.cbtn1{
+    height: 50px;
+    width: 160px;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 1px solid white;
+    background-color: #50e1ce;
+}
+.cli1{
+    float: left;
+    width: 2.5rem;
+    color: #747474;
+    height: 2.5rem;
+    border: 0.1rem solid #66666685;
+    text-align: center;
+    font-size: 1.6rem;
+}
+.cli2{
+    float: left;
+    width: 2.5rem;
+    color: #ffffff;
+    height: 2.5rem;
+    border: 0.1rem solid #ffffff00;
+    text-align: center;
+    font-size: 1.6rem;
+    background-color: #50e1ce;
+}
+
+#container2 {height:150px;width:150px;}
+#container2 span {position: relative;}
+#container2 .inputCheck {position: absolute;width: 20px;height: 20px;
+    visibility: hidden;}
+#container2 .inputCheck+label {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border: 2px solid;
+    border-color: #6ae5db;
+    background: #ffffff;
+}
+#container2 .inputCheck:checked+label {background: url(pictures/勾.png) no-repeat center center;background-size:20px 20px;}
